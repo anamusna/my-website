@@ -70,16 +70,17 @@
 @import "./components/badges";
 @import "./components/banners";
 @import "./components/buttons";
+@import "./components/carousel";
 @import "./components/container";
 @import "./components/dropdown";
 @import "./components/heroes";
+@import "./components/home-background";
 @import "./components/icons";
+@import "./components/polygon";
 @import "./components/sliders";
 @import "./components/tabs";
 @import "./components/typography";
 @import "./components/zindex";
-@import "./components/carousel";
-@import "./components/home-background";
 
 // Layouts: styles for modules
 @import "./layout/header";
@@ -87,6 +88,6 @@
 
 // Page Styles
 @import "./pages/about";
+@import "./pages/contact";
 @import "./pages/home";
 @import "./pages/testimonials";
-@import "./pages/contact";

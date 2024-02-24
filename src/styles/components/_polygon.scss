@@ -1,0 +1,21 @@
+.polygon {
+  color: white;
+  animation: glowing-polygon 1500ms infinite;
+}
+
+@keyframes glowing-polygon {
+  0% {
+    color: $success-1;
+    filter: drop-shadow(0 0 3px $success-1);
+  }
+
+  50% {
+    color: $success-1;
+    filter: drop-shadow(0 0 15px $success-2);
+  }
+
+  100% {
+    color: $success-2;
+    filter: drop-shadow(0 0 3px $success);
+  }
+}

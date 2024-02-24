@@ -25,7 +25,7 @@ const Testimonials = () => {
             <h1 className="title mb-4 text-start mb-md-5">
               {t(`testimonials.title`)}
             </h1>
-            <div className="row mx-auto my-4">
+            <div className="row my-4">
               <div className="col-md-6">
                 {testimonials.map((testimonial: any, index: number) => (
                   <div className="" key={testimonial.name}>
@@ -73,12 +73,12 @@ export const Testimonial = ({ testimonial }: { testimonial: any }) => {
   return (
     <div className="row mx-md-3 mx-auto my-4" key={testimonial.name}>
       <div className="hero-body pt-4 bg-gray-2 rounded-4 position-relative">
-        <p className="testimonial-text">“{testimonial.testimony}”</p>
+        <p className="body-text">“{testimonial.testimony}”</p>
       </div>
       <div className="mb-4 text-start">
         <div className="text-start arrow-down mb-4 ms-6"></div>
         <div className="d-flex mx-5 align-items-center gap-4">
-          <div className="fw-bold">{testimonial.name}</div>
+          <small className="fw-bold">{testimonial.name}</small>
         </div>
       </div>
     </div>

@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUp, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
 import Avatar from "../components/Avatar";
 import { FooterMain } from "../components/Footer";
-import { PictureSlide } from "../components/Sliders";
+import { SlideContent } from "../components/Sliders";
 import YoutubeEmbed from "../components/Youtube";
 import { Processes } from "./Processes";
 import ProfilImage from "../styles/images/profile.jpeg";
@@ -52,12 +52,12 @@ const Hero = () => {
     <div className="hero-holder pt-5 pt-md-6 bg-gradient-horizontal">
       <div className="page-about-hero hero py-md-7">
         <div className="hero-container">
-          <div className="hero-row row">
+          <div className="hero-row col-md-10">
             <div className="hero-body col-md-8 mb-4 mb-md-0 mx-0">
               <h1 className="title text-md-start text-center">
                 {t("about.title")}
               </h1>
-              <p className="testimonial-text fw-normal mb-4">
+              <p className="body-text fw-normal mb-4 me-md-">
                 {t("about.shortBio.text")}
               </p>
               <div className="hero-button-container d-flex gap-3 mx-auto mx-md-0">
@@ -78,7 +78,7 @@ const Hero = () => {
               </div>
             </div>
             <div className="mt-0 my-4 d-flex col-md-4">
-              <PictureSlide
+              <SlideContent
                 //className="bg-primary"
                 slideElement={
                   <img
@@ -128,7 +128,7 @@ const AboutMe = () => {
               <div className="accordion-body">
                 <div>
                   {longBio.map((text, index) => (
-                    <p key={index} className="testimonial-text">
+                    <p key={index} className="body-text">
                       {t(text)}
                     </p>
                   ))}

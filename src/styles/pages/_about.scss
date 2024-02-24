@@ -17,6 +17,12 @@
     line-height: $line-height-base;
   }
 
+  .horizontal-line {
+    height: 1px;
+    margin: 0 auto;
+    z-index: 999;
+  }
+    
   .about-img {
     @include media-breakpoint-up(md) {
       border-radius: 50%;

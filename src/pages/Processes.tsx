@@ -26,7 +26,7 @@ const Process = () => {
   const [divRef, goToTop] = useBackToTop();
 
   return (
-    <div className="page-about mt-5" ref={divRef}>
+    <div className="page-process mt-5" ref={divRef}>
       <Processes />
       <div className="mb-4 mx-auto d-flex flex-row text-center align-items-center justify-content-center">
         <div onClick={goToTop} role="button">
@@ -60,7 +60,7 @@ export const Processes = () => {
           <h3 className="about-title mb-4 text-start">{t("process.title")}</h3>
           <div className="mb-4">
             {processText.map((process, index) => (
-              <p className="testimonial-text" key={index}>{process}</p>
+              <p className="body-text" key={index}>{process}</p>
             ))}
           </div>
           <div className="row d-flex justify-content-center">

@@ -1,31 +1,3 @@
-.horizontal-line {
-  height: 1px;
-  margin: 0 auto;
-  z-index: 999;
-}
-
-.blink {
-  color: white;
-  animation: glowing-polygon 1500ms infinite;
-}
-
-@keyframes glowing-polygon {
-  0% {
-    color: $success-1;
-    filter: drop-shadow(0 0 3px $success-1);
-  }
-
-  50% {
-    color: $success-1;
-    filter: drop-shadow(0 0 15px $success-2);
-  }
-
-  100% {
-    color: $success-2;
-    filter: drop-shadow(0 0 3px $success);
-  }
-}
-
 .page-home {
   height: 100%;
   position: relative;
@@ -99,37 +71,6 @@
     }
   }
 
-  .box-icon {
-    @extend .container;
-  }
-
-  .card-holder {
-    @extend .pt-3, .pb-5;
-
-    .card-container {
-      @extend .container, .justify-content-center;
-
-      .card-container-title {
-        @extend .mt-4, .mb-5;
-        font-size: 2.5rem
-      }
-
-      .card {
-        @extend .mb-4;
-      }
-
-      button {
-        @extend .mt-5;
-        width: 12.187rem;
-        margin: 0 auto;
-      }
-    }
-  }
-
-  &-values {
-    @extend .bg-primary;
-  }
-
   &-image {
     @extend .mb-md-0;
     z-index: -1;
@@ -157,24 +98,4 @@
       width: 100%;
     }
   }
-}
-
-.slide-content {
-  &.slide-content-from-left {
-    transform: translateX(-50%);
-  }
-
-  &.slide-content-from-left {
-    transition: opacity 250ms ease-in, transform 500ms ease-in;
-    opacity: 0;
-  }
-
-  &.slide-content-from-left.appear {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-.banner-holder {
-  @extend .pt-5, .pb-5, .container;
 }
