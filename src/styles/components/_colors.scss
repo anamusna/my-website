@@ -1,0 +1,37 @@
+@each $brand, $value in $brand-colors {
+  a:not(.btn) {
+    color: var(--#{$prefix}#{$brand}-primary);
+    text-decoration: $link-decoration;
+
+    &:hover {
+      color: var(--#{$prefix}#{$brand}-secondary);
+      text-decoration: $link-hover-decoration;
+    }
+  }
+
+  .accordion {
+    --#{$prefix}accordion-active-bg: var(--#{$prefix}#{$brand}-secondary);
+    --#{$prefix}accordion-border-color: var(--#{$prefix}#{$brand}-secondary);
+  }
+
+}
+
+@each $color, $value in $theme-colors {
+  .bg-hover-#{$color} {
+    &:hover {
+      background-color: $value;
+    }
+  }
+
+  .fill-#{$color} {
+    fill: $value;
+  }
+
+  .text-hover-#{$color} {
+
+    &:hover,
+    :hover>& {
+      color: $value !important;
+    }
+  }
+}

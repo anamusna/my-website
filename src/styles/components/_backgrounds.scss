@@ -1,0 +1,77 @@
+@mixin bg-gradient-variant($theme, $variation: 1, $orientation: "horizontal") {
+  $colors: map-get($brand-colors, $theme);
+  $primary-color: map-get($brand-colors, primary);
+  $secondary-color: map-get($brand-colors, secondary);
+
+  $svg: (
+    1:
+      "data:image/svg+xml;utf8,<svg width='1125' height='225' preserveAspectRatio='none' viewBox='0 0 1125 225' fill='none' xmlns='http://www.w3.org/2000/svg'><mask id='m1' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='1125' height='225'><rect y='225' width='225' height='1125' transform='rotate(-90 0 225)' fill='#C4C4C4' /></mask><g filter='url(#f2)' mask='url(#m1)'><ellipse opacity='0.9' cx='-28.4156' cy='145.961' rx='138.789' ry='172.68' transform='rotate(-90 -28.4156 145.961)' fill='#{$primary-color}' /><ellipse rx='172.843' ry='239.148' transform='matrix(-0.761061 -0.64868 0.977856 -0.209277 642.267 225.273)' fill='url(#paint0_radial_6746_19077)' fill-opacity='0.5' /><ellipse rx='149.698' ry='197.257' transform='matrix(-0.728964 -0.684552 0.981651 -0.190684 175.985 -16.5352)' fill='#{$secondary-color}' fill-opacity='0.5' /></g><g filter='url(#f1)'><rect y='225' width='224.055' height='1124.97' transform='rotate(-90 0 225)' fill='url(#lg1)' /></g><defs><filter id='f1' x='-70' y='-69.0547' width='1264.97' height='364.055' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'><feFlood flood-opacity='0' result='BackgroundImageFix' /><feBlend mode='normal' in='SourceGraphic' result='shape' /></filter><filter id='f2' x='0' y='0'><feGaussianBlur in='SourceGraphic' stdDeviation='35' /></filter><radialGradient id='paint0_radial_6746_19077' cx='0' cy='0' r='1' gradientUnits='userSpaceOnUse' gradientTransform='rotate(90) scale(239.148 172.843)'><stop stop-color='#{$primary-color}' /><stop offset='0.671875' stop-color='#{$secondary-color}' /></radialGradient><linearGradient id='lg1' x1='25.5173' y1='249.044' x2='666.079' y2='922.308' gradientUnits='userSpaceOnUse'><stop stop-color='white' stop-opacity='0.4' /><stop offset='1' stop-color='white' stop-opacity='0.1' /></linearGradient></defs></svg>",
+    2:
+      "data:image/svg+xml;utf8,<svg width='1126' height='225' preserveAspectRatio='none' viewBox='0 0 1126 225' fill='none' xmlns='http://www.w3.org/2000/svg'><mask id='m1' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='1' y='0' width='1125' height='225'><rect x='1' y='225' width='225' height='1125' transform='rotate(-90 1 225)' fill='#C4C4C4' /></mask><g filter='url(#f2)' mask='url(#m1)'><ellipse cx='-37' cy='128.5' rx='156.5' ry='239' transform='rotate(-90 -37 128.5)' fill='url(#g1)' /><ellipse rx='172.843' ry='239.148' transform='matrix(-0.761061 -0.64868 0.977856 -0.209277 643.267 225.273)' fill='url(#g2)' fill-opacity='0.5' /><ellipse rx='149.698' ry='197.257' transform='matrix(-0.728964 -0.684552 0.981651 -0.190684 176.986 -16.5352)' fill='#{$secondary-color}' /></g><g filter='url(#f1)'><rect y='225' width='224.055' height='1124.97' rx='5' transform='rotate(-90 0 225)' fill='url(#lg1)' /></g><defs><filter id='f1' x='-70' y='-69.0547' width='1264.97' height='364.055' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'><feFlood flood-opacity='0' result='BackgroundImageFix' /><feBlend mode='normal' in='SourceGraphic' result='shape' /></filter><filter id='f2' x='0' y='0'><feGaussianBlur in='SourceGraphic' stdDeviation='35' /></filter><radialGradient id='g1' cx='0' cy='0' r='1' gradientUnits='userSpaceOnUse' gradientTransform='translate(-37 128.5) rotate(90) scale(239 156.5)'><stop stop-color='#{$primary-color}' /><stop offset='1' stop-color='#{$secondary-color}' /></radialGradient><radialGradient id='g2' cx='0' cy='0' r='1' gradientUnits='userSpaceOnUse' gradientTransform='rotate(90) scale(239.148 172.843)'><stop stop-color='#{$primary-color}' /><stop offset='0.671875' stop-color='#{$secondary-color}' /></radialGradient><linearGradient id='lg1' x1='25.5173' y1='249.044' x2='666.079' y2='922.309' gradientUnits='userSpaceOnUse'><stop stop-color='white' stop-opacity='0.5' /><stop offset='1' stop-color='white' stop-opacity='0.1' /></linearGradient></defs></svg>",
+    3:
+      "data:image/svg+xml;utf8,<svg width='360' height='772' preserveAspectRatio='none' viewBox='0 0 360 772' fill='none' xmlns='http://www.w3.org/2000/svg'><mask id='m1' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='360' height='772'><rect width='360' height='772' fill='#C4C4C4'/></mask><g filter='url(#f2)' mask='url(#m1)'><ellipse cx='127' cy='-19.5' rx='223' ry='118.5' fill='#{$primary-color}'/><ellipse cx='-0.436645' cy='440.751' rx='201.5' ry='179.5' transform='rotate(-26.6151 -0.436645 440.751)' fill='url(#rg1)' fill-opacity='0.5'/><ellipse cx='388.09' cy='120.768' rx='180.883' ry='145.98' transform='rotate(-24.4564 388.09 120.768)' fill='#{$secondary-color}' fill-opacity='0.5'/></g><g filter='url(#f1)'><rect width='360' height='772' fill='url(#lg1)'/></g><defs><filter id='f1' x='-70' y='-70' width='500' height='912' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'><feFlood flood-opacity='0' result='BackgroundImageFix'/><feComposite in2='SourceAlpha' operator='in' result='e1'/><feBlend mode='normal' in='SourceGraphic' in2='e1' result='shape'/></filter><filter id='f2' x='0' y='0'><feGaussianBlur in='SourceGraphic' stdDeviation='35' /></filter><radialGradient id='rg1' cx='0' cy='0' r='1' gradientUnits='userSpaceOnUse' gradientTransform='translate(-0.436646 440.751) rotate(90) scale(179.5 201.5)'><stop stop-color='#{$primary-color}'/><stop offset='0.671875' stop-color='#{$secondary-color}'/></radialGradient><linearGradient id='lg1' x1='41' y1='16.5' x2='348' y2='772' gradientUnits='userSpaceOnUse'><stop stop-color='white' stop-opacity='0.1'/><stop offset='1' stop-color='white' stop-opacity='0.5'/></linearGradient></defs></svg>",
+    4:
+      "data:image/svg+xml;utf8,<svg width='360' height='772' preserveAspectRatio='none' viewBox='0 0 360 772' fill='none' xmlns='http://www.w3.org/2000/svg'><mask id='m1' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='360' height='772'><rect width='360' height='772' rx='5' fill='#C4C4C4'/></mask><g filter='url(#f2)' mask='url(#m1)'><ellipse cx='151.5' cy='-30.5' rx='247.5' ry='99.5' fill='#{$primary-color}'/><ellipse cx='-0.436645' cy='440.751' rx='201.5' ry='179.5' transform='rotate(-26.6151 -0.436645 440.751)' fill='url(#rg1)' fill-opacity='0.5'/><ellipse cx='388.09' cy='120.768' rx='180.883' ry='145.98' transform='rotate(-24.4564 388.09 120.768)' fill='#{$secondary-color}' fill-opacity='0.5'/></g><g filter='url(#f1)'><rect width='360' height='772' rx='5' fill='url(#lg1)'/></g><defs><filter id='f1' x='-70' y='-70' width='500' height='912' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'><feFlood flood-opacity='0' result='BackgroundImageFix'/><feGaussianBlur in='BackgroundImage' stdDeviation='35'/><feComposite in2='SourceAlpha' operator='in' result='e1'/><feBlend mode='normal' in='SourceGraphic' in2='e1' result='shape'/></filter><filter id='f2' x='0' y='0'><feGaussianBlur in='SourceGraphic' stdDeviation='35' /></filter><radialGradient id='rg1' cx='0' cy='0' r='1' gradientUnits='userSpaceOnUse' gradientTransform='translate(-0.436646 440.751) rotate(90) scale(179.5 201.5)'><stop stop-color='#{$primary-color}' stop-opacity='0.8'/><stop offset='0.671875' stop-color='#{$secondary-color}'/></radialGradient><linearGradient id='lg1' x1='41' y1='16.5' x2='348' y2='772' gradientUnits='userSpaceOnUse'><stop stop-color='white' stop-opacity='0.1'/><stop offset='1' stop-color='white' stop-opacity='0.3'/></linearGradient></defs></svg>",
+    5:
+      "data:image/svg+xml;utf8,<svg width='1440' height='701' preserveAspectRatio='none' viewBox='0 0 1440 701' fill='none' xmlns='http://www.w3.org/2000/svg'><mask id='m1' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='1440' height='701'><rect y='701' width='701' height='1440' transform='rotate(-90 0 701)' fill='#C4C4C4'/></mask><g filter='url(#f2)' mask='url(#m1)'><ellipse opacity='0.5' rx='434.787' ry='314.559' transform='matrix(0.308629 -0.951182 0.952934 0.303179 -119.321 447.011)' fill='#{$secondary-color}'/><ellipse rx='295.134' ry='447.383' transform='matrix(-0.100985 -0.994888 0.998726 -0.0504564 821.712 701.315)' fill='url(#rg)' fill-opacity='0.6'/><ellipse rx='119.225' ry='351.402' transform='matrix(0.036164 -0.999346 0.999993 -0.00363589 310.078 36.0754)' fill='#{$primary-color}'/></g><g filter='url(#f1)'><rect y='701' width='701' height='1440' transform='rotate(-90 0 701)' fill='url(#lg)'/></g><defs><filter id='f1' x='-120' y='-120' width='1680' height='941' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'><feFlood flood-opacity='0' result='BackgroundImageFix'/><feComposite in2='SourceAlpha' operator='in' result='e1'/><feBlend mode='normal' in='SourceGraphic' in2='e1' result='shape'/></filter>><filter id='f2' x='0' y='0'><feGaussianBlur in='SourceGraphic' stdDeviation='35' /></filter>  <radialGradient id='rg' cx='0' cy='0' r='1' gradientUnits='userSpaceOnUse' gradientTransform='translate(295.134 447.383) rotate(90) scale(447.383 295.134)'><stop stop-color='#{$primary-color}'/><stop offset='0.671875' stop-color='#{$secondary-color}'/></radialGradient><linearGradient id='lg' x1='700.979' y1='701' x2='97.6455' y2='2114.53' gradientUnits='userSpaceOnUse'><stop stop-color='#F3F3F3' stop-opacity='0'/><stop offset='0.708333' stop-color='#F3F3F3' stop-opacity='0.4'/><stop offset='1' stop-color='#F3F3F3' stop-opacity='0.5'/></linearGradient></defs></svg>",
+  );
+
+  background-color: $white;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  &::before {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url(escape-svg(map-get($svg, $variation)));
+  }
+
+  &::after {
+    background-size: cover;
+    mix-blend-mode: soft-light;
+    opacity: 0.1;
+  }
+}
+
+.bg-gradient-horizontal,
+.bg-gradient-horizontal-primary {
+  @include bg-gradient-variant(1);
+}
+
+.bg-gradient-full,
+.bg-gradient-full-primary,
+.bg-gradient-full-secondary {
+  @include bg-gradient-variant(5);
+}
+
+.bg-gradient-horizontal-secondary {
+  @include bg-gradient-variant(2);
+}
+
+.bg-gradient-vertical,
+.bg-gradient-vertical-primary {
+  @include bg-gradient-variant(3);
+}
+
+.bg-gradient-vertical-secondary {
+  @include bg-gradient-variant(4);
+}
+
+.bg-swirl {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+}

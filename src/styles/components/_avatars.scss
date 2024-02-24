@@ -1,0 +1,83 @@
+.avatar {
+  border: 1px solid $gray-2;
+  border-radius: 50%;
+  height: 3rem;
+  width: 3rem;
+
+  .icon {
+    @extend .d-flex, .mx-auto, .text-center, .align-items-center, .justify-content-center;
+  }
+
+  &-sm {
+    height: 1.75rem;
+    width: 1.75rem;
+  }
+
+  &-lg {
+    height: 5rem;
+    width: 5rem;
+  }
+
+  &-dot {
+    background-color: $success;
+    border: 0.125rem solid $gray-2;
+    border-radius: 50%;
+    bottom: 0rem;
+    height: 0.75rem;
+    position: absolute;
+    width: 0.75rem;
+    right: 0rem;
+  }
+
+  &-sm &-dot {
+    bottom: -0.25rem;
+    right: -0.25rem;
+  }
+
+  &-lg &-dot {
+    bottom: 0.25rem;
+    right: 0.25rem;
+  }
+
+  img,
+  &-text {
+    border-radius: 50%;
+    height: inherit;
+    width: inherit;
+  }
+
+  &-text {
+    @extend .d-flex, .mx-auto, .text-center, .text-white, .align-items-center, .justify-content-center;
+    font-weight: $font-weight-bold;
+    font-size: 1rem;
+  }
+
+  &-sm &-text {
+    font-size: 0.675rem;
+  }
+
+  &-lg &-text {
+    font-size: 1.5rem;
+  }
+}
+
+.image-dot {
+  background-color: $success;
+  border: 0.125rem solid $gray-2;
+  border-radius: 50%;
+  top: 0rem;
+  height: 0.75rem;
+  position: absolute;
+  width: 0.75rem;
+  right: 0rem;
+}
+
+.image-dot {
+  bottom: -0.25rem;
+  right: -0.25rem;
+}
+
+.image-dot {
+  bottom: 0.25rem;
+  right: 0.25rem;
+}

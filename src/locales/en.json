@@ -1,0 +1,491 @@
+{
+  "header": {
+    "home": "Home",
+    "language": "English",
+    "links": {
+      "about": {
+        "label": "About",
+        "url": "/about"
+      },
+      "process": {
+        "label": "My Process",
+        "url": "/my-process"
+      },
+      "testimonials": {
+        "label": "Testimonials",
+        "url": "/testimonials"
+      },
+      "contact": {
+        "label": "Contact",
+        "url": "/contact"
+      }
+    }
+  },
+  "home": {
+    "work": "Available for work",
+    "location": "Berlin, Germany",
+    "language": {
+      "value": "english",
+      "label": "English"
+    },
+    "hero": {
+      "title": "Hey, it's me 👋",
+      "heroTitle": "Are you in search of a trustworthy ally to assist you in expanding your online presence?",
+      "subTitile": "I'll collaborate with you to develop a personalized app or website that aligns with your objectives.",
+      "text": "I'm a full-stack developer and co-founder. Proficient in JavaScript, TypeScript, React, React Native, MongoDB, Node.js, AWS, Docker, and Kubernetes. I specialize in building complex web and mobile applications, collaborating with cross-functional teams, and managing large-scale databases.",
+      "button": "Let's chat about your project"
+    },
+    "about": {
+      "text": "I'm Ansumana Darboe (he/him), an experienced Full Stack Developer based in Berlin. Proficient in JavaScript, React, NodeJS, MongoDB, AWS and more. Beyond coding, I've got a diverse background in Tech having worked as a network system administrator and IT support. Skilled in Agile, CI/CD, and collaborative tools. Co-founder/Tech Lead at ZULA. Outside work, I enjoy sports, cooking, and quality time with loved ones.",
+      "button": "Read More"
+    }
+  },
+  "about": {
+    "title": "About Me",
+    "experienceTitle": "Experience",
+    "skillTitle": "Technologies",
+    "youtube": "Here's a sneak peek into my journey of becoming a full-stack web developer.",
+    "text": "I'm Ansumana Darboe (he/him), an experienced Full Stack Developer and co-founder based in Berlin.",
+    "cv": "View my resume",
+    "shortBio": {
+      "title": "Short Bio",
+      "text": "I've got a diverse background in Tech, having worked as a Network System Administrator to IT Support and Full Stack Developer. My expertise includes building complex applications. With autonomy and clean code, I deliver high-quality tailored solutions for every project. Oh, and I'm a co-founder of ZULA too."
+    },
+    "longBio": {
+      "title": "Background",
+      "text": [
+        "From Network System Administration to Full Stack Development, my tech journey has been diverse and dynamic. As the Co-Founder and Tech Lead at ZULA, I spearheaded the creation of an online book library with a mission to provide universal access to diverse and inclusive books for children. My expertise spans both front-end and back-end web development, specializing in building complex web and mobile applications, optimizing performance, and managing databases. Proficient in JavaScript, TypeScript, ReactJS, NodeJS, MongoDB, AWS, Docker, and Kubernetes, I bring a comprehensive skill set to every project.",
+        "Agile methodologies like SCRUM and Kanban are integral to my workflow, alongside tools like Bitbucket, Github, Jira, and Confluence. I've implemented CI/CD pipelines and containerization and orchestration with Docker and Kubernetes."
+      ]
+    },
+    "skills": [
+      {
+        "skill": "JavaScript and TypeScript",
+        "text": "In order to elevate the quality of my code, I employ TypeScript, an extension of JavaScript. This provides the benefit of static typing, reducing the likelihood of bugs and enhancing overall code reliability. For front-end development, I harness the power of JavaScript to craft dynamic and interactive user interfaces. This combination not only ensures a smoother development process but also results in a more robust and error-resistant codebase."
+      },
+      {
+        "skill": "React and React Native",
+        "text": "My framework of choice for crafting efficient and reusable UI components is React. Its component-based architecture allows me to create modular, scalable, and easily maintainable user interfaces. Additionally, when transitioning to mobile app development, I seamlessly extend this capability using React Native. This ensures the development of cross-platform applications with a single codebase, saving time and resources."
+      },
+      {
+        "skill": "MongoDB",
+        "text": "MongoDB stands out as my preferred database management system. Its flexibility in handling JSON-like documents and scalability make it an ideal choice for managing diverse data structures. The ability to adapt to evolving project needs, coupled with efficient querying capabilities, contributes to a robust and versatile data management solution."
+      },
+      {
+        "skill": "AWS",
+        "text": "AWS is my go-to solution for cloud storage. Its secure and scalable object storage ensures reliable data management for my applications. The seamless integration with other AWS services further enhances the overall efficiency of the cloud infrastructure, providing a solid foundation for application deployment and data handling."
+      },
+      {
+        "skill": "RESTful APIs",
+        "text": "To foster efficient data exchange and ensure a seamless UI, I design and implement RESTful APIs. These APIs serve as a bridge between different components of a web application, allowing for smooth communication and interaction. This approach not only enhances the responsiveness of the application but also promotes a modular and scalable architecture."
+      },
+      {
+        "skill": "Node.js",
+        "text": "Node.js takes the spotlight as my preferred server-side runtime. Its non-blocking, event-driven architecture aligns perfectly with my development philosophy, allowing for the creation of scalable and high-performance server-side applications. This choice facilitates the development of fast and responsive back-end solutions for a wide range of applications."
+      },
+      {
+        "skill": "Docker and Kubernetes",
+        "text": "For consistent deployment across various environments, I leverage Docker containers. These containers encapsulate the application and its dependencies, ensuring reliability and consistency. To orchestrate and manage these containers at scale, I turn to Kubernetes. This dynamic duo enables seamless scaling, efficient management, and automated processes, streamlining the deployment lifecycle."
+      },
+      {
+        "skill": "CI/CD",
+        "text": "Continuous Integration and Continuous Deployment (CI/CD) are integral components of my development process. By implementing CI/CD practices, I automate testing and deployment, significantly reducing the likelihood of errors. This approach ensures that updates can be delivered quickly and reliably, contributing to a more agile and responsive development cycle."
+      },
+      {
+        "skill": "Microservices",
+        "text": "I embrace a microservices architecture to design applications that prioritize scalability and maintainability. This architectural approach promotes modularity, allowing each microservice to focus on a specific business function. This not only enhances scalability but also facilitates easy maintenance and updates, ensuring flexibility and agility in response to evolving project requirements."
+      },
+      {
+        "skill": "Redux",
+        "text": "For effective state management in larger applications, I integrate Redux. This powerful library provides a predictable state container, making it easier to manage and debug complex data flows. By centralizing the state, Redux enhances the maintainability and scalability of larger applications, ensuring a smooth and organized development process."
+      },
+      {
+        "skill": "Bootstrap",
+        "text": "Bootstrap takes center stage in my toolkit for rapid front-end development. Its responsive design components enable swift and consistent UI development. Additionally, I employ SASS, a CSS preprocessor, to enhance maintainability by introducing variables and mixins. This combination accelerates front-end development while ensuring a clean and organized styling structure."
+      },
+      {
+        "skill": "Express.js",
+        "text": "Express.js is my framework of choice for building robust and scalable web applications on the Node.js runtime. Its simplicity and flexibility align seamlessly with my development philosophy, allowing for the creation of efficient and modular back-end solutions. Express.js streamlines the development process, enabling the rapid creation of feature-rich web applications."
+      },
+      {
+        "skill": "Version Control",
+        "text": "Git is my version control system of choice, providing a robust and distributed approach to tracking changes in my projects. By utilizing Git, I enable collaborative development, track changes effectively, and maintain a safety net for code rollback when necessary. This ensures version control integrity and collaboration across development teams."
+      },
+      {
+        "skill": "SCRUM",
+        "text": "I adhere to the SCRUM framework for project management. SCRUM's iterative development approach, emphasis on collaboration, and regular feedback cycles align with my project management philosophy. This framework ensures that projects are delivered incrementally, adapting to changing requirements and maintaining alignment with client expectations."
+      },
+      {
+        "skill": "Webpack",
+        "text": "Webpack is my preferred bundler for optimizing web application performance. Its ability to efficiently package and manage assets, coupled with features like code splitting and tree shaking, significantly enhances the overall speed and efficiency of web applications. Webpack plays a crucial role in optimizing the performance of the applications I develop."
+      },
+      {
+        "skill": "TDD",
+        "text": "I adhere to Test Driven Development (TDD) as my approach for writing software. This methodology involves creating tests before writing the actual code, ensuring that the codebase remains robust, scalable, and bug-free throughout the development process. TDD contributes to a more reliable and maintainable codebase by prioritizing test coverage from the outset."
+      }
+    ],
+    "tools": [
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "Next.js",
+      "React Native",
+      "Node.js",
+      "Redux",
+
+      "RESTful APIs",
+      "Express",
+      "MongoDB",
+      "Docker",
+      "Kubernetes",
+      "AWS",
+
+      "HTML",
+      "CSS",
+      "Bootstrap",
+      "Sass",
+      "Material-UI",
+
+      "Git",
+      "Firebase",
+      "Jira",
+      "Storybook",
+      "Emotion",
+      "Styled-Components",
+      "GitLab",
+      "Postman",
+      "Scrum",
+      "Bitbucket",
+      "Confluence",
+      "Microservices",
+
+      "Version Control",
+      "Webpack",
+
+      "Jest",
+      "Linux",
+      "Handlebars.js"
+    ],
+    "experience": [
+      {
+        "company": "ZULA",
+        "position": "Co-Founder | Tech Lead",
+        "employment_type": "Self-employed",
+        "location": "",
+        "start_date": "Jul 2023",
+        "end_date": "Present",
+        "duration": "8 mos",
+        "description": [
+          "Co-founded Zula, contributing to the conceptualization and establishment of the company. Initiated and shaped the company's vision, mission, and overall strategic direction.",
+          "Directed, developed and implemented comprehensive technology strategies aligning with the company's objectives of developing a vast online book library, ensuring the creation of a user-friendly and content-rich platform.",
+          "Led the team towards the mission of providing access to books that celebrates differences and resonates with every child.",
+          "Oversaw the end-to-end process, from content curation to platform development.",
+          "Applied a full-stack approach to ensure seamless functionality across the platform."
+        ],
+        "skills": [
+          "Jest",
+          "TypeScript",
+          "React",
+          "Linux",
+          "MongoDB",
+          "Node.js",
+          "SASS",
+          "RESTful WebServices",
+          "Docker Products",
+          "Microservices",
+          "System Administration",
+          "Git",
+          "JavaScript",
+          "Handlebars.js",
+          "HTML5",
+          "Software Development",
+          "Cascading Style Sheets (CSS)",
+          "Front-end Development",
+          "Kubernetes",
+          "Web Design",
+          "Leadership",
+          "Entrepreneurship",
+          "Team Building",
+          "Strategic Planning"
+        ]
+      },
+      {
+        "company": "innn.it. | Change.org",
+        "position": "Full-stack Developer | IT Support",
+        "employment_type": "Full-time",
+        "location": "Berlin, Germany",
+        "start_date": "Oct 2020",
+        "end_date": "Jul 2023",
+        "duration": "2 yrs 10 mos",
+        "subtext": "Developed applications, enhanced UI and increased page views by achieving an 80% reduction in website loading time. Implemented caching strategies and optimized code for enhanced scalability and maintainability. Ensured data integrity through database management. Provided efficient IT support for 25+ employees and established robust data security policies.",
+        "description": [
+          "Developed and maintained organization's websites, optimizing performance, user experience, and ensuring scalability and maintainability",
+          "Troubleshot, debugged, and resolved issues to ensure website functionality, stability, and performance.",
+          "Collaborated with cross-functional teams to handle product requests, implement new features, and improve user experience.",
+          "Managed organization's databases handling over 500 million user records, applications, and APIs, including design, optimization, and ensuring data integrity.",
+          "Developed communication tools for citizens' participation, creating front-end applications and layouts.",
+          "Established and provided IT support for over 25 employees within the association, promptly addressing inquiries and resolving technical issues.",
+          "Developed and implemented IT policies and procedures for data security, privacy compliance, and best practices."
+        ],
+        "skills": [
+          "Jest",
+          "TypeScript",
+          "React",
+          "Linux",
+          "CSS3",
+          "MongoDB",
+          "Node.js",
+          "SASS",
+          "Express.js",
+          "RESTful WebServices",
+          "Docker Products",
+          "Amazon Web Services (AWS)",
+          "Microservices",
+          "System Administration",
+          "Git",
+          "JavaScript",
+          "Handlebars.js",
+          "HTML5",
+          "Software Development",
+          "Cascading Style Sheets (CSS)",
+          "Front-end Development",
+          "Kubernetes",
+          "Web Design"
+        ]
+      },
+      {
+        "company": "Propstack",
+        "position": "Full-stack Developer",
+        "employment_type": "Internship",
+        "location": "Berlin Area, Germany",
+        "start_date": "May 2019",
+        "end_date": "Jun 2019",
+        "duration": "2 mos",
+        "description": [
+          "Rebuilt the company's mobile application using React Native to optimize its performance, user experience, and align it with the company's branding and messaging.",
+          "Enhanced the mobile app's functionalities based on user feedback, business requirements, and industry best practices to make it more user-friendly and intuitive.",
+          "Collaborated closely with the UX designer to ensure the mobile app's easy navigation, usability, and accessibility.",
+          "Worked collaboratively with external vendors and service providers to optimize the mobile app for both Android and iOS devices, ensuring compliance with relevant app store requirements."
+        ],
+        "skills": [
+          "React",
+          "Linux",
+          "MongoDB",
+          "Node.js",
+          "SASS",
+          "RESTful WebServices",
+          "Git",
+          "JavaScript",
+          "HTML5",
+          "Software Development",
+          "Cascading Style Sheets (CSS)",
+          "Front-end Development",
+          "React Native"
+        ]
+      },
+      {
+        "company": "AccounTax Solutions",
+        "position": "Network System Administrator",
+        "employment_type": "Full-time",
+        "location": "The Gambia",
+        "start_date": "Jul 2011",
+        "end_date": "Apr 2013",
+        "duration": "1 yr 10 mos",
+        "description": [
+          "Provided comprehensive IT support to internal and external stakeholders.",
+          "Diagnosed and resolved network issues related to hardware, software, and connectivity.",
+          "Troubleshot and solved software faults, including operating systems, applications, and databases.",
+          "Installed and implemented network security programs, such as firewalls and anti-virus software.",
+          "Configured new computer systems, including hardware and software setup.",
+          "Conducted end-user training on various software programs and systems."
+        ],
+        "skills": ["System Administration"]
+      }
+    ]
+  },
+  "process": {
+    "title": "My processes",
+    "subText": "Understanding the project's needs and requirements is paramount for me. I make sure to engage in detailed discussions to grasp every aspect of the project thoroughly. Additionally, breaking down complex issues and tasks is a key part of my approach. This allows for better management and execution, ensuring that each component receives the necessary attention. Moreover, I prioritize time management, especially when developing responsive web and mobile apps. By adhering to these processes, I aim to deliver high-quality results efficiently and effectively.",
+    "button": "My work process",
+    "text": [
+      "Time management is crucial for me so in my workflow, I like to break down complex issues and tasks into more manageable components, using both analytical and creative thinking to fully understand a project requirements then prioritize tasks and sprints based on importance and dependencies.",
+      "Agile methodologies like SCRUM and Kanban help me keep organized. Also, I thrive in a dynamic, collaborative environment where teamwork, creativity, diversity, and continuous learning are embraced."
+    ],
+    "processes": [
+      {
+        "title": "Discussion",
+        "img": "../styles/images/light-bulb.svg",
+        "text": "To understand the project needs and requirements it’s very important for me to discuss with the people involved to make sure I understand everything the project should achieve."
+      },
+      {
+        "title": "Planning",
+        "img": "../styles/images/prioritise.svg",
+        "text": "Next, I start by breaking the big project into smaller tasks and decide urgencies. This helps me prioritize tasks, estimate time better and ensure deadlines are met without compromising on quality."
+      },
+
+      {
+        "title": "Development",
+        "img": "../styles/images/code.svg",
+        "text": "I like to build things step by step. I deliver parts of the project one at a time, getting feedback as I go. It helps me make improvements along the way."
+      },
+      {
+        "title": "Documentation",
+        "img": "../styles/images/documentation.svg",
+        "text": "I keep records of everything I do. This includes technical details and guides."
+      },
+      {
+        "title": "Review",
+        "img": "../styles/images/sprint.svg",
+        "text": "At the end of a sprint, I show what I've completed, gather feedback, and adjust accordingly."
+      },
+      {
+        "title": "Deployment",
+        "img": "../styles/images/deployment.svg",
+        "text": "Once everything is good to go, I deploy the project online. I also set up tools to keep an eye on how things are running, so I can quickly fix any issues that pop up."
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "Testimonials",
+    "button": "All testimonials",
+    "groupOne": [
+      {
+        "name": "Lea Terwort",
+        "position": "UX Designer",
+        "company": "innn.it",
+        "testimony": "You're a true team player! If there was a contest for the most skilled developer with the brightest smile, you'd win hands down. Working with you is so fun, and the results also speak for themselves. You have a very easy and appreciative way of communicating (which is not a given between designers and developers;) and I am so happy to work in a team with you."
+      },
+      {
+        "name": "Nora Circosa",
+        "position": "Executive Board Member",
+        "company": "innn.it",
+        "testimony": "Your blend of technical expertise and positive energy is truly remarkable. So glad that you're part of our team. Your smile and positive vibes make everyone around you feel at ease. I admire how you relate with people and find the right words. You are a very charismatic person. Thanks a lot for all your amazing work at innn.it."
+      },
+      {
+        "name": "Thomas Manoila",
+        "position": "Head of Content Creation",
+        "company": "innn.it",
+        "testimony": "I'm so happy you are part of the team. Your mastery in Tech is evident in the quality of your work. Your laugh is infectious and your can-do-mentality is amazing. I really enjoy talking to you and appreciate your input to every topic! Stay awesome!"
+      },
+      {
+        "name": "Luiz Fukushiro",
+        "position": "Product Lead",
+        "company": "innn.it",
+        "testimony": "You're a true asset to our team. You've brought a lot of joy to the team, and your positive energy motivates all of us to go the extra mile. Your analytical skills and can-do mentality makes working with you a pleasure. Thanks for the fantastic energy and for finding solutions to every challenge!"
+      },
+      {
+        "name": "Annika Heintz-Saad",
+        "position": "Head of Fund-Raising",
+        "company": "innn.it",
+        "testimony": "You are not just a skilled developer; you are also a natural leader with a passion for bringing out the best in people. Your presence, voice, laugh & energy lights up every room! This is very special!"
+      }
+    ],
+    "groupTwo": [
+      {
+        "name": "Fabian Schyrer",
+        "position": "Head of Cloud Technology",
+        "company": "MAN Energy Solutions",
+        "testimony": "Ansumana Darboe constantly amazed me with his business insight and original methods to solving problems. His hands-on strategy to node.js, MongoDB, HTML5, CSS, Redux, React, MySQL, and strong personality won him the respect of the team. Ansumana Darboe never refuses you when you ask him for help. He is always capable of adapting to new working environments and has a very positive attitude towards work. Ansumana is an eager professional, no matter how complex the problem is, he will always come up with a brilliant, elegant, and cost-effective solution. He is a trustworthy person and I will always hold him in the highest esteem."
+      },
+      {
+        "name": "Gregor Hackmack",
+        "position": "Executive Board Member",
+        "company": "innn.it",
+        "testimony": "Your impact on the team is undeniable with your technical skills and leadership shining through in every project. Your can-do and proactive approach to resolving issues is truly inspiring. I will never forget our signature collection rallies for `Democracy For All`. You are such a great and joyful person! It's such a joy to meet you, talk with you and most importantly laugh with you! I always enjoy having you around at the office. Thank you for all the work you invest into innn.it - you built our future!"
+      },
+      {
+        "name": "Daphne Schaefer",
+        "position": "Fund-Raising expert",
+        "company": "innn.it",
+        "testimony": "You are a true professional with a wealth of experience and expertise. You always make me laugh. I will sincerely remember and cherish all the memories we've made!"
+      },
+      {
+        "name": "Sebastian Schütz",
+        "position": "Head of Social Media",
+        "company": "innn.it",
+        "testimony": "Your ability to translate complex ideas simply and effectively is truly amazing and you have such a positive energy that it made me smile whenever I saw you. You're such a great person!"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Project Planner",
+    "subText": "You are welcome to arrange an appointment.",
+    "text": [
+      "Whether you're just brainstorming ideas or already have a detailed project plan, I'm here to turn your vision into reality. Let's explore how we can work together on your next digital venture.",
+      "Reach out to start a conversation about your web or mobile app needs, and let's create something amazing together.",
+      "Not quite ready to dive into project specifics? Just want to say a friendly `Hi`? I'm looking forward to hearing from you!"
+    ],
+    "meeting": "Book a meeting",
+    "linkedin": "LinkedIn",
+    "email": "Email",
+    "github": "Github",
+    "phone": "Phone",
+    "projectForm": {
+      "text": "Share details about your project by completing the form below. Once I go through your responses, I'll reach out to you to arrange a call.",
+      "form": {
+        "content": {
+          "label": "What outcomes do you aim to achieve for your business through this project?",
+          "placeholder": "Jot down the inforation"
+        },
+        "estimatedBudget": {
+          "label": "What is your approximate budget for the project?",
+          "placeholder": "Estimated Budget"
+        },
+        "estimatedTime": {
+          "label": "What is your expected timeline for completing the project?",
+          "placeholder": "Estimated Time"
+        },
+        "firstName": {
+          "label": "First Name",
+          "placeholder": "First Name"
+        },
+        "lastName": {
+          "label": "Last Name",
+          "placeholder": "Last Name"
+        },
+        "email": {
+          "label": "Email Address",
+          "placeholder": "example@example.com"
+        },
+        "website": {
+          "label": "Current Website",
+          "placeholder": "https://example.com"
+        },
+        "button": "Get in touch",
+        "caption": "The personal data provided via this form will be utilized to address your inquiry. Refer to my privacy notice for additional details.",
+        "successMessage": "Thank you for sharing details about your project! I'll review your responses and reach out to you soon to discuss further steps."
+      }
+    },
+    "contactForm": {
+      "text": "Not ready to complete the project planner? Just want to drop a friendly `Hi`?",
+      "form": {
+        "firstName": {
+          "label": "First Name",
+          "placeholder": "First Name"
+        },
+        "lastName": {
+          "label": "Last Name",
+          "placeholder": "Last Name"
+        },
+        "email": {
+          "label": "Email Address",
+          "placeholder": "example@example.com"
+        },
+        "content": {
+          "label": "How would you measure the success of a project together?",
+          "placeholder": "Share your idea"
+        },
+        "button": "Get in touch",
+        "caption": "The personal data provided via this form will be utilized to address your inquiry. Refer to my privacy notice for additional details.",
+        "successMessage": "Thank you for reaching out! I've received your message and will get back to you as soon as possible. If you have any additional information to share, you can also complete the project planner above."
+      }
+    }
+  },
+  "scrollButton": "Back to top",
+  "footer": {
+    "title": "Do you have a project in mind? Let's discuss how we can bring it to life. Whether you're ready to begin or simply exploring ideas, I'm all ears.",
+    "button": "Get in touch",
+    "text": "Made with",
+    "subText": "by"
+  }
+}

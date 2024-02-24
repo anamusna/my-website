@@ -1,0 +1,275 @@
+.btn {
+  font-weight: $font-weight-bolder !important;
+  font-size: 1.3rem;
+
+  .svg-inline--fa {
+    float: right;
+    height: 1.25rem;
+    margin-left: 1rem;
+  }
+}
+
+.btn-icon {
+  --#{$prefix}btn-padding-x: #{$btn-padding-y};
+
+  .svg-inline--fa {
+    margin-right: 0;
+    width: 1.25rem;
+  }
+
+  &.btn-sm {
+    --#{$prefix}btn-padding-x: #{$btn-padding-y-sm};
+  }
+}
+
+.btn-gradient {
+  border: none;
+  @include gradient-directional($start-color: $primary 7.08%,
+    $end-color: $secondary 93.16%,
+    $deg: 86.68deg);
+
+  @include button-variant($background: $secondary,
+    $border: $primary,
+    $color: $white,
+    $hover-color: $white );
+
+  &:hover {
+    background: $secondary;
+  }
+}
+
+.btn-close {
+  @extend .d-flex, .align-items-center, .justify-content-center;
+  opacity: 1;
+
+  &:hover {
+    opacity: 0.75;
+  }
+}
+
+.btn-container {
+  &>.btn {
+    @extend .me-4;
+
+    &:last-child {
+      @extend .me-0;
+    }
+  }
+}
+
+// New buttons
+@mixin generate-btn-styles($color-name, $color) {
+  --#{$prefix}btn-color: #{$white};
+  --#{$prefix}btn-bg: #{$color};
+  --#{$prefix}btn-border-color: #{$color};
+  --#{$prefix}btn-hover-color: #{$white};
+  --#{$prefix}btn-hover-bg: #{rgba($color, $opacity-sm)};
+  --#{$prefix}btn-hover-border-color: #{rgba($color, 0)};
+  --#{$prefix}btn-active-color: #{$white};
+  --#{$prefix}btn-active-bg: #{rgba($color, $opacity-sm)};
+  --#{$prefix}btn-active-border-color: #{rgba($color, 0)};
+  --#{$prefix}btn-active-shadow: #{$btn-active-box-shadow};
+  --#{$prefix}btn-disabled-color: #{$white};
+  --#{$prefix}btn-disabled-bg: #{$gray-1};
+  --#{$prefix}btn-disabled-border-color: #{rgba($gray-1, 0)};
+}
+
+@each $color-name, $color in $theme-colors {
+  .btn-#{$color-name} {
+    @include generate-btn-styles($color-name, $color);
+  }
+}
+
+//primary-outline
+.btn-outline-primary {
+  --#{$prefix}btn-color: #{$primary};
+  --#{$prefix}btn-border-color: #{$primary};
+  --#{$prefix}btn-hover-color: #{$primary};
+  --#{$prefix}btn-hover-bg: #{rgba($primary, .15)};
+  --#{$prefix}btn-hover-border-color: #{$secondary};
+  --#{$prefix}btn-active-color: #{$primary};
+  --#{$prefix}btn-active-bg: #{rgba($black, $opacity-lg)};
+  --#{$prefix}btn-active-border-color: #{$secondary};
+  --#{$prefix}btn-active-shadow: #{$btn-active-box-shadow};
+  --#{$prefix}btn-disabled-color: #{$gray-2};
+  --#{$prefix}btn-disabled-bg: transparent;
+  --#{$prefix}btn-disabled-border-color: #{$gray-2};
+  --#{$prefix}gradient: none;
+}
+
+.btn-outline-primary-1 {
+  --#{$prefix}btn-color: #{$primary-1};
+  --#{$prefix}btn-border-color: #{$primary-1};
+  --#{$prefix}btn-hover-color: #{$primary-1};
+  --#{$prefix}btn-hover-bg: #{rgba($black, .15)};
+  --#{$prefix}btn-hover-border-color: #{$secondary-1};
+  --#{$prefix}btn-active-color: #{$primary-1};
+  --#{$prefix}btn-active-bg: #{rgba($black, $opacity-lg)};
+  --#{$prefix}btn-active-border-color: #{$secondary-2};
+  --#{$prefix}btn-active-shadow: #{$btn-active-box-shadow};
+  --#{$prefix}btn-disabled-color: #{$gray-2};
+  --#{$prefix}btn-disabled-bg: transparent;
+  --#{$prefix}btn-disabled-border-color: #{$gray-2};
+  --#{$prefix}gradient: none;
+}
+
+.btn-outline-primary-2 {
+  --#{$prefix}btn-color: #{$primary-2};
+  --#{$prefix}btn-border-color: #{$primary-2};
+  --#{$prefix}btn-hover-color: #{$primary-2};
+  --#{$prefix}btn-hover-bg: #{rgba($black, .15)};
+  --#{$prefix}btn-hover-border-color: #{$secondary-2};
+  --#{$prefix}btn-active-color: #{$primary-2};
+  --#{$prefix}btn-active-bg: #{rgba($black, $opacity-lg)};
+  --#{$prefix}btn-active-border-color: #{$secondary-2};
+  --#{$prefix}btn-active-shadow: #{$btn-active-box-shadow};
+  --#{$prefix}btn-disabled-color: #{$gray-2};
+  --#{$prefix}btn-disabled-bg: transparent;
+  --#{$prefix}btn-disabled-border-color: #{$gray-2};
+  --#{$prefix}gradient: none;
+}
+
+.btn-outline-primary-3 {
+  --#{$prefix}btn-color: #{$primary-3};
+  --#{$prefix}btn-border-color: #{$primary-3};
+  --#{$prefix}btn-hover-color: #{$primary-3};
+  --#{$prefix}btn-hover-bg: #{rgba($black, .15)};
+  --#{$prefix}btn-hover-border-color: #{$secondary-3};
+  --#{$prefix}btn-active-color: #{$primary-3};
+  --#{$prefix}btn-active-bg: #{rgba($black, $opacity-lg)};
+  --#{$prefix}btn-active-border-color: #{$secondary-3};
+  --#{$prefix}btn-active-shadow: #{$btn-active-box-shadow};
+  --#{$prefix}btn-disabled-color: #{$gray-2};
+  --#{$prefix}btn-disabled-bg: transparent;
+  --#{$prefix}btn-disabled-border-color: #{$gray-2};
+  --#{$prefix}gradient: none;
+}
+
+//secondary-outline
+.btn-outline-secondary {
+  --#{$prefix}btn-color: #{$secondary};
+  --#{$prefix}btn-border-color: #{$secondary};
+  --#{$prefix}btn-hover-color: #{$secondary};
+  --#{$prefix}btn-hover-bg: #{rgba($black, .15)};
+  --#{$prefix}btn-hover-border-color: #{$secondary};
+  --#{$prefix}btn-active-color: #{$secondary};
+  --#{$prefix}btn-active-bg: #{rgba($black, $opacity-lg)};
+  --#{$prefix}btn-active-border-color: #{$primary-1};
+  --#{$prefix}btn-active-shadow: #{$btn-active-box-shadow};
+  --#{$prefix}btn-disabled-color: #{$gray-2};
+  --#{$prefix}btn-disabled-bg: transparent;
+  --#{$prefix}btn-disabled-border-color: #{$gray-2};
+  --#{$prefix}gradient: none;
+}
+
+.btn-outline-secondary-1 {
+  --#{$prefix}btn-color: #{$secondary-1};
+  --#{$prefix}btn-border-color: #{$secondary-1};
+  --#{$prefix}btn-hover-color: #{$secondary-1};
+  --#{$prefix}btn-hover-bg: #{rgba($black, .15)};
+  --#{$prefix}btn-hover-border-color: #{$secondary};
+  --#{$prefix}btn-active-color: #{$secondary-1};
+  --#{$prefix}btn-active-bg: #{rgba($black, $opacity-lg)};
+  --#{$prefix}btn-active-border-color: #{$primary-1};
+  --#{$prefix}btn-active-shadow: #{$btn-active-box-shadow};
+  --#{$prefix}btn-disabled-color: #{$gray-2};
+  --#{$prefix}btn-disabled-bg: transparent;
+  --#{$prefix}btn-disabled-border-color: #{$gray-2};
+  --#{$prefix}gradient: none;
+}
+
+.btn-outline-secondary-2 {
+  --#{$prefix}btn-color: #{$secondary-2};
+  --#{$prefix}btn-border-color: #{$secondary-2};
+  --#{$prefix}btn-hover-color: #{$secondary-2};
+  --#{$prefix}btn-hover-bg: #{rgba($black, .15)};
+  --#{$prefix}btn-hover-border-color: #{$primary-2};
+  --#{$prefix}btn-active-color: #{$secondary-2};
+  --#{$prefix}btn-active-bg: #{rgba($black, $opacity-lg)};
+  --#{$prefix}btn-active-border-color: #{$primary-2};
+  --#{$prefix}btn-active-shadow: #{$btn-active-box-shadow};
+  --#{$prefix}btn-disabled-color: #{$gray-2};
+  --#{$prefix}btn-disabled-bg: transparent;
+  --#{$prefix}btn-disabled-border-color: #{$gray-2};
+  --#{$prefix}gradient: none;
+}
+
+.btn-outline-secondary-3 {
+  --#{$prefix}btn-color: #{$secondary-3};
+  --#{$prefix}btn-border-color: #{$secondary-3};
+  --#{$prefix}btn-hover-color: #{$secondary-3};
+  --#{$prefix}btn-hover-bg: #{rgba($black, .15)};
+  --#{$prefix}btn-hover-border-color: #{$primary-3};
+  --#{$prefix}btn-active-color: #{$secondary-2};
+  --#{$prefix}btn-active-bg: #{rgba($black, $opacity-lg)};
+  --#{$prefix}btn-active-border-color: #{$primary-2};
+  --#{$prefix}btn-active-shadow: #{$btn-active-box-shadow};
+  --#{$prefix}btn-disabled-color: #{$gray-2};
+  --#{$prefix}btn-disabled-bg: transparent;
+  --#{$prefix}btn-disabled-border-color: #{$gray-2};
+  --#{$prefix}gradient: none;
+}
+
+.btn-transparent {
+  --#{$prefix}btn-color: #{$primary};
+  --#{$prefix}btn-border-color: transparent;
+  --#{$prefix}btn-hover-color: #{$primary};
+  --#{$prefix}btn-hover-bg: #{rgba($black, .15)};
+  --#{$prefix}btn-hover-border-color: transparent;
+  --#{$prefix}btn-active-color: #{$primary};
+  --#{$prefix}btn-active-bg: #{rgba($black, $opacity-lg)};
+  --#{$prefix}btn-active-border-color: transparent;
+  --#{$prefix}btn-active-shadow: #{$btn-active-box-shadow};
+  --#{$prefix}btn-disabled-color: #{$gray-2};
+  --#{$prefix}btn-disabled-bg: transparent;
+  --#{$prefix}btn-disabled-border-color: transparent;
+  --#{$prefix}gradient: none;
+}
+
+.btn-outline-danger {
+  --#{$prefix}btn-color: #{$danger};
+  --#{$prefix}btn-border-color: #{$danger};
+  --#{$prefix}btn-hover-color: #{$danger};
+  --#{$prefix}btn-hover-bg: #{rgba($danger, .15)};
+  --#{$prefix}btn-hover-border-color: #{$danger};
+  --#{$prefix}btn-active-color: #{$danger};
+  --#{$prefix}btn-active-bg: #{rgba($danger, .15)};
+  --#{$prefix}btn-active-border-color: #{$danger};
+  --#{$prefix}btn-active-shadow: #{$btn-active-box-shadow};
+  --#{$prefix}btn-disabled-color: #{$gray-2};
+  --#{$prefix}btn-disabled-bg: transparent;
+  --#{$prefix}btn-disabled-border-color: #{$gray-2};
+  --#{$prefix}gradient: none;
+}
+
+.btn-outline-yellow {
+  --#{$prefix}btn-color: #{$yellow};
+  --#{$prefix}btn-border-color: #{$yellow};
+  --#{$prefix}btn-hover-color: #{$yellow};
+  --#{$prefix}btn-hover-bg: #{rgba($yellow, .15)};
+  --#{$prefix}btn-hover-border-color: #{$yellow};
+  --#{$prefix}btn-active-color: #{$yellow};
+  --#{$prefix}btn-active-bg: #{rgba($yellow, .15)};
+  --#{$prefix}btn-active-border-color: #{$yellow};
+  --#{$prefix}btn-active-shadow: #{$btn-active-box-shadow};
+  --#{$prefix}btn-disabled-color: #{$gray-2};
+  --#{$prefix}btn-disabled-bg: transparent;
+  --#{$prefix}btn-disabled-border-color: #{$gray-2};
+  --#{$prefix}gradient: none;
+}
+
+.btn-outline-success {
+  --#{$prefix}btn-color: #{$success};
+  --#{$prefix}btn-border-color: #{$success};
+  --#{$prefix}btn-hover-color: #{$success};
+  --#{$prefix}btn-hover-bg: #{rgba($success, .15)};
+  --#{$prefix}btn-hover-border-color: #{$success};
+  --#{$prefix}btn-active-color: #{$success};
+  --#{$prefix}btn-active-bg: #{rgba($success, .15)};
+  --#{$prefix}btn-active-border-color: #{$success};
+  --#{$prefix}btn-active-shadow: #{$btn-active-box-shadow};
+  --#{$prefix}btn-disabled-color: #{$gray-2};
+  --#{$prefix}btn-disabled-bg: transparent;
+  --#{$prefix}btn-disabled-border-color: #{$gray-2};
+  --#{$prefix}gradient: none;
+}

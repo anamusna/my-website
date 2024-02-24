@@ -1,0 +1,92 @@
+@use "sass:map";
+@use "sass:math";
+
+@import "~bootstrap/scss/functions";
+
+@import "./variables";
+
+@import "./base/accordion";
+@import "./base/banners";
+@import "./base/cards";
+@import "./base/dropdown";
+@import "./base/badges";
+@import "./base/buttons";
+@import "./base/containers";
+@import "./base/shadows";
+@import "./base/sliders";
+@import "./base/navbar";
+@import "./base/tabs";
+@import "./base/spacings";
+
+@import "~bootstrap/scss/bootstrap";
+@import "~bootstrap/scss/variables";
+
+@import "~bootstrap/scss/maps";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/root";
+
+@import "~bootstrap/scss/utilities";
+@import "./abstracts/colors";
+
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/type";
+@import "~bootstrap/scss/images";
+@import "~bootstrap/scss/containers";
+@import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/buttons";
+@import "~bootstrap/scss/tables";
+@import "~bootstrap/scss/forms";
+@import "~bootstrap/scss/buttons";
+@import "~bootstrap/scss/transitions";
+@import "~bootstrap/scss/dropdown";
+@import "~bootstrap/scss/button-group";
+@import "~bootstrap/scss/nav";
+@import "~bootstrap/scss/navbar";
+@import "~bootstrap/scss/card";
+@import "~bootstrap/scss/accordion";
+@import "~bootstrap/scss/breadcrumb";
+@import "~bootstrap/scss/pagination";
+@import "~bootstrap/scss/badge";
+@import "~bootstrap/scss/alert";
+@import "~bootstrap/scss/progress";
+@import "~bootstrap/scss/list-group";
+@import "~bootstrap/scss/close";
+@import "~bootstrap/scss/toasts";
+@import "~bootstrap/scss/modal";
+@import "~bootstrap/scss/tooltip";
+@import "~bootstrap/scss/popover";
+@import "~bootstrap/scss/carousel";
+@import "~bootstrap/scss/spinners";
+@import "~bootstrap/scss/offcanvas";
+@import "~bootstrap/scss/placeholders";
+@import "~bootstrap/scss/helpers";
+
+@import "~bootstrap/scss/utilities/api";
+
+@import "./components/accordion";
+@import "./components/arrows";
+@import "./components/avatars";
+@import "./components/backgrounds";
+@import "./components/badges";
+@import "./components/banners";
+@import "./components/buttons";
+@import "./components/container";
+@import "./components/dropdown";
+@import "./components/heroes";
+@import "./components/icons";
+@import "./components/sliders";
+@import "./components/tabs";
+@import "./components/typography";
+@import "./components/zindex";
+@import "./components/carousel";
+@import "./components/home-background";
+
+// Layouts: styles for modules
+@import "./layout/header";
+@import "./layout/footer";
+
+// Page Styles
+@import "./pages/about";
+@import "./pages/home";
+@import "./pages/testimonials";
+@import "./pages/contact";

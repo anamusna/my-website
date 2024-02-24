@@ -1,0 +1,15 @@
+.container {
+    &-narrow {
+        @extend .container;
+        max-width: 55rem;
+        width: 100%;
+
+        &-sm {
+            @extend .container-narrow;
+
+            @include media-breakpoint-up(md) {
+                width: 50%;
+            }
+        }
+    }
+}

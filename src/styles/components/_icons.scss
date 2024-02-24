@@ -1,0 +1,11 @@
+.icon {
+  &-left {
+    margin-left: 0;
+    margin-right: 1rem;
+  }
+
+  &-right {
+    margin-left: 1rem;
+    margin-right: 0;
+  }
+}

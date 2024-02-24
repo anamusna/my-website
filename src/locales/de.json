@@ -1,0 +1,494 @@
+{
+  "header": {
+    "home": "Startseite",
+    "language": "Deutsch",
+    "links": {
+      "about": {
+        "label": "Über mich",
+        "url": "/ueber-mich"
+      },
+      "process": {
+        "label": "Mein Prozess",
+        "url": "/mein-prozess"
+      },
+      "testimonials": {
+        "label": "Referenzen",
+        "url": "/referenzen"
+      },
+      "contact": {
+        "label": "Kontakt",
+        "url": "/kontakt"
+      }
+    }
+  },
+  "home": {
+    "work": "Offen für Arbeit",
+    "location": "Berlin, Deutschland",
+    "language": {
+      "value": "deutsch",
+      "label": "Deutsch"
+    },
+    "header": {
+      "links": {
+        "about": "Über Mich",
+        "books": "Mein Prozess",
+        "testimonials": "Referenzen",
+        "contact": "Kontakt"
+      }
+    },
+    "hero": {
+      "title": "Hey, ich bin's 👋",
+      "heroTitle": "Suchen Sie einen vertrauenswürdigen Partner, um Ihre Online-Präsenz zu erweitern?",
+      "text": "Ich bin ein Full-Stack-Entwickler und Mitbegründer. Ich kenne mich aus mit JavaScript, TypeScript, React, React Native, MongoDB, Node.js, AWS, Docker und Kubernetes. Ich bin spezialisiert auf die Entwicklung komplexer Web- und Mobilanwendungen, die Zusammenarbeit mit funktionsübergreifenden Teams und die Verwaltung umfangreicher Datenbanken.",
+      "subTitile": "Ich werde mit Ihnen zusammenarbeiten, um eine individuelle Website zu entwickeln, die Ihren Zielen entspricht.",
+      "button": "Lassen Sie uns über Ihr Projekt sprechen"
+    },
+    "about": {
+      "text": "Ich bin Ansumana Darboe (er/ihn), ein erfahrener Full Stack Developer mit Sitz in Berlin. Versiert in JavaScript, React, NodeJS, MongoDB, AWS und mehr. Neben dem Codieren habe ich einen vielfältigen Hintergrund in der Technologiebranche, habe als Netzwerkadministrator und IT-Support gearbeitet. Erfahren in Agile, CI/CD und kollaborativen Tools. Mitbegründer/Tech Lead bei ZULA. In meiner Freizeit genieße ich Sport, Kochen und Qualitätstreffen mit meinen Lieben.",
+      "button": "Mehr erfahren"
+    }
+  },
+  "about": {
+    "title": "Über mich",
+    "experienceTitle": "Erfahrung",
+    "skillTitle": "Technologien",
+    "youtube": "Hier ist ein kleiner Einblick in meine Reise zum Full-Stack Entwickler.",
+    "text": "Ich bin Ansumana Darboe (er/ihn), ein erfahrener Full-Stack Entwickler und Mitbegründer mit Sitz in Berlin.",
+    "cv": "Lebenslauf anzeigen",
+    "shortBio": {
+      "title": "Kurzbiografie",
+      "text": "Ich habe einen vielseitigen technischen Hintergrund und habe als Netzwerk-Systemadministrator, IT-Support und Full-Stack-Entwickler gearbeitet. Mein Fachwissen umfasst die Entwicklung komplexer Anwendungen. Mit Eigenständigkeit und sauberem Code liefere ich hochwertige, maßgeschneiderte Lösungen für jedes Projekt. Oh, und ich bin auch ein Mitbegründer von ZULA."
+    },
+    "longBio": {
+      "title": "Hintergrund",
+      "text": [
+        "Von der Netzwerkadministration bis zur Full-Stack-Entwicklung war meine technische Reise vielfältig und dynamisch. Als Mitbegründer und Technischer Leiter bei ZULA habe ich die Erstellung einer Online-Buchbibliothek mit dem Ziel, universellen Zugang zu vielfältigen und inklusiven Büchern für Kinder zu bieten, maßgeblich vorangetrieben. Meine Expertise umfasst sowohl die Frontend- als auch die Backend-Webentwicklung und spezialisiert sich auf den Bau komplexer Web- und Mobile-Anwendungen, die Optimierung der Leistung und das Management von Datenbanken. Ich beherrsche JavaScript, TypeScript, ReactJS, NodeJS, MongoDB, AWS, Docker und Kubernetes und bringe ein umfassendes Kompetenzprofil in jedes Projekt ein.",
+        "Agile Methoden wie SCRUM und Kanban sind integraler Bestandteil meiner Arbeitsweise, neben Tools wie Bitbucket, Github, Jira und Confluence. Ich habe CI/CD-Pipelines und Containerisierung und Orchestrierung mit Docker und Kubernetes implementiert."
+      ]
+    },
+    "skills": [
+      {
+        "skill": "JavaScript und TypeScript",
+        "text": "Um die Qualität meines Codes zu verbessern, setze ich TypeScript ein, eine Erweiterung von JavaScript. Dies bietet den Vorteil der statischen Typisierung, was die Wahrscheinlichkeit von Fehlern verringert und die Gesamtzuverlässigkeit des Codes verbessert. Für die Frontend-Entwicklung nutze ich die Leistungsfähigkeit von JavaScript, um dynamische und interaktive Benutzeroberflächen zu gestalten. Diese Kombination gewährleistet nicht nur einen reibungsloseren Entwicklungsprozess, sondern auch eine robustere und fehlerresistente Codebasis."
+      },
+      {
+        "skill": "React und React Native",
+        "text": "Mein Framework der Wahl zur Erstellung effizienter und wiederverwendbarer UI-Komponenten ist React. Seine komponentenbasierte Architektur ermöglicht es mir, modulare, skalierbare und leicht wartbare Benutzeroberflächen zu erstellen. Zusätzlich erweitere ich diese Fähigkeit nahtlos auf die Entwicklung von mobilen Apps, indem ich React Native verwende. Dies gewährleistet die Entwicklung plattformübergreifender Anwendungen mit einer einzigen Codebasis und spart Zeit und Ressourcen."
+      },
+      {
+        "skill": "MongoDB",
+        "text": "MongoDB ist mein bevorzugtes Datenbankverwaltungssystem. Seine Flexibilität im Umgang mit JSON-ähnlichen Dokumenten und Skalierbarkeit machen es zu einer idealen Wahl für die Verwaltung verschiedener Datenstrukturen. Die Fähigkeit, sich an sich ändernde Projekterfordernisse anzupassen, gepaart mit effizienten Abfragefähigkeiten, trägt zu einer robusten und vielseitigen Datenverwaltungslösung bei."
+      },
+      {
+        "skill": "AWS",
+        "text": "AWS ist meine Lösung für Cloud-Speicher. Sein sicherer und skalierbarer Objektspeicher gewährleistet eine zuverlässige Datenverwaltung für meine Anwendungen. Die nahtlose Integration mit anderen AWS-Services verbessert die Gesamteffizienz der Cloud-Infrastruktur und bietet eine solide Grundlage für die Bereitstellung von Anwendungen und die Datenverarbeitung."
+      },
+      {
+        "skill": "RESTful APIs",
+        "text": "Um einen effizienten Datenaustausch zu fördern und eine nahtlose Benutzeroberfläche sicherzustellen, entwerfe und implementiere ich RESTful APIs. Diese APIs dienen als Brücke zwischen den verschiedenen Komponenten einer Webanwendung und ermöglichen eine reibungslose Kommunikation und Interaktion. Diese Herangehensweise verbessert nicht nur die Reaktionsfähigkeit der Anwendung, sondern fördert auch eine modulare und skalierbare Architektur."
+      },
+      {
+        "skill": "Node.js",
+        "text": "Node.js steht im Mittelpunkt meiner bevorzugten serverseitigen Laufzeitumgebung. Seine nicht blockierende, ereignisgesteuerte Architektur passt perfekt zu meiner Entwicklungsmethodik und ermöglicht die Erstellung skalierbarer und leistungsstarker serverseitiger Anwendungen. Diese Wahl ermöglicht die Entwicklung schneller und reaktionsfähiger Backend-Lösungen für eine Vielzahl von Anwendungen."
+      },
+      {
+        "skill": "Docker und Kubernetes",
+        "text": "Für eine konsistente Bereitstellung in verschiedenen Umgebungen nutze ich Docker-Container. Diese Container kapseln die Anwendung und ihre Abhängigkeiten und gewährleisten Zuverlässigkeit und Konsistenz. Zur Orchestrierung und Verwaltung dieser Container im großen Maßstab greife ich auf Kubernetes zurück. Dieses dynamische Duo ermöglicht eine nahtlose Skalierung, effizientes Management und automatisierte Prozesse, was den Bereitstellungslebenszyklus vereinfacht."
+      },
+      {
+        "skill": "CI/CD",
+        "text": "Continuous Integration und Continuous Deployment (CI/CD) sind wesentliche Bestandteile meines Entwicklungsprozesses. Durch die Implementierung von CI/CD-Praktiken automatisiere ich Tests und Bereitstellungen und reduziere so die Wahrscheinlichkeit von Fehlern erheblich. Diese Herangehensweise stellt sicher, dass Updates schnell und zuverlässig bereitgestellt werden können und trägt zu einem agileren und reaktionsschnelleren Entwicklungszyklus bei."
+      },
+      {
+        "skill": "Microservices",
+        "text": "Ich bevorzuge eine Microservices-Architektur, um Anwendungen zu entwerfen, die Skalierbarkeit und Wartbarkeit priorisieren. Dieser architektonische Ansatz fördert die Modularität, sodass sich jeder Microservice auf eine bestimmte Geschäftsfunktion konzentrieren kann. Dies verbessert nicht nur die Skalierbarkeit, sondern erleichtert auch die Wartung und Updates und gewährleistet Flexibilität und Agilität als Reaktion auf sich ändernde Projekterfordernisse."
+      },
+      {
+        "skill": "Redux",
+        "text": "Für ein effektives Zustandsmanagement in größeren Anwendungen integriere ich Redux. Diese leistungsstarke Bibliothek bietet einen vorhersehbaren Zustandscontainer, was das Management und Debugging komplexer Datenflüsse erleichtert. Durch Zentralisierung des Zustands verbessert Redux die Wartbarkeit und Skalierbarkeit größerer Anwendungen und gewährleistet einen reibungslosen und organisierten Entwicklungsprozess."
+      },
+      {
+        "skill": "Bootstrap",
+        "text": "Bootstrap steht im Mittelpunkt meines Werkzeugsatzes für die schnelle Frontend-Entwicklung. Seine reaktionsschnellen Designkomponenten ermöglichen eine schnelle und konsistente UI-Entwicklung. Zusätzlich setze ich SASS, einen CSS-Präprozessor, ein, um die Wartbarkeit durch die Einführung von Variablen und Mixins zu verbessern. Diese Kombination beschleunigt die Frontend-Entwicklung und gewährleistet eine saubere und organisierte Strukturierung des Stylings."
+      },
+      {
+        "skill": "Express.js",
+        "text": "Express.js ist mein Framework der Wahl für den Bau robuster und skalierbarer Webanwendungen auf der Node.js-Laufzeitumgebung. Seine Einfachheit und Flexibilität passen nahtlos zu meiner Entwicklungsmethodik und ermöglichen die Erstellung effizienter und modularer Backend-Lösungen. Express.js rationalisiert den Entwicklungsprozess und ermöglicht die schnelle Erstellung funktionsreicher Webanwendungen."
+      },
+      {
+        "skill": "Versionskontrolle",
+        "text": "Git ist mein bevorzugtes Versionskontrollsystem und bietet einen robusten und verteilten Ansatz zum Nachverfolgen von Änderungen in meinen Projekten. Durch die Nutzung von Git ermögliche ich die Zusammenarbeit, verfolge Änderungen effektiv und sorge für eine Sicherheitsnetz für Code-Rollbacks, wenn erforderlich. Dies gewährleistet die Integrität der Versionskontrolle und die Zusammenarbeit zwischen Entwicklungsteams."
+      },
+      {
+        "skill": "SCRUM",
+        "text": "Ich halte mich an das SCRUM-Framework für das Projektmanagement. SCRUMs iterative Entwicklungsmethode, Betonung der Zusammenarbeit und regelmäßige Feedbackzyklen stimmen mit meiner Projektmanagementphilosophie überein. Dieses Framework stellt sicher, dass Projekte inkrementell geliefert werden, sich an sich ändernde Anforderungen anpassen und die Ausrichtung auf die Erwartungen der Kunden beibehalten."
+      },
+      {
+        "skill": "Webpack",
+        "text": "Webpack ist mein bevorzugter Bundler zur Optimierung der Leistung von Webanwendungen. Seine Fähigkeit zur effizienten Verpackung und Verwaltung von Ressourcen, zusammen mit Funktionen wie Code-Splitting und Tree Shaking, verbessert signifikant die Geschwindigkeit und Effizienz von Webanwendungen. Webpack spielt eine entscheidende Rolle bei der Optimierung der Leistung von von mir entwickelten Anwendungen."
+      },
+      {
+        "skill": "TDD",
+        "text": "Ich halte mich an die Test Driven Development (TDD) als meine Methode zum Schreiben von Software. Diese Methodik beinhaltet das Erstellen von Tests vor dem eigentlichen Code, um sicherzustellen, dass die Codebasis während des gesamten Entwicklungsprozesses robust, skalierbar und fehlerfrei bleibt. TDD trägt zu einer zuverlässigeren und wartbareren Codebasis bei, indem es von Anfang an eine Priorisierung der Testabdeckung ermöglicht."
+      }
+    ],
+    "tools": [
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "Next.js",
+      "React Native",
+      "Node.js",
+      "Redux",
+      "RESTful APIs",
+      "Express",
+      "MongoDB",
+      "Docker",
+      "Kubernetes",
+      "AWS",
+      "HTML",
+      "CSS",
+      "Bootstrap",
+      "Sass",
+      "Material-UI",
+      "Git",
+      "Firebase",
+      "Jira",
+      "Storybook",
+      "Emotion",
+      "Styled-Components",
+      "GitLab",
+      "Postman",
+      "Scrum",
+      "Bitbucket",
+      "Confluence",
+      "Microservices",
+      "Versionskontrolle",
+      "Webpack",
+      "Jest",
+      "Linux",
+      "Handlebars.js"
+    ],
+    "experience": [
+      {
+        "company": "ZULA",
+        "position": "Mitbegründer | Technischer Leiter",
+        "employment_type": "Selbstständig",
+        "location": "",
+        "start_date": "Jul 2023",
+        "end_date": "Aktuell",
+        "duration": "8 Monate",
+        "description": [
+          "Mitbegründer von Zula, Beitrag zur Konzeption und Gründung des Unternehmens. Initiierte und formte die Vision, Mission und die allgemeine strategische Ausrichtung des Unternehmens.",
+          "Entwicklung und Umsetzung umfassender Technologiestrategien, die sich mit den Zielen des Unternehmens, eine umfangreiche Online-Bibliothek zu entwickeln, ausrichten und eine benutzerfreundliche und inhaltsreiche Plattform gewährleisten.",
+          "Führte das Team in der Mission, Zugang zu Büchern zu bieten, die Unterschiede feiern und jedem Kind nahe sind.",
+          "Überwachte den End-to-End-Prozess, von der Inhaltskuratierung bis zur Plattformentwicklung.",
+          "Anwendung eines Full-Stack-Ansatzes, um eine nahtlose Funktionalität über die Plattform sicherzustellen."
+        ],
+        "skills": [
+          "Jest",
+          "TypeScript",
+          "React",
+          "Linux",
+          "MongoDB",
+          "Node.js",
+          "SASS",
+          "RESTful WebServices",
+          "Docker-Produkte",
+          "Microservices",
+          "Systemadministration",
+          "Git",
+          "JavaScript",
+          "Handlebars.js",
+          "HTML5",
+          "Softwareentwicklung",
+          "Cascading Style Sheets (CSS)",
+          "Front-End-Entwicklung",
+          "Kubernetes",
+          "Webdesign",
+          "Führung",
+          "Unternehmertum",
+          "Teambuilding",
+          "Strategische Planung"
+        ]
+      },
+      {
+        "company": "innn.it. | Change.org",
+        "position": "Full-Stack Entwickler | IT-Support",
+        "employment_type": "Vollzeit",
+        "location": "Berlin, Deutschland",
+        "start_date": "Okt 2020",
+        "end_date": "Jul 2023",
+        "duration": "2 Jahre 10 Monate",
+        "subtext": "Entwickelte Anwendungen, verbesserte die Benutzeroberfläche und steigerte die Seitenaufrufe durch eine Reduzierung der Ladezeit der Website um 80 %. Implementierte Caching-Strategien und optimierte den Code für verbesserte Skalierbarkeit und Wartbarkeit. Gewährleistete Datenintegrität durch Datenbankverwaltung. Bietet effizienten IT-Support für über 25 Mitarbeiter und etablierte robuste Richtlinien zur Datensicherheit.",
+        "description": [
+          "Entwicklung und Wartung der Websites der Organisation, Optimierung von Leistung, Benutzererfahrung und Gewährleistung von Skalierbarkeit und Wartbarkeit",
+          "Fehlerbehebung, Debugging und Behebung von Problemen, um die Funktionalität, Stabilität und Leistung der Website zu gewährleisten.",
+          "Zusammenarbeit mit interdisziplinären Teams, um Produktanfragen zu bearbeiten, neue Funktionen zu implementieren und die Benutzererfahrung zu verbessern.",
+          "Verwaltung der Datenbanken der Organisation mit über 500 Millionen Benutzerdatensätzen, Anwendungen und APIs, einschließlich Design, Optimierung und Gewährleistung der Datenintegrität.",
+          "Entwicklung von Kommunikationstools für die Bürgerbeteiligung, Erstellung von Frontend-Anwendungen und Layouts.",
+          "Einrichtung und Bereitstellung von IT-Support für über 25 Mitarbeiter innerhalb des Verbandes, umgehende Beantwortung von Anfragen und Behebung technischer Probleme.",
+          "Entwicklung und Umsetzung von IT-Richtlinien und Verfahren für Datenschutz, Datenschutzkonformität und bewährte Verfahren."
+        ],
+        "skills": [
+          "Jest",
+          "TypeScript",
+          "React",
+          "Linux",
+          "CSS3",
+          "MongoDB",
+          "Node.js",
+          "SASS",
+          "Express.js",
+          "RESTful WebServices",
+          "Docker-Produkte",
+          "Amazon Web Services (AWS)",
+          "Microservices",
+          "Systemadministration",
+          "Git",
+          "JavaScript",
+          "Handlebars.js",
+          "HTML5",
+          "Softwareentwicklung",
+          "Cascading Style Sheets (CSS)",
+          "Front-End-Entwicklung",
+          "Kubernetes",
+          "Webdesign"
+        ]
+      },
+      {
+        "company": "Propstack",
+        "position": "Full-Stack Entwickler",
+        "employment_type": "Praktikum",
+        "location": "Berlin, Deutschland",
+        "start_date": "Mai 2019",
+        "end_date": "Jun 2019",
+        "duration": "2 Monate",
+        "description": [
+          "Neuaufbau der mobilen Anwendung des Unternehmens mit React Native zur Optimierung von Leistung, Benutzererfahrung und Anpassung an die Marken- und Messagingstrategie des Unternehmens.",
+          "Verbesserung der Funktionalitäten der mobilen App basierend auf Benutzerfeedback, Geschäftsanforderungen und branchenüblichen Best Practices, um sie benutzerfreundlicher und intuitiver zu gestalten.",
+          "Enge Zusammenarbeit mit dem UX-Designer, um eine einfache Navigation, Benutzerfreundlichkeit und Zugänglichkeit der mobilen App zu gewährleisten.",
+          "Zusammenarbeit mit externen Anbietern und Dienstleistern, um die App für Android- und iOS-Geräte zu optimieren.",
+          "Zusammenarbeit mit externen Anbietern und Dienstleistern zur Optimierung der mobilen App für Android- und iOS-Geräte und Gewährleistung der Einhaltung relevanter Anforderungen der App-Stores."
+        ],
+        "skills": [
+          "React",
+          "Linux",
+          "MongoDB",
+          "Node.js",
+          "SASS",
+          "RESTful WebServices",
+          "Git",
+          "JavaScript",
+          "HTML5",
+          "Softwareentwicklung",
+          "Cascading Style Sheets (CSS)",
+          "Front-End-Entwicklung",
+          "React Native"
+        ]
+      },
+      {
+        "company": "AccounTax Solutions",
+        "position": "Netzwerk-Systemadministrator",
+        "employment_type": "Vollzeit",
+        "location": "Gambia",
+        "start_date": "Jul 2011",
+        "end_date": "Apr 2013",
+        "duration": "1 Jahr 10 Monate",
+        "description": [
+          "Umfassender IT-Support für interne und externe Stakeholder bereitgestellt.",
+          "Diagnose und Behebung von Netzwerkproblemen im Zusammenhang mit Hardware, Software und Konnektivität.",
+          "Fehlerbehebung und Behebung von Softwarefehlern, einschließlich Betriebssystemen, Anwendungen und Datenbanken.",
+          "Installation und Implementierung von Netzwerksicherheitsprogrammen wie Firewalls und Antivirensoftware.",
+          "Konfiguration neuer Computersysteme, einschließlich Hardware- und Softwareeinrichtung.",
+          "Schulung von Endbenutzern in verschiedenen Softwareprogrammen und Systemen durchgeführt."
+        ],
+        "skills": ["Systemadministration"]
+      }
+    ]
+  },
+  "process": {
+    "title": "Mein Prozesse",
+    "subText": "Das Verständnis der Bedürfnisse und Anforderungen des Projekts ist für mich von größter Bedeutung. Ich sorge dafür, mich in ausführliche Diskussionen zu vertiefen, um jeden Aspekt des Projekts gründlich zu erfassen. Darüber hinaus ist die Aufteilung komplexer Probleme und Aufgaben ein wesentlicher Bestandteil meiner Herangehensweise. Dies ermöglicht eine bessere Verwaltung und Ausführung, wodurch sichergestellt wird, dass jedem Bestandteil die notwendige Aufmerksamkeit zuteilwird. Darüber hinaus priorisiere ich das Zeitmanagement, insbesondere bei der Entwicklung reaktionsfähiger Web- und Mobilanwendungen. Durch die Einhaltung dieser Prozesse strebe ich danach, qualitativ hochwertige Ergebnisse effizient und effektiv zu liefern.",
+    "button": "Mein Arbeitsprozess",
+    "text": [
+      "Zeitmanagement ist für mich entscheidend. Daher zerlege ich komplexe Probleme und Aufgaben in meinem Arbeitsablauf in leichter zu bewältigende Komponenten. Dabei nutze ich sowohl analytisches als auch kreatives Denken, um die Projektanforderungen vollständig zu verstehen. Anschließend priorisiere ich Aufgaben und Sprints basierend auf ihrer Bedeutung und Abhängigkeiten.",
+      "Agile Methoden wie SCRUM und Kanban helfen mir, organisiert zu bleiben. Außerdem gedeihe ich in einer dynamischen, kooperativen Umgebung, in der Teamarbeit, Kreativität, Vielfalt und kontinuierliches Lernen gefördert werden."
+    ],
+    "processes": [
+      {
+        "title": "Diskussion",
+        "img": "../styles/images/light-bulb.svg",
+        "text": "Um die Projektanforderungen und -bedürfnisse zu verstehen, ist es für mich sehr wichtig, mit den beteiligten Personen zu diskutieren, um sicherzustellen, dass ich alles verstehe, was das Projekt erreichen soll."
+      },
+      {
+        "title": "Planung",
+        "img": "../styles/images/prioritise.svg",
+        "text": "Als Nächstes beginne ich damit, das große Projekt in kleinere Aufgaben zu zerlegen und Dringlichkeiten festzulegen. Dies hilft mir, Aufgaben zu priorisieren, die Zeit besser abzuschätzen und sicherzustellen, dass Fristen eingehalten werden, ohne die Qualität zu beeinträchtigen."
+      },
+      {
+        "title": "Entwicklung",
+        "img": "../styles/images/code.svg",
+        "text": "Ich baue gerne Schritt für Schritt auf. Ich liefere Teile des Projekts nach und nach aus und erhalte Feedback während des Prozesses. Das hilft mir, Verbesserungen auf dem Weg vorzunehmen."
+      },
+      {
+        "title": "Dokumentation",
+        "img": "../styles/images/documentation.svg",
+        "text": "Ich halte Aufzeichnungen von allem, was ich tue. Dazu gehören technische Details und Anleitungen."
+      },
+      {
+        "title": "Überprüfung",
+        "img": "../styles/images/sprint.svg",
+        "text": "Am Ende eines Sprints zeige ich, was ich erreicht habe, sammle Feedback und passe mich entsprechend an."
+      },
+      {
+        "title": "Bereitstellung",
+        "img": "../styles/images/deployment.svg",
+        "text": "Sobald alles bereit ist, veröffentliche ich das Projekt online. Außerdem richte ich Werkzeuge ein, um zu überwachen, wie die Dinge laufen, damit ich schnell etwaige Probleme beheben kann, die auftreten."
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "Referenzen",
+    "button": "Alle Referenzen",
+    "groupOne": [
+      {
+        "name": "Lea Terwort",
+        "position": "UX Designer",
+        "company": "innn.it",
+        "testimony": "Du bist ein echter Teamplayer! Wenn es einen Wettbewerb um den qualifiziertesten Entwickler mit dem strahlendsten Lächeln gäbe, würdest du mit Sicherheit gewinnen. Die Zusammenarbeit mit dir macht so viel Spaß, und die Ergebnisse sprechen für sich. Du hast eine sehr einfache und wertschätzende Art zu kommunizieren (was zwischen Designern und Entwicklern nicht selbstverständlich ist;) und ich bin so glücklich, in einem Team mit dir zu arbeiten."
+      },
+      {
+        "name": "Nora Circosa",
+        "position": "Vorstandsmitglied",
+        "company": "innn.it",
+        "testimony": "Deine Kombination aus technischem Fachwissen und positiver Energie ist wirklich bemerkenswert. Ich bin so froh, dass du Teil unseres Teams bist. Dein Lächeln und deine positive Ausstrahlung lassen jeden um dich herum sich wohl fühlen. Ich bewundere, wie du mit Menschen umgehst und die richtigen Worte findest. Du bist eine sehr charismatische Person. Vielen Dank für all deine erstaunliche Arbeit bei innn.it."
+      },
+      {
+        "name": "Thomas Manoila",
+        "position": "Leiter der Inhaltsentwicklung",
+        "company": "innn.it",
+        "testimony": "Ich bin so froh, dass du Teil des Teams bist. Deine Beherrschung in der Technik zeigt sich in der Qualität deiner Arbeit. Dein Lachen ist ansteckend und deine 'Ja, das schaffen wir'-Mentalität ist erstaunlich. Ich genieße es wirklich, mit dir zu sprechen, und schätze deinen Beitrag zu jedem Thema! Bleib großartig!"
+      },
+      {
+        "name": "Luiz Fukushiro",
+        "position": "Produktleiter",
+        "company": "innn.it",
+        "testimony": "Du bist eine echte Bereicherung für unser Team. Du hast viel Freude ins Team gebracht, und deine positive Energie motiviert uns alle, die Extra-Meile zu gehen. Deine analytischen Fähigkeiten und deine 'Ja, das schaffen wir'-Mentalität machen die Zusammenarbeit mit dir zum Vergnügen. Vielen Dank für die fantastische Energie und dafür, Lösungen für jede Herausforderung zu finden!"
+      },
+      {
+        "name": "Annika Heintz-Saad",
+        "position": "Leiterin der Spendenakquise",
+        "company": "innn.it",
+        "testimony": "Du bist nicht nur ein qualifizierter Entwickler; du bist auch ein natürlicher Anführer mit Leidenschaft, das Beste in den Menschen hervorzubringen. Deine Präsenz, deine Stimme, dein Lachen und deine Energie erhellen jeden Raum! Das ist etwas ganz Besonderes!"
+      }
+    ],
+    "groupTwo": [
+      {
+        "name": "Fabian Schyrer",
+        "position": "Leiter der Cloud-Technologie",
+        "company": "MAN Energy Solutions",
+        "testimony": "Ansumana Darboe hat mich ständig mit seinem geschäftlichen Einblick und seinen originellen Methoden zur Problemlösung beeindruckt. Seine praktische Strategie für node.js, MongoDB, HTML5, CSS, Redux, React, MySQL und seine starke Persönlichkeit haben ihm den Respekt des Teams eingebracht. Ansumana Darboe lehnt es nie ab, wenn Sie ihn um Hilfe bitten. Er ist immer in der Lage, sich an neue Arbeitsumgebungen anzupassen, und hat eine sehr positive Einstellung zur Arbeit. Ansumana ist ein eifriger Profi, egal wie komplex das Problem ist, er wird immer eine brillante, elegante und kostengünstige Lösung finden. Er ist eine vertrauenswürdige Person, und ich werde ihn immer in höchstem Ansehen halten."
+      },
+      {
+        "name": "Gregor Hackmack",
+        "position": "Vorstandsmitglied",
+        "company": "innn.it",
+        "testimony": "Dein Einfluss auf das Team ist unbestreitbar, deine technischen Fähigkeiten und deine Führungsqualitäten kommen in jedem Projekt zum Vorschein. Deine 'Ja, das schaffen wir'- und proaktive Herangehensweise bei der Lösung von Problemen ist wirklich inspirierend. Ich werde unsere charakteristischen Sammelaktionen für 'Demokratie für Alle' nie vergessen. Du bist so eine tolle und fröhliche Person! Es ist so eine Freude, dich zu treffen, mit dir zu sprechen und vor allem mit dir zu lachen! Ich genieße es immer, dich im Büro zu haben. Danke für all die Arbeit, die du in innn.it investierst - du baust unsere Zukunft!"
+      },
+      {
+        "name": "Daphne Schaefer",
+        "position": "Expertin für Spendensammlung",
+        "company": "innn.it",
+        "testimony": "Du bist ein echter Profi mit einem reichen Erfahrungsschatz und Fachwissen. Du bringst mich immer zum Lachen. Ich werde mich aufrichtig an alle Erinnerungen erinnern und sie schätzen, die wir gemacht haben!"
+      },
+      {
+        "name": "Sebastian Schütz",
+        "position": "Leiter der sozialen Medien",
+        "company": "innn.it",
+        "testimony": "Deine Fähigkeit, komplexe Ideen einfach und effektiv zu übersetzen, ist wirklich erstaunlich, und du hast so eine positive Energie, dass es mich jedes Mal zum Lächeln gebracht hat, wenn ich dich gesehen habe. Du bist eine tolle Person!"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Projektplaner",
+    "subText": "Sie können gerne einen Termin vereinbaren.",
+    "text": [
+      "Egal, ob Sie nur Ideen sammeln oder bereits einen detaillierten Projektplan haben, ich bin hier, um Ihre Vision in die Realität umzusetzen. Lassen Sie uns herausfinden, wie wir gemeinsam an Ihrem nächsten digitalen Projekt arbeiten können",
+      "Nehmen Sie Kontakt auf, um ein Gespräch über Ihre Web- oder Mobile-App-Anforderungen zu beginnen, und lassen Sie uns gemeinsam etwas Erstaunliches schaffen.",
+      "Sie sind noch nicht bereit, sich auf ein konkretes Projekt einzulassen? Möchten Sie nur ein freundliches `Hallo` sagen? Ich freue mich darauf, von Ihnen zu hören!"
+    ],
+    "meeting": "Buchen Sie ein Meeting",
+    "linkedin": "LinkedIn",
+    "email": "E-Mail",
+    "github": "Github",
+    "phone": "Handy",
+    "projectForm": {
+      "text": "Teilen Sie Details zu Ihrem Projekt, indem Sie das unten stehende Formular ausfüllen. Sobald ich Ihre Antworten durchgesehen habe, werde ich mich mit Ihnen in Verbindung setzen, um einen Anruf zu arrangieren.",
+      "form": {
+        "content": {
+          "label": "Welche Ziele möchten Sie für Ihr Unternehmen durch dieses Projekt erreichen?",
+          "placeholder": "Notieren Sie die Informationen"
+        },
+        "estimatedBudget": {
+          "label": "Was ist Ihr ungefährer Budgetrahmen für das Projekt?",
+          "placeholder": "Geschätztes Budget"
+        },
+        "estimatedTime": {
+          "label": "Welchen Zeitrahmen erwarten Sie für die Fertigstellung des Projekts?",
+          "placeholder": "Geschätzte Zeit"
+        },
+        "firstName": {
+          "label": "Vorname",
+          "placeholder": "Vorname"
+        },
+        "lastName": {
+          "label": "Nachname",
+          "placeholder": "Nachname"
+        },
+        "email": {
+          "label": "E-Mail-Adresse",
+          "placeholder": "beispiel@example.com"
+        },
+        "website": {
+          "label": "Aktuelle Website",
+          "placeholder": "https://beispiel.com"
+        },
+        "button": "Lass uns gehen",
+        "caption": "Die über dieses Formular bereitgestellten persönlichen Daten werden verwendet, um Ihre Anfrage zu bearbeiten. Beachten Sie meine Datenschutzerklärung für weitere Details.",
+        "successMessage": "Vielen Dank, dass Sie Details zu Ihrem Projekt geteilt haben! Ich werde Ihre Antworten überprüfen und mich bald mit Ihnen in Verbindung setzen, um weitere Schritte zu besprechen."
+      }
+    },
+    "contactForm": {
+      "text": "Noch nicht bereit, den Projektplaner auszufüllen? Möchten Sie einfach ein freundliches 'Hi' hinterlassen?",
+      "form": {
+        "firstName": {
+          "label": "Vorname",
+          "placeholder": "Vorname"
+        },
+        "lastName": {
+          "label": "Nachname",
+          "placeholder": "Nachname"
+        },
+        "email": {
+          "label": "E-Mail-Adresse",
+          "placeholder": "beispiel@example.com"
+        },
+        "content": {
+          "label": "Wie würden Sie den Erfolg eines gemeinsamen Projekts messen?",
+          "placeholder": "Teilen Sie Ihre Idee"
+        },
+        "button": "Kontakt aufnehmen",
+        "caption": "Die über dieses Formular bereitgestellten persönlichen Daten werden verwendet, um Ihre Anfrage zu bearbeiten. Beachten Sie meine Datenschutzerklärung für weitere Details.",
+        "successMessage": "Vielen Dank für Ihre Kontaktaufnahme! Ich habe Ihre Nachricht erhalten und werde mich so schnell wie möglich bei Ihnen melden. Wenn Sie zusätzliche Informationen teilen möchten, können Sie auch den oben stehenden Projektplaner ausfüllen."
+      }
+    }
+  },
+  "scrollButton": "Zurück nach oben",
+  "footer": {
+    "title": "Haben Sie ein Projekt im Sinn? Lassen Sie uns darüber reden, wie wir es zum Leben erwecken können. Egal, ob Sie bereit sind, anzufangen oder einfach nur Ideen zu sammeln, ich bin ganz Ohr.",
+    "button": "Kontakt aufnehmen",
+    "text": "Hergestellt mit",
+    "subText": "von"
+  }
+}

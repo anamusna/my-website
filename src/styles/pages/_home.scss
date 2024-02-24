@@ -1,0 +1,180 @@
+.horizontal-line {
+  height: 1px;
+  margin: 0 auto;
+  z-index: 999;
+}
+
+.blink {
+  color: white;
+  animation: glowing-polygon 1500ms infinite;
+}
+
+@keyframes glowing-polygon {
+  0% {
+    color: $success-1;
+    filter: drop-shadow(0 0 3px $success-1);
+  }
+
+  50% {
+    color: $success-1;
+    filter: drop-shadow(0 0 15px $success-2);
+  }
+
+  100% {
+    color: $success-2;
+    filter: drop-shadow(0 0 3px $success);
+  }
+}
+
+.page-home {
+  height: 100%;
+  position: relative;
+
+  .work {
+    @extend .justify-content-between, .justify-content-md-center, .align-items-center;
+  }
+
+  .location-text {
+    color: $primary;
+
+    @include media-breakpoint-up(md) {
+      color: $white;
+    }
+  }
+
+  .hero-holder {
+    @extend .position-relative, .justify-content-center, .align-items-center, .my-auto;
+
+    .hero {
+      @extend .position-relative, .justify-content-center, .align-items-center, .my-auto;
+      min-height: 90vh;
+      height: 100%;
+
+      @include media-breakpoint-up(md) {
+        min-height: 70vh;
+
+        &-text {
+          font-size: 1.5rem;
+          font-weight: $font-weight-base !important;
+        }
+      }
+
+      &-image {
+        .hero-body {
+          @include media-breakpoint-up(md) {
+            @include make-col(6);
+            z-index: 999;
+          }
+
+          h4 {
+            @extend .mb-5, .text-primary;
+          }
+
+          .hero-button-container {
+            @extend .d-grid, .gap-3, .d-md-block, .mb-5;
+            padding-bottom: 2rem;
+
+            .btn {
+              @extend .me-3;
+            }
+          }
+        }
+
+        .hero-img {
+          @include media-breakpoint-up(md) {
+            @include make-col(8);
+          }
+
+          &-holder {
+            margin-top: 4rem;
+
+            @include media-breakpoint-up(md) {
+              @include padding-bottom(4rem);
+              @include padding-top(4rem);
+              @include margin-top(6rem);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .box-icon {
+    @extend .container;
+  }
+
+  .card-holder {
+    @extend .pt-3, .pb-5;
+
+    .card-container {
+      @extend .container, .justify-content-center;
+
+      .card-container-title {
+        @extend .mt-4, .mb-5;
+        font-size: 2.5rem
+      }
+
+      .card {
+        @extend .mb-4;
+      }
+
+      button {
+        @extend .mt-5;
+        width: 12.187rem;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  &-values {
+    @extend .bg-primary;
+  }
+
+  &-image {
+    @extend .mb-md-0;
+    z-index: -1;
+
+    background-image: url("../images/ansu.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    width: 100%;
+    height: 50vh;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    top: 40%;
+    padding: 10%;
+    text-align: center;
+    transform: translate(-10%, 30%);
+
+    img {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+    }
+  }
+}
+
+.slide-content {
+  &.slide-content-from-left {
+    transform: translateX(-50%);
+  }
+
+  &.slide-content-from-left {
+    transition: opacity 250ms ease-in, transform 500ms ease-in;
+    opacity: 0;
+  }
+
+  &.slide-content-from-left.appear {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.banner-holder {
+  @extend .pt-5, .pb-5, .container;
+}

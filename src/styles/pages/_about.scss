@@ -1,0 +1,128 @@
+.about-text {
+  font-size: 1.5rem;
+}
+
+.video-responsive {
+  @extend .position-relative;
+
+  iframe {
+    @extend .mb-md-0, .ratio;
+    top: 0;
+  }
+}
+
+.page-about {
+  .about-title {
+    font-size: 1.8rem;
+    line-height: $line-height-base;
+  }
+
+  .about-img {
+    @include media-breakpoint-up(md) {
+      border-radius: 50%;
+    }
+  }
+
+  .about-badge {
+    @extend .text-secondary-1, h4;
+    border: 1px solid $secondary-1;
+    font-weight: $font-weight-boldest
+  }
+
+  &-hero {
+    @extend .position-relative, .justify-content-center, .align-items-center;
+    min-height: 70vh;
+    height: 100%;
+
+    @include media-breakpoint-up(md) {
+      min-height: 70vh;
+    }
+  }
+
+  .banner-img {
+    @extend .align-items-center, .justify-content-center;
+    height: 100%;
+    width: 100%;
+  }
+
+  .about-hero-content {
+    @extend .d-flex, .p-5, .col-md-5, .align-items-center, .flex-column, .justify-content-center;
+    @include media-breakpoint-up(md) {
+      min-height: 35rem;
+      min-width: 25rem;
+      border-radius: 50%;
+    }
+  }
+
+  .about-background {
+    @extend .bg-primary;
+    width: 100%;
+    height: 120vh;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    padding: 10%;
+    text-align: center;
+    z-index: -1 
+    //transform: translate(-10%, 30%);
+  }
+
+  .about-hero {
+    @extend .d-flex, .justify-content-center;
+  }
+
+  .about-hero-img {
+    @extend .img-fluid;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom center;
+    height: 100%;
+    width: 100%;
+  }
+
+  .about-banner {
+    @extend .d-flex, .align-items-center, .bg-primary-3, .justify-content-center, .position-relative;
+    position: relative;
+
+    &-content {
+      width: 13.1875rem;
+      height: 100%;
+    }
+  }
+
+  .about-banner-img {
+    @extend .rounded-circle;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+
+    @include media-breakpoint-up(md) {
+      max-height: 17rem;
+    }
+  }
+
+  &-image {
+    @extend .mb-md-0;
+    width: 100%;
+    height: 50vh;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    top: 10%;
+    text-align: center;
+    z-index: -1;
+
+    //background-image: url("../images/ansu.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom center;
+    transform: translate(0%, 50%);
+  }
+}

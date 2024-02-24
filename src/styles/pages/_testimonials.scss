@@ -1,0 +1,14 @@
+.testimonial-text {
+  font-size: 1.5rem;
+  font-weight: $font-weight-base !important;
+}
+
+.testimonial-body {
+  @extend .bg-gray;
+}
+
+.page-testimonials {
+  .testimonial-hero {
+    @extend .d-flex, .justify-content-start;
+  }
+}

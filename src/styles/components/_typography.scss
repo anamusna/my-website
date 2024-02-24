@@ -1,0 +1,144 @@
+html {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root,
+#app,
+#app>div {
+  color: $black;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow-y: inherit;
+  overflow-x: hidden;
+}
+
+a {
+  font-weight: $font-weight-bold;
+}
+
+.text-underline {
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+  font-weight: $font-weight-boldest !important;
+}
+
+p {
+  @extend .testimonial-text;
+}
+
+.fw-boldest {
+  font-weight: $font-weight-boldest !important;
+}
+
+.display {
+  font-size: $display-font-size !important;
+  font-weight: $font-weight-boldest !important;
+}
+
+.title {
+  font-weight: $font-weight-boldest !important;
+  line-height: 1.1;
+
+  @include media-breakpoint-up(md) {
+    font-size: $display-font-size !important;
+  }
+}
+
+.underline {
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+}
+
+a {
+  font-weight: $font-weight-bold;
+}
+
+h1,
+h2 {
+  font-weight: $font-weight-boldest !important;
+}
+
+h1 {
+  font-size: $h1-font-size;
+}
+
+p {
+  font-size: 1.3rem;
+}
+
+h2 {
+  font-size: $h2-font-size;
+}
+
+h5,
+h6 {
+  font-weight: $font-weight-normal;
+}
+
+h3 {
+  line-height: $line-height-sm;
+  font-weight: $font-weight-boldest !important;
+}
+
+h4 {
+  line-height: $line-height-sm;
+}
+
+h5 {
+  line-height: $line-height-lg;
+}
+
+h6 {
+  line-height: $line-height-sm;
+}
+
+details {
+  margin-bottom: 1rem;
+}
+
+.disabled {
+  color: $gray-2;
+  border-color: $gray-2;
+}
+
+h6 {
+  letter-spacing: 0.5px;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.label {
+  @extend label;
+}
+
+.lead {
+  line-height: $line-height-sm;
+}
+
+.small {
+  @extend small;
+}
+
+small,
+.small {
+  color: $gray-2;
+  font-weight: $font-weight-light;
+  line-height: $line-height-sm;
+}
+
+textarea {
+  height: 8.875rem;
+}
+
+summary {
+  font-weight: $font-weight-bold;
+}
