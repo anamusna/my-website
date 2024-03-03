@@ -11,16 +11,16 @@
   }
 }
 
+.about-badge {
+  @extend .text-secondary-1, h4;
+  border: 1px solid $secondary-1;
+  font-weight: $font-weight-boldest
+}
+
 .page-about {
   .about-title {
     font-size: 1.8rem;
     line-height: $line-height-base;
-  }
-
-  .horizontal-line {
-    height: 1px;
-    margin: 0 auto;
-    z-index: 999;
   }
     
   .about-img {
@@ -29,11 +29,7 @@
     }
   }
 
-  .about-badge {
-    @extend .text-secondary-1, h4;
-    border: 1px solid $secondary-1;
-    font-weight: $font-weight-boldest
-  }
+ 
 
   &-hero {
     @extend .position-relative, .justify-content-center, .align-items-center;

@@ -22,13 +22,17 @@ const Testimonials = () => {
       <div className="hero py-5 py-md-6">
         <div className="hero-container ">
           <div className="col-md-10 mx-auto">
-            <h1 className="title mb-4 text-start mb-md-5">
-              {t(`testimonials.title`)}
-            </h1>
+            <div className="mx-auto col-md-4 text-center">
+              <h1 className="title text-center">{t(`testimonials.title`)}</h1>
+              {/*  <h4 className="fw-boldest">
+              {t(`testimonials.subtitle`)}
+            </h4> */}
+              <p className="mb-4  mb-md-5">{t(`testimonials.text`)}</p>
+            </div>
             <div className="row my-4">
               <div className="col-md-6">
                 {testimonials.map((testimonial: any, index: number) => (
-                  <div className="" key={testimonial.name}>
+                  <div className="slide-content-wrapper" key={testimonial.name}>
                     <SlideContent
                       //className="bg-primary"
                       slideElement={<Testimonial testimonial={testimonial} />}
@@ -39,7 +43,7 @@ const Testimonials = () => {
               </div>
               <div className="col-md-6">
                 {testimonies.map((testimonial: any, index: number) => (
-                  <div className="" key={testimonial.name}>
+                  <div className="slide-content-wrapper" key={testimonial.name}>
                     <SlideContent
                       //className="bg-secondary"
                       slideElement={<Testimonial testimonial={testimonial} />}
@@ -71,13 +75,13 @@ const Testimonials = () => {
 
 export const Testimonial = ({ testimonial }: { testimonial: any }) => {
   return (
-    <div className="row mx-md-3 mx-auto my-4" key={testimonial.name}>
-      <div className="hero-body pt-4 bg-gray-2 rounded-4 position-relative">
+    <div className="row mx-md-3 mx-auto mb-4" key={testimonial.name}>
+      <div className="hero-body pt-4 bg-gray-3 rounded-4 position-relative">
         <p className="body-text">“{testimonial.testimony}”</p>
       </div>
       <div className="mb-4 text-start">
-        <div className="text-start arrow-down mb-4 ms-6"></div>
-        <div className="d-flex mx-5 align-items-center gap-4">
+        <div className="text-start arrow-down mb-2 ms-5"></div>
+        <div className="d-flex mx-4 align-items-center gap-4">
           <small className="fw-bold">{testimonial.name}</small>
         </div>
       </div>

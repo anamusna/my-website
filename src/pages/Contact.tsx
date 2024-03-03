@@ -11,14 +11,14 @@ const Contact = () => {
   return (
     <div className="page-contact mt-5 position-relative">
       <div className="container pt-5">
-        <div className="hero-holder mt-5">
+        <div className="hero-holder mt-md-4">
           <div className="hero mb-4 mb-md-6">
             <div className="col-md-10 mx-auto">
-              <h1 className="title text-start mb-4">{t("footer.button")}</h1>
+              <h1 className="title text-center mb-4">{t("footer.button")}</h1>
               <div className="contact-content col-12 flex-column flex-md-row d-md-flex  d-flex justify-content-center align-items-center">
                 <div className="col-md-7 mb-4 mb-md-5">
                   {ContactText.map((text) => (
-                    <p key={text} className="about-text">{t(text)}</p>
+                    <p key={text} className="body-text">{t(text)}</p>
                   ))}
                 </div>
                 <div className="col-md-5 mb-4 mb-md-5 flex-column">

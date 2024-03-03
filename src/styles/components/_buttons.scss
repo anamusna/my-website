@@ -1,6 +1,6 @@
 .btn {
-  font-weight: $font-weight-bolder !important;
-  font-size: 1.3rem;
+  @extend .body-text;
+ // font-weight: $font-weight-bolder !important;
 
   .svg-inline--fa {
     float: right;

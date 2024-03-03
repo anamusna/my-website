@@ -10,6 +10,7 @@ const CarouselComponent = ({
   showDots = false,
   className = "",
   ssr = true,
+  dotListClass="",
   infinite = true,
   autoPlay = true,
   autoPlaySpeed = 1000,
@@ -40,6 +41,7 @@ const CarouselComponent = ({
         containerClass={containerClass}
         removeArrowOnDeviceType={removeArrowOnDeviceType}
         deviceType={deviceType}
+        dotListClass={dotListClass}
         itemClass={itemClass}
       >
         {children}

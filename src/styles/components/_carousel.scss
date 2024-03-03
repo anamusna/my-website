@@ -1,3 +1,14 @@
+.react-multi-carousel-dot {
+  button{
+    border-color: $secondary;
+   }
+   &--active {
+    button{
+      background-color:  $primary;
+     }
+   }
+}
+
 .carousel {
   @extend .hero,
   .hero-image,
@@ -13,6 +24,7 @@
     width: 100vw;
     height: 100vh;
   }
+
 
   &-inner {
     @extend .d-flex, .flex-column, .position-relative;

@@ -54,8 +54,11 @@ p {
 }
 
 .body-text {
-  font-size: 1.5rem;
-  font-weight: $font-weight-base !important;
+  font-size: 1.3rem;
+  font-weight: $font-weight-base;
+  @include media-breakpoint-up(md) {
+    font-size: 1.5rem;
+  }
 }
 
 .underline {
@@ -90,8 +93,7 @@ h6 {
 }
 
 h3 {
-  line-height: $line-height-sm;
-  font-weight: $font-weight-boldest !important;
+  font-size: 1.5rem;
 }
 
 h4 {

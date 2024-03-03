@@ -2,9 +2,10 @@ import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import germanyFlag from "../styles/images/germany-flag.svg";
-import logo from "../styles/images/logo-2.png";
+import logo from "../styles/images/logo.png";
 import ukFlag from "../styles/images/uk.svg";
 import { defaultLanguages } from "../helpers/language";
+import TypingAnimation from "./TypeAnimation";
 
 const Header = () => {
   const [actionContainerHeight, setActionContainerHeight] = useState(0);
@@ -55,9 +56,10 @@ const Header = () => {
             to="/"
           >
             <img className="" src={logo} alt="ansumana" />
-            <p className="header-brand-text align-self-end align-self-md-center text-uppercase fw-bolder h3">
+            <TypingAnimation />
+           {/*  <p className="header-brand-text align-self-end align-self-md-center text-uppercase fw-bolder">
               Ansumana Darboe
-            </p>
+            </p> */}
           </Link>
           <div
             className={`header-toggler d-md-none ${isMenuOpen ? " open" : ""}`}
@@ -128,7 +130,7 @@ const Menu: React.FC<{
 
   const menuContent: MenuItem[] = [
     { label: `${t(`header.home`)}`, url: "/" },
-    { label: `${t("header.links.about.label")}`, url: "/about" },
+   /*  { label: `${t("header.links.about.label")}`, url: "/about" }, */
     { label: `${t("header.links.testimonials.label")}`, url: "/testimonials" },
     { label: `${t("header.links.contact.label")}`, url: "/contact" },
     {

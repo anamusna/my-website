@@ -2,79 +2,83 @@
   height: 100%;
   position: relative;
 
-  .work {
-    @extend .justify-content-between, .justify-content-md-center, .align-items-center;
-  }
-
-  .location-text {
-    color: $primary;
-
+  .company-text {
+    color: $gray;
     @include media-breakpoint-up(md) {
-      color: $white;
+      color: $black;
     }
+
   }
-
+  .services {
+    .card {
+     width: 100%;
+     height: 100%;
+     @include media-breakpoint-up(md) {
+      width: 100%;
+    height: 100%;
+    }
+     &-head {
+      @extend .row, .gap-2, .d-flex, .flex-column, .justify-content-center, .align-items-center;
+      img {
+        @extend .img-fluid;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        max-width: 6rem;
+        max-height: 6rem;
+      }
+     }
+  }
+  }
   .hero-holder {
-    @extend .position-relative, .justify-content-center, .align-items-center, .my-auto;
-
-    .hero {
-      @extend .position-relative, .justify-content-center, .align-items-center, .my-auto;
-      min-height: 90vh;
-      height: 100%;
-
-      @include media-breakpoint-up(md) {
-        min-height: 70vh;
-
-        &-text {
-          font-size: 1.5rem;
-          font-weight: $font-weight-base !important;
-        }
+    .hero-container {
+      .hero-banner {
+        @extend .d-flex, .flex-column, .justify-content-center, .align-items-center;
+        min-height: 80vh;
+        height: 100%;
       }
 
-      &-image {
-        .hero-body {
-          @include media-breakpoint-up(md) {
-            @include make-col(6);
-            z-index: 999;
-          }
+      .banner-image {
+        .banner-row {
+          height: 100%;
+        }
 
-          h4 {
-            @extend .mb-5, .text-primary;
-          }
+        .banner-img {
+          @extend .row, .d-flex, .flex-column;
 
-          .hero-button-container {
-            @extend .d-grid, .gap-3, .d-md-block, .mb-5;
-            padding-bottom: 2rem;
-
-            .btn {
-              @extend .me-3;
-            }
+          img {
+            @extend .align-items-end, .justify-content-end;
           }
         }
 
-        .hero-img {
-          @include media-breakpoint-up(md) {
-            @include make-col(8);
+        .banner-body {
+          @extend .d-flex, .flex-column, .justify-content-between, .align-items-center;
+
+          .work {
+            @extend .flex-grow-1, .d-flex, .justify-content-between, .justify-content-md-center, .align-items-center;
           }
 
-          &-holder {
-            margin-top: 4rem;
+
+          .location-text {
+            color: $primary;
 
             @include media-breakpoint-up(md) {
-              @include padding-bottom(4rem);
-              @include padding-top(4rem);
-              @include margin-top(6rem);
+              color: $white;
             }
+          }
+
+          .hero-about-text {
+            @extend .justify-content-between, .justify-content-md-center, .align-items-center, .mt-auto;
           }
         }
       }
+
     }
   }
 
   &-image {
     @extend .mb-md-0;
     z-index: -1;
-
     background-image: url("../images/ansu.svg");
     background-position: center;
     background-repeat: no-repeat;

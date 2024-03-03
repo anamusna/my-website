@@ -109,7 +109,7 @@ export const SlideContents: React.FC<SlideProps> = (props) => {
   useSlideAnimation(rightContentRef, "right");
 
   return (
-    <div className="slide-content-wrapper row pt-3 d-flex flex-column justify-content-between text-center flex-md-row text-md-left">
+    <div className="slide-content-wrapper ">
       <div
         ref={leftContentRef}
         className={`slide-content slide-content-from-left ${props.className}`}

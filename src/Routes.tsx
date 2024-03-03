@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
-import { Route, Routes, useLocation } from "react-router-dom";
+import { Navigate, Route, Routes, useLocation } from "react-router-dom";
 
-import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
@@ -22,7 +21,7 @@ const AppRouter = () => {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/about" element={<Navigate replace to="/" />} />
         <Route path="/testimonials" element={<Testimonials />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>

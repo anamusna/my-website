@@ -2,6 +2,18 @@
   @extend .btn-gradient;
 }
 
+.header-brand-text {
+  @extend 
+      .d-block,
+      .m-auto,
+      .p-2,
+      .py-3;
+      font-size: 1rem;
+  font-family: $font-family-monospace;
+  @include media-breakpoint-up(md) {
+    font-size: 1.3rem !important;
+  }
+ }
 .header {
   //@extend .position-relative, .shadow;
   @extend .position-fixed, .bg-white, .shadow;
@@ -59,21 +71,12 @@
 
   &-brand {
     @extend  .p-0;
-   &-text {
-    @extend 
-        .d-block,
-        .m-auto,
-        .p-2,
-        .py-3;
-    font-size: 1.3rem !important;
-    font-family: $font-family-monospace;
-   }
     img {
-      height: 3rem;
-      width: 3rem;
+      height: 4rem;
+      width: 4rem;
       @include media-breakpoint-up(md) {
-        height: 4rem;
-        width: 4rem;
+        height: 5rem;
+        width: 5rem;
       }
     }
   }
