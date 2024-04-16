@@ -5,11 +5,13 @@ import {
   Routes,
 } from "react-router-dom";
 
+import {Blogs} from "./pages/Blog";
 import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Home from "./pages/Home";
 import Testimonials from "./pages/Testimonials";
+import Workflow from "./pages/Workflow";
 import { useTranslation } from "react-i18next";
 import { useTranslatedPaths } from "./helpers/use-translated-paths";
 
@@ -26,6 +28,10 @@ const AppRouter = () => {
         <Route
           path={`/${i18n.language}${testimonials}`}
           element={<Testimonials />}
+        />
+        <Route
+          path={`/${i18n.language}/blog`}
+          element={<Blogs />}
         />
         <Route
           path="/"
@@ -67,6 +73,8 @@ const AppRouter = () => {
           path="/kontakt"
           element={<Navigate replace to={`/${i18n.language}${contact}`} />}
         />
+
+        <Route path="/:lang/flow" element={<Workflow />} />
       </Routes>
       <Footer />
     </>
