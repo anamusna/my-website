@@ -3,8 +3,46 @@
     min-height: 70vh;
   }
 }
+
+.experience {
+ /*  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%; */
+  @include media-breakpoint-up(md) {
+   // background-color: $white;
+   &-title {
+    border-top-right-radius: 3rem;
+    background-color: $gray-3;
+   }
+    .description {
+      background-color: $white;
+      border-top-left-radius: 3rem;
+      border-bottom-right-radius: 7rem;
+      //box-shadow: $box-shadow-lg;
+    }
+    .position {
+      background-color: $white;
+      padding: 1rem 3rem 1rem 0; 
+      border-top-right-radius: 3rem;
+      border-bottom-right-radius: 3rem;
+      //border-radius: 3rem;
+    }
+  }
+}
 .horizontal-line {
+  @extend .shadow;
   height: 1px;
   margin: 0 auto;
-  z-index: 999;
+
+ // z-index: 999;
+}  
+
+.position {
+ // border-left: 1px solid red;
+}  
+
+.vertical-line {
+  width: 20px;
+  height: 100%;
+  margin: auto 0;
+ // z-index: 999;
 }  

@@ -2,9 +2,11 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
 import Avatar from "../components/Avatar";
+import BannerImage from "../components/BannerImage";
 import { FooterMain } from "../components/Footer";
 import { SlideContent } from "../components/Sliders";
 import { useBackToTop } from "../helpers/back-to-top";
+import ProfileImage from "../styles/images/ansu.jpg";
 
 const Testimonials = () => {
   const [divRef, goToTop] = useBackToTop();
@@ -21,45 +23,46 @@ const Testimonials = () => {
     <div className="page-testimonials mt-5" ref={divRef}>
       <div className="hero py-5 py-md-6">
         <div className="hero-container ">
-          <div className="col-md-10 mx-auto">
+          <div className="mx-auto">
             <div className="mx-auto col-md-4 text-center">
-              <h1 className="title text-center">{t(`testimonials.title`)}</h1>
-              {/*  <h4 className="fw-boldest">
-              {t(`testimonials.subtitle`)}
-            </h4> */}
-              <p className="mb-4  mb-md-5">{t(`testimonials.text`)}</p>
+              <h1 className="title text-center mb-4">{t(`testimonials.title`)}</h1>
+              <BannerImage image={ProfileImage}/>
+              <p className="mb-4 mb-md-5">{t(`testimonials.text`)}</p>
             </div>
+
             <div className="row my-4">
-              <div className="col-md-6">
+              <div className="mx-auto col-md-6">
                 {testimonials.map((testimonial: any, index: number) => (
-                  <div className="slide-content-wrapper" key={testimonial.name}>
-                    <SlideContent
-                      //className="bg-primary"
-                      slideElement={<Testimonial testimonial={testimonial} />}
-                      from="left"
-                    />
-                  </div>
+                  <SlideContent
+                    key={testimonial.name}
+                    //className="bg-primary"
+                    slideElement={<Testimonial testimonial={testimonial} />}
+                    from="left"
+                  />
                 ))}
               </div>
-              <div className="col-md-6">
+              <div className="mx-auto col-md-6">
                 {testimonies.map((testimonial: any, index: number) => (
-                  <div className="slide-content-wrapper" key={testimonial.name}>
-                    <SlideContent
-                      //className="bg-secondary"
-                      slideElement={<Testimonial testimonial={testimonial} />}
-                      from="right"
-                    />
-                  </div>
+                  <SlideContent
+                    key={testimonial.name}
+                    //className="bg-secondary"
+                    slideElement={<Testimonial testimonial={testimonial} />}
+                    from="right"
+                  />
                 ))}
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="mb-4 mx-auto d-flex flex-row text-center align-items-center justify-content-center">
-        <div onClick={goToTop} role="button">
+      <div className="slide-content  mb-4 mx-auto d-flex flex-row text-center align-items-center justify-content-center">
+        <div
+          onClick={goToTop}
+          role="button"
+          className="p-md-4 slide-content-from-avatar"
+        >
           <Avatar
-            iconColor="secondary"
+            iconColor=""
             icon={faArrowUp}
             size={"md"}
             dot={false}

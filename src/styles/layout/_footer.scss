@@ -1,5 +1,12 @@
 .footer {
   // @extend .mt-5;
+.link-text{
+    @extend .text-gray;
+}
+
+.link-text:hover {
+  @extend .text-white;
+}
 
   &-main {
     @extend .bg-secondary, .fw-bold;

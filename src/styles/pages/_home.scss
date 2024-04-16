@@ -1,36 +1,99 @@
+.header-scrolled {
+ // @extend .bg-gradient-horizontal;
+}
+
+.body-scrolled {
+ // @extend .bg-gradient-horizontal;
+}
+
 .page-home {
   height: 100%;
   position: relative;
 
+  .technology {
+    &-text {
+      @extend .text-gray;
+    }
+  }
+  .technology:hover {
+    .technology-image {
+      animation: rotate-center 1s linear 0s 1 normal none;
+    }
+    @keyframes rotate-center {
+      
+      0% {
+        transform:rotate(0);
+      }
+      100% {
+        transform:rotate(360deg);
+      }
+    }
+  }
+
+ 
+  .process-img {
+    width: 2rem;
+    height: 2rem;
+  }
+
   .company-text {
     color: $gray;
+
     @include media-breakpoint-up(md) {
       color: $black;
     }
 
   }
+
   .services {
     .card {
-     width: 100%;
-     height: 100%;
-     @include media-breakpoint-up(md) {
       width: 100%;
-    height: 100%;
+      height: 100%;
+
+      @include media-breakpoint-up(md) {
+        width: 100%;
+        height: 100%;
+      }
+
+      &-head {
+        @extend .row, .gap-2, .d-flex, .flex-column, .justify-content-center, .align-items-center;
+
+        img {
+          @extend .img-fluid;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          max-width: 6rem;
+          max-height: 6rem;
+        }
+      }
     }
-     &-head {
-      @extend .row, .gap-2, .d-flex, .flex-column, .justify-content-center, .align-items-center;
+  }
+
+  .hero-holder {
+    .hero-background {
+       @extend .w-100, .h-100;
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: cover; 
+    }
+    .hero-img {
+       @extend .w-100, .h-100;
+       background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
       img {
-        @extend .img-fluid;
         background-position: center;
         background-repeat: no-repeat;
-        background-size: contain;
-        max-width: 6rem;
-        max-height: 6rem;
+        background-size: cover;
+        border-radius: 10%;
+
+        @include media-breakpoint-up(md) {
+          border-radius: 100%;
+        }
       }
-     }
-  }
-  }
-  .hero-holder {
+    }
+
     .hero-container {
       .hero-banner {
         @extend .d-flex, .flex-column, .justify-content-center, .align-items-center;
@@ -45,30 +108,26 @@
 
         .banner-img {
           @extend .row, .d-flex, .flex-column;
-
-          img {
-            @extend .align-items-end, .justify-content-end;
-          }
         }
 
         .banner-body {
-          @extend .d-flex, .flex-column, .justify-content-between, .align-items-center;
+          @extend .d-flex, .flex-column,  .align-items-center;
 
           .work {
-            @extend .flex-grow-1, .d-flex, .justify-content-between, .justify-content-md-center, .align-items-center;
+            @extend  .d-flex, .justify-content-between, .justify-content-md-center, .align-items-center;
           }
 
 
-          .location-text {
+        /*   .location-text {
             color: $primary;
 
             @include media-breakpoint-up(md) {
               color: $white;
             }
-          }
+          } */
 
-          .hero-about-text {
-            @extend .justify-content-between, .justify-content-md-center, .align-items-center, .mt-auto;
+          .home-hero-text-wrapper {
+            @extend .flex-grow-1,  .mt-auto, .align-items-center;
           }
         }
       }
@@ -79,7 +138,7 @@
   &-image {
     @extend .mb-md-0;
     z-index: -1;
-    background-image: url("../images/ansu.svg");
+    // background-image: url("../images/ansu.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

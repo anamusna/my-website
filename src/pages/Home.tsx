@@ -1,28 +1,38 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faArrowUp,
   faChevronRight,
-  faCircle,
-  faLocationDot,
+  faEyeSlash,
 } from "@fortawesome/free-solid-svg-icons";
 import { useTranslation } from "react-i18next";
-import { Processes } from "./Processes";
 import Avatar from "../components/Avatar";
-import { useBackToTop } from "../helpers/back-to-top";
+import BannerImage from "../components/BannerImage";
 import CarouselComponent from "../components/CarouselMulti";
-import { FooterMain } from "../components/Footer";
-import { SlideContent } from "../components/Sliders";
+import { ColophonSocialMedia } from "../components/ColophonSocialMedia";
 import YoutubeEmbed from "../components/Youtube";
+import { SlideContent, useSlideAnimation } from "../components/Sliders";
+import { FooterMain } from "../components/Footer";
+import { useBackToTop } from "../helpers/back-to-top";
+import { useTranslatedPaths } from "../helpers/use-translated-paths";
+import { responsive } from "../styles/responsive";
 import development from "../styles/images/development.svg";
 import app from "../styles/images/app.svg";
 import cloud from "../styles/images/cloud.svg";
+import code from "../styles/images/code.svg";
 import complex from "../styles/images/complex.svg";
 import database from "../styles/images/database.svg";
+import deployment from "../styles/images/deployment.svg";
+import documentation from "../styles/images/documentation.svg";
+import forwards from "../styles/images/forwards.svg";
+import lightbulb from "../styles/images/light-bulb.svg";
 import optimization from "../styles/images/optimization.svg";
-import ProfileImage from "../styles/images/ansu-bw-bg.png";
-import { responsive } from "../styles/responsive";
+import planning from "../styles/images/planning.svg";
+import review from "../styles/images/review.svg";
+import Work from "../components/Work";
+import useHeaderBackgroundChange from "../helpers/use-header-scroll";
+import Blog from "./Blog";
 
 const Home = () => {
   const [divRef, goToTop] = useBackToTop();
@@ -30,17 +40,22 @@ const Home = () => {
   return (
     <div className="page-home mt-5 position-relative" ref={divRef}>
       <Hero />
-      <div className="hero-holder bg-white">
+      <div className="hero-holder slide-content">
         <AboutMe />
         <Technologies />
         <WhatIOffer />
         <Experience />
         <Testimonials />
         <Processes />
+        <Blog />
         <div className="mb-4 mx-auto d-flex flex-row text-center align-items-center justify-content-center">
-          <div onClick={goToTop} role="button">
+          <div
+            onClick={goToTop}
+            role="button"
+            className="p-md-4 slide-content-from-avatar"
+          >
             <Avatar
-              iconColor="secondary"
+              iconColor=""
               icon={faArrowUp}
               size={"md"}
               dot={false}
@@ -56,70 +71,17 @@ const Home = () => {
 };
 
 const Hero = () => {
-  const { t } = useTranslation();
-
   return (
-    <div className="hero-holder position-relative">
-      <div className="d-none d-md-block home-background" id="welcome-section">
-        <div className="forest" />
-        <div className="moon" />
-      </div>
-      <div className="container hero-container pt-5 pt-md-7">
-        <div className="col-md-10 mx-auto hero-banner banner banner-image mx-auto banner-image-right ">
+    <div className="hero-holder position-relative bg-gradient-horizontal">
+      <div className="container hero-container pt-4 pt-md-6">
+        <div className="mx-auto hero-banner banner banner-image mx-auto banner-image-right">
           <div className="mb-md-4 row banner-row mx-auto h-100">
-            <BannerImage />
-            <div className="banner-body mb-4">
-              <div className="work px-md-4 d-flex gap-4 mt-md-auto">
-                <div className="text-md-start bg-success-1 badge rounded-4 mb-4 mb-md-0">
-                  <span className="polygon">
-                    <FontAwesomeIcon icon={faCircle} className="" fixedWidth />
-                  </span>
-                  <label className="badge-label text-success">
-                    {t("home.work")}
-                  </label>
-                </div>
-                <div className="location-text text-start mb-4 mb-md-0">
-                  <FontAwesomeIcon
-                    icon={faLocationDot}
-                    className=""
-                    fixedWidth
-                  />
-                  {t("home.location")}
-                </div>
-              </div>
-              <SlideContentWrapper />
-            </div>
+            <BannerImage withWork />;
+            <SlideContentWrapper />
           </div>
-          <div className="d-none horizontal-line bg-gray-2 col-12 col-md-10"></div>
         </div>
       </div>
     </div>
-  );
-};
-
-const BannerImage = () => {
-  const { t } = useTranslation();
-
-  return (
-    <SlideContent
-      className="banner-img img-fluid order-1 order-md-0 mx-auto"
-      from="up"
-      slideElement={
-        <>
-          <div className="d-none d-md-block">
-            <h3 className="home-hero-text text-md-start text-center lh-1">
-              {t("home.hero.title")}
-            </h3>
-            <h1 className="ms-md-5 home-hero-text title text-center text-md-start">
-              Ansu
-            </h1>
-          </div>
-          <div className="">
-            <img className="img-fluid w-100" src={ProfileImage} alt="" />
-          </div>
-        </>
-      }
-    />
   );
 };
 
@@ -128,23 +90,25 @@ const SlideContentWrapper = () => {
 
   return (
     <SlideContent
-      className="slide-content-wrapper"
+      className="slide-content-wrapper home-hero-text-wrapper banner-body"
       from="left"
       slideElement={
-        <div className="">
-          <div className="home-hero-text px-md-4 d-block d-md-none text-md-start mb-4">
-            <h3 className="home-hero-text title text-start">
-              {t("home.hero.title")}
-            </h3>
-            <h1 className="home-hero-text title text-center text-md-start">
+        <div className="d-flex flex-column h-100">
+          <div className="px-md-4 text-md-start mb-4 animated-hero">
+            <div className="d-flex d-md-none">
+              <Work />
+            </div>
+            <h3 className="text-start">{t("home.hero.title")}</h3>
+            <h1 className="ms-md-5 home-hero-text title text-center text-md-start">
               Ansu
             </h1>
           </div>
-          <div className="mt-md-auto mb-4">
-            <p className="home-hero-text body-text fw-normal ">
-              {t("home.hero.text")}
-            </p>
+          <div className="mb-4 mt-auto justify-items-center">
+            <p className="home-hero-text hero-text">{t("home.hero.text")}</p>
           </div>
+          <ul className="d-none d-md-flex text-secondary m-auto d-flex list-unstyled mb-4 mb-md-0 gap-4">
+            {ColophonSocialMedia}
+          </ul>
         </div>
       }
     />
@@ -154,20 +118,23 @@ const SlideContentWrapper = () => {
 const AboutMe = () => {
   const { t } = useTranslation();
   const longBio: any[] = t("about.longBio.text", { returnObjects: true });
+  const slideRef = useRef<HTMLDivElement>(null);
+  useSlideAnimation(slideRef, "bottom");
 
   return (
-    <div className="container hero-container mb-4 pt-md-5">
-      <div className="row my-4">
-        <div className="col-md-10 mx-auto ">
-          {/*    <h3 className="text-uppercase value-title mb-4 mb-md-5 text-center">
-            {t(`about.title`)}
-            </h3> */}
+    <div
+      className="container hero-container mb-4 pt-4 pt-md-5 slide-content-from-bottom"
+      ref={slideRef}
+      id="about"
+    >
+      <div className="row my-md-4">
+        <div className="row mx-auto ">
           <p className="text-black home-hero-text body-text fw-normal mb-5">
             {t("home.about.text")}
           </p>
         </div>
 
-        <div className="col-12 col-md-10 mx-auto mb-4 mb-md-5">
+        <div className="row col-12 mx-auto mb-4 mb-md-5">
           <div className="accordion accordion-flush" id="skill">
             <div className="accordion-item">
               <h3
@@ -175,14 +142,14 @@ const AboutMe = () => {
                 id={`#heading`}
               >
                 <button
-                  className="h3 accordion-button collapsed text-start"
+                  className="text-uppercase h3 accordion-button collapsed text-start"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target={`#collapse`}
                   aria-expanded="false"
                   aria-controls={`collapse`}
                 >
-                  {t("about.longBio.title")}
+                  {t("about.title")}
                 </button>
               </h3>
 
@@ -193,15 +160,13 @@ const AboutMe = () => {
                 data-bs-parent="#skill"
               >
                 <div className="accordion-body">
-                  <div>
-                    {longBio.map((text, index) => (
-                      <p key={index} className="body-text">
-                        {t(text)}
-                      </p>
-                    ))}
-                  </div>
+                  {longBio.map((text, index) => (
+                    <p key={index} className="body-text">
+                      {t(text)}
+                    </p>
+                  ))}
                   <div className="position-relative mt-4 flex-column col-md-10 mx-auto">
-                    <p className="mb-4 text-start text-md-center">
+                    <p className="mb-4 text-start body-text text-md-center">
                       {t("about.youtube")}
                     </p>
                     <YoutubeEmbed embedId="nhw-uRjtiPI" />
@@ -212,35 +177,69 @@ const AboutMe = () => {
           </div>
         </div>
       </div>
-      <div className="horizontal-line bg-gray-2 col-12 col-md-10"></div>
+      <div className="horizontal-line row bg-gray-2 col-10 col-md-12"></div>
     </div>
   );
 };
 
 const Technologies = () => {
+  const slideRef = useRef<HTMLDivElement>(null);
   const { t } = useTranslation();
-  const technologies: any[] = t("about.tools", { returnObjects: true });
+
+  const technologies: any[] = t("technologies", { returnObjects: true });
+
+  useSlideAnimation(slideRef, "bottom");
 
   return (
-    <div className="container hero-container pt-4 pt-md-5">
+    <div className="container hero-container pt-4 mt-md-5" id="technologies">
       <div className="row mb-4">
-        <div className="col-md-10 mx-auto">
-          <h3 className="text-uppercase value-title mb-4 mb-md-5 text-center">
-            {t(`about.skillTitle`)}
-          </h3>
+        <div className="col-12 mx-auto">
+          <div className="d-flex gap-4">
+            <img
+              src={forwards}
+              className="img-fluid"
+              alt="services"
+              style={{ width: "1.8rem", height: "1.8rem" }}
+            />
+            <h3 className="text-uppercase value-title mb-4 mb-md-5 text-start">
+              {t(`about.skillTitle`)}
+            </h3>
+          </div>
 
-          <div className="d-flex flex-wrap mb-4 mb-md-5">
+          <div
+            className="col-12 row  mx-auto d-flex mb-4 slide-content-from-bottom"
+            ref={slideRef}
+          >
             {technologies.map((technology, index) => (
-              <div key={index} className="gap-4 m-1">
-                <div className="about-badge text-start badge rounded-1 mb-1">
-                  {t(technology)}
+              <div className="col-auto mb-md-4" key={technology.title}>
+                <label className="fw-boldest">{technology.title}</label>
+                <div className="d-flex flex-wrap mb-2 gap-2">
+                  {technology.tools.map((tool: any, toolIndex: number) => (
+                    <div
+                      key={toolIndex}
+                      className="technology d-flex text-center flex-wrap about-badge gap-2 text-start badge rounded-1 align-items-center"
+                    >
+                      <img
+                        className="technology-image img-fluid"
+                        alt="technology"
+                        style={{
+                          width: "1.5rem",
+                          height: "1.5rem",
+                          backgroundSize: "cover",
+                          backgroundPosition: "center",
+                        }}
+                        src={require(`../styles/images/technologies/${tool.image}`)}
+                      />
+                      <p className="technology-text my-1">{t(tool.name)}</p>
+                    </div>
+                  ))}
                 </div>
               </div>
             ))}
           </div>
         </div>
       </div>
-      <div className="horizontal-line bg-gray-2 col-12 col-md-10"></div>
+      <div className="horizontal-line row bg-gray-2 col-10 col-md-12"></div>
     </div>
   );
 };
@@ -263,96 +262,155 @@ const WhatIOffer = () => {
   const serviceKeys = Object.keys(serviceImages);
 
   return (
-    <div className="services">
+    <div className="services" id="services">
       <div className="container hero-container mb-4 mt-md-6">
-        <div className="row mb-4 my-5 mb-md-5">
-          <h3 className="text-uppercase value-title mb-4 mb-md-5 text-center">
-            {t("serviceTitle")}
-          </h3>
-          <div className="hero-row col-md-10 mx-auto">
-            {services.map((service: any, index) => (
-              <div className="col-md-4" key={service.title}>
-                <div className="card h-100">
-                  <div className="card-head flex-column mx-auto">
-                    <img
-                      src={serviceImages[serviceKeys[index]]}
-                      className="card-img-top img-fluid"
-                      alt="services"
-                    />
-                    <h4 className="text-uppercase fw-boldest text-center text-gray">
-                      {service.title}
-                    </h4>
-                  </div>
-                  <div className="d-flex card-body">
-                    <p className="text-start text-md-center ">
-                      {service.description}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            ))}
+        <div className="mb-4 my-5 mb-md-5">
+          <div className="mx-auto">
+            <div className="ms-2 ms-md-4 d-flex gap-4">
+              <img
+                src={forwards}
+                className="img-fluid"
+                alt="services"
+                style={{ width: "1.8rem", height: "1.8rem" }}
+              />
+              <h3 className="text-uppercase value-title mb-4 mb-md-5 text-start">
+                {t("serviceTitle")}
+              </h3>
+            </div>
+
+            <div className="hero-row">
+              {services.map((service: any, index) => (
+                <SlideContent
+                  className="col-md-4"
+                  from="bottom"
+                  key={service.title}
+                  slideElement={
+                    <div className="card h-100">
+                      <div className="card-head flex-column mx-auto">
+                        <img
+                          src={serviceImages[serviceKeys[index]]}
+                          className="card-img-top img-fluid"
+                          alt="services"
+                        />
+                        <h3 className="value-title text-center">
+                          {service.title}
+                        </h3>
+                      </div>
+                      <div className="d-flex card-body">
+                        <p className="text-start body-text text-md-center ">
+                          {service.description}
+                        </p>
+                      </div>
+                    </div>
+                  }
+                />
+              ))}
+            </div>
           </div>
         </div>
-        <div className="horizontal-line bg-gray-2 col-12 col-md-10"></div>
+        <div className="horizontal-line row bg-gray-2 col-10 col-md-12"></div>
       </div>
     </div>
   );
 };
 
 const Experience = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const experiences: any[] = t("about.experience", { returnObjects: true });
+  const slideRef = useRef<HTMLDivElement>(null);
+  useSlideAnimation(slideRef, "bottom");
+
+  const cvLink =
+    i18n.language === "de"
+      ? "https://drive.google.com/file/d/1_L5NbGdANHJCJEg7Oh__r9yHH2goSsYJ/view?usp=sharing"
+      : "https://drive.google.com/file/d/1JScDayvwjoDI4koNPrE84D8N7kE7H5qH/view?usp=sharing";
 
   return (
-    <div className="container hero-container mb-4 pt-4 pt-md-5">
+    <div className="container hero-container pt-4 pt-md-5" id="experience">
       <div className="row mb-4">
-        <h3 className="text-uppercase value-title mb-4 mb-md-5 text-center">
-          {t("about.experienceTitle")}
-        </h3>
-        <div className="col-md-10 mx-auto mb-md-4">
-          <div className="bg-gray-3 rounded-4 mb-4 p-1 p-md-4 pt-md-5">
-            {experiences.map((experience) => (
-              <>
-                <div className="mx-auto d-flex flex-md-row">
-                  <div className="col-12 d-flex flex-column flex-md-row">
-                    <div className="order-1 order-md-0 col-md-3">
-                      <h3 className="company-text fw-normal mb-4">
-                        {t(`${experience.company}`)}
-                      </h3>
-                    </div>
-                    <div className="order-0 order-md-1 col-md-9">
-                      <h3 className="value-title">
-                        {t(`${experience.position}`)}
-                      </h3>
+        <div className="">
+          <div className="d-flex gap-4 mb-4 mb-md-5">
+            <img
+              src={forwards}
+              className="img-fluid"
+              alt="services"
+              style={{ width: "1.8rem", height: "1.8rem" }}
+            />
+            <h3 className="text-uppercase value-title text-start">
+              {t("about.experienceTitle")}
+            </h3>
+          </div>
+          <div className="mb-4 mb-md-5">
+            <div className="bg-gray-3 rounded-4 mb-4 pt-4 px-md-4 pt-md-5 pb-md-1">
+              {experiences.map((experience, index) => (
+                <div className="experience mb-md-5" key={experience.company}>
+                  <div className="mx-auto d-flex flex-md-row">
+                    <div className="px-1 px-md-2 col-12 d-flex flex-column flex-md-row align-items-md-center">
+                      <div className="order-1 order-md-0 col-md-3">
+                        <h3 className="p-md-2 company-text fw-normal mb-4">
+                          {t(`${experience.company}`)}
+                        </h3>
+                      </div>
+                      <div className="order-0 order-md-1 col-md-9">
+                        <h3 className="value-title">
+                          {t(`${experience.position}`)}
+                        </h3>
+                      </div>
                     </div>
                   </div>
+                  <SlideContent
+                    className="description ps-2 p-2 pt-md-4 col-md-9 offset-md-3 mb-4"
+                    from="bottom"
+                    slideElement={
+                      <div className="">
+                        <ul className="">
+                          {experience.description.map((description: any) => (
+                            <li className="card-text" key={description}>
+                              <p className="body-text ">
+                                {t(`${description}`)}
+                              </p>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    }
+                  />
                 </div>
-
-                <div className="col-md-9 offset-md-3 mb-4">
-                  <ul>
-                    {experience.description.map((description: any) => (
-                      <li className="card-text">
-                        <p className="">{t(`${description}`)}</p>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-                <div className="col-11 col-md-12 horizontal-line bg-gray-2 d-md-flex mb-4 mx-auto"></div>
-              </>
-            ))}
+              ))}
+            </div>
+            <div className="resume text-center">
+              <a
+                className="btn btn-lg bt-icon btn-outline-primary text-uppercase"
+                href={cvLink}
+                target="_blank"
+                rel="noreferrer"
+              >
+                {t("about.cv")}
+                <FontAwesomeIcon
+                  icon={faEyeSlash}
+                  className=""
+                  fixedWidth
+                  //size="xs"
+                />
+              </a>
+            </div>
           </div>
         </div>
       </div>
-      <div className="horizontal-line bg-gray-2 col-12 col-md-10 mt-4"></div>
+      <div className="horizontal-line bg-gray-2 col-10 col-md-12 mt-4"></div>
     </div>
   );
 };
 
 const Testimonials = () => {
-  const { t } = useTranslation();
-  const testimonials: any[] = t("testimonials.groupOne", {
+  const { t, i18n } = useTranslation();
+  const testimonialsArray: any[] = t("testimonials.groupOne", {
     returnObjects: true,
   });
+
+  const { testimonials } = useTranslatedPaths(
+    t("header.links.testimonials.url")
+  );
 
   const [currentTestimonialIndex, setCurrentTestimonialIndex] = useState(0);
 
@@ -365,32 +423,41 @@ const Testimonials = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentTestimonialIndex(
-        (prevIndex) => (prevIndex + 1) % testimonials?.length
+        (prevIndex) => (prevIndex + 1) % testimonialsArray?.length
       );
     }, 5000);
 
     return () => clearInterval(interval);
-  }, [testimonials, currentTestimonialIndex]);
+  }, [testimonialsArray, currentTestimonialIndex]);
 
   return (
-    <div className="container mt-md-5">
-      <div className="col-md-10 mx-auto banner banner-features">
+    <div className="container mt-md-5" id="testimonials">
+      <div className="mx-auto banner banner-features">
         <div className="hero-row row">
-          <div className="col-12 col-md-10 mx-auto d-flex justify-content-between mt-4 mb-4 p-2">
-            <h3 className="text-uppercase value-title text-black text-start">
-              {t("testimonials.title")}
-            </h3>
+          <div className="col-12 mx-auto d-flex justify-content-between mt-4 mb-4 p-2">
+            <div className="d-flex gap-4">
+              <img
+                src={forwards}
+                className="img-fluid"
+                alt="services"
+                style={{ width: "1.8rem", height: "1.8rem" }}
+              />
+              <h3 className="text-uppercase value-title text-black text-start">
+                {t("testimonials.title")}
+              </h3>
+            </div>
+
             <div className="hero-button-container d-none d-md-block">
               <Link
-                className="btn bt-icon btn-outline-primary text-uppercase"
-                to="/testimonials"
+                className="btn btn-lg bt-icon btn-outline-primary text-uppercase"
+                to={`/${i18n.language}${testimonials}`}
               >
                 {t("testimonials.button")}
                 <FontAwesomeIcon
                   icon={faChevronRight}
-                  className="bg-primary home-hero-text rounded-circle mt-1 "
+                  className=""
                   fixedWidth
-                  size="xs"
+                  size="2xs"
                 />
               </Link>
             </div>
@@ -413,8 +480,8 @@ const Testimonials = () => {
               centerMode={true}
               afterChange={handleAfterChange}
             >
-              {testimonials &&
-                testimonials.map((testimonial, i) => (
+              {testimonialsArray &&
+                testimonialsArray.map((testimonial, i) => (
                   <div key={testimonial.name} className={`mx-auto mb-4 px-1`}>
                     <div className="banner banner-shadow rounded-4 p-2 p-md-4">
                       <div className="gap-4 d-flex bg-gray-3 rounded-4 p-2">
@@ -435,23 +502,107 @@ const Testimonials = () => {
                 ))}
             </CarouselComponent>
           </div>
-
           <div className="d-flex mx-auto justify-content-center align-items-center">
             <Link
-              className="btn btn-outline-primary text-uppercase d-md-none"
-              to="/testimonials"
+              className="btn btn-lg bt-icon btn-outline-primary text-uppercase d-md-none"
+              to={`/${i18n.language}${testimonials}`}
             >
               {t("testimonials.button")}
-              <FontAwesomeIcon
-                icon={faChevronRight}
-                className="bg-primary text-white home-hero-text rounded-circle mt-1 "
-                fixedWidth
-              />
+              <FontAwesomeIcon icon={faChevronRight} className=" " fixedWidth />
             </Link>
           </div>
         </div>
       </div>
-      <div className="horizontal-line bg-gray-2 col-12 col-md-10"></div>
+      <div className="horizontal-line bg-gray-2 mx-auto col-10 col-md-12"></div>
+    </div>
+  );
+};
+
+const Processes = () => {
+  const slideRef = useRef<HTMLDivElement>(null);
+  const { t } = useTranslation();
+  const processText: any[] = t("process.text", { returnObjects: true });
+
+  useSlideAnimation(slideRef, "bottom");
+
+  const projectWorkProcesses: any[] = t("process.processes", {
+    returnObjects: true,
+  });
+
+  const projectWorkProcessImages: any = {
+    lightbulb,
+    planning,
+    code,
+    documentation,
+    review,
+    deployment,
+  };
+
+  const projectWorkProcessKeys = Object.keys(projectWorkProcessImages);
+
+  return (
+    <div className="container hero-container mt-5 mt-md-6 mb-4" id="process">
+      <div className="row mb-4 my-md-5" id="my-process">
+        <div className="row mx-auto ">
+          <div className="d-flex gap-4">
+            <img
+              src={forwards}
+              className="img-fluid"
+              alt="services"
+              style={{ width: "1.8rem", height: "1.8rem" }}
+            />
+            <h3 className="text-uppercase value-title mb-4 mb-md-5 text-start">
+              {t("process.title")}
+            </h3>
+          </div>
+          <div className="mb-4 mb-md-5">
+            {processText.map((process, index) => (
+              <p className="body-text" key={index}>
+                {process}
+              </p>
+            ))}
+          </div>
+          <div className="row d-flex justify-content-center">
+            {projectWorkProcesses.map((process, index) => (
+              <SlideContent
+                key={process.title}
+                className="col-md-4 mb-4"
+                from="bottom"
+                slideElement={
+                  <div className="card h-100">
+                    <div className="d-flex gap-4  align-items-center mb-4">
+                      <div className="bg-gray-2 p-2 rounded-circle">
+                        <img
+                          className="process-img img-fluid"
+                          alt="process-img"
+                          style={{
+                            backgroundSize: "cover",
+                            backgroundPosition: "center",
+                          }}
+                          src={
+                            projectWorkProcessImages[
+                              projectWorkProcessKeys[index]
+                            ]
+                          }
+                        />
+                      </div>
+                      <div className="col-8 mb-0">
+                        <h3 className="value-title text-start">
+                          {process.title}
+                        </h3>
+                      </div>
+                    </div>
+                    <div className="">
+                      <p className="">{process.text}</p>
+                    </div>
+                  </div>
+                }
+              />
+            ))}
+          </div>
+        </div>
+      </div>
+      <div className="horizontal-line row bg-gray-2 col-10 col-md-12"></div>
     </div>
   );
 };

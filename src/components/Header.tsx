@@ -1,11 +1,13 @@
 import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import germanyFlag from "../styles/images/germany-flag.svg";
 import logo from "../styles/images/logo.png";
 import ukFlag from "../styles/images/uk.svg";
 import { defaultLanguages } from "../helpers/language";
 import TypingAnimation from "./TypeAnimation";
+import { useTranslatedPaths } from "../helpers/use-translated-paths";
+import useHeaderBackgroundChange from "../helpers/use-header-scroll";
 
 const Header = () => {
   const [actionContainerHeight, setActionContainerHeight] = useState(0);
@@ -15,6 +17,11 @@ const Header = () => {
   const [menuLeftPosition, setMenuLeftPosition] = useState(0);
   const menuButtonRef = useRef<HTMLDivElement>(null);
   const menuRef = useRef<HTMLUListElement>(null);
+  const [divRef, isScrolled, headRef] = useHeaderBackgroundChange();
+
+  const headerStyle = isScrolled ? { backgroundColor: "red" } : {};
+
+  console.log("isScrolled#:", isScrolled);
 
   const repositionMenu = () => {
     if (menuRef.current) {
@@ -55,11 +62,8 @@ const Header = () => {
             className="header-brand d-flex text-center justify-content-between align-items-center"
             to="/"
           >
-            <img className="" src={logo} alt="ansumana" />
+            <img className="ansu" src={logo} alt="ansumana" />
             <TypingAnimation />
-           {/*  <p className="header-brand-text align-self-end align-self-md-center text-uppercase fw-bolder">
-              Ansumana Darboe
-            </p> */}
           </Link>
           <div
             className={`header-toggler d-md-none ${isMenuOpen ? " open" : ""}`}
@@ -113,9 +117,12 @@ const Menu: React.FC<{
   repositionMenu,
   setIsMenuOpen,
 }) => {
+  const navigate = useNavigate();
   const { t, i18n } = useTranslation();
   const location = useLocation();
   const pathname = location.pathname;
+
+  const { contact } = useTranslatedPaths();
 
   const handleClickOutside = (event: MouseEvent) => {
     if (
@@ -129,16 +136,30 @@ const Menu: React.FC<{
   };
 
   const menuContent: MenuItem[] = [
-    { label: `${t(`header.home`)}`, url: "/" },
-   /*  { label: `${t("header.links.about.label")}`, url: "/about" }, */
-    { label: `${t("header.links.testimonials.label")}`, url: "/testimonials" },
-    { label: `${t("header.links.contact.label")}`, url: "/contact" },
+    { label: `${t(`header.home`)}`, url: "" },
+     //{ label: `Blog`, url: "/blog" },
+    /*  { label: `${t("header.links.about.label")}`, url: `${t("header.links.about.url")}` },  */
+    /* { label: `${t("header.links.testimonials.label")}`, url: `${testimonials}` }, */
+    {
+      label: `${t("header.links.contact.label")}`,
+      url: contact,
+    },
     {
       label: `${t("header.language")}`,
       icon: i18n.language === "en" ? ukFlag : germanyFlag,
       items: defaultLanguages,
     },
   ];
+
+  const handleSelectChange = async (lng: any) => {
+    const language = lng.slice(0, 2).toLowerCase();
+    const newPathname = `/${language}${pathname.substring(3)}`;
+
+    i18n.changeLanguage(language);
+
+    navigate(newPathname);
+    setIsMenuOpen(false);
+  };
 
   useEffect(() => {
     if (location.pathname === "/") {
@@ -156,19 +177,13 @@ const Menu: React.FC<{
     };
   });
 
-  const handleSelectChange = async (lng: any) => {
-    const language = lng.slice(0, 2).toLowerCase();
-    i18n.changeLanguage(language);
-    setIsMenuOpen(false);
-  };
-
-  const fetchMenuItem = (item: MenuItem, index: number) => {
+  const fetchMenuItem = (item: MenuItem, index: any) => {
     const isActive = item.url === pathname;
 
     return (
       <li
         className="position-relative"
-        key={index}
+        key={item.label}
         onClick={() => repositionMenu()}
       >
         {item.items?.length ? (
@@ -206,7 +221,8 @@ const Menu: React.FC<{
               onClick={() => setIsMenuOpen((prev) => !prev)}
               rel={item.blank ? "noopener noreferrer" : ""}
               target={item.blank ? "_blank" : ""}
-              to={{ pathname: item.url }}
+              //to={{ pathname: item.url }}
+              to={{ pathname: `${i18n.language}${item.url}` }}
             >
               {item.label}
             </Link>

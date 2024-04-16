@@ -1,0 +1,14 @@
+.page-blog {
+  .banner {
+    &-image {
+      @extend .shadow;
+  
+      @include media-breakpoint-up(md) {
+       //box-shadow: $box-shadow-lg;
+     }
+    }
+    &:hover {
+      box-shadow: $box-shadow-lg;
+    } 
+  }  
+}

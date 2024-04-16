@@ -55,13 +55,13 @@
     &-left {
       .banner-img {
         @include media-breakpoint-up(md) {
-          @include make-col(5);
+          @include make-col(4);
         }
       }
 
       .banner-body {
         @include media-breakpoint-up(md) {
-          @include make-col(7);
+          @include make-col(8);
         }
       }
 
@@ -119,10 +119,10 @@
   }
 
   &-text {
-    @extend .py-3, .py-md-5;
+    @extend .py-3, .py-md-4;
 
     @include media-breakpoint-up(md) {
-      padding-right: 6rem;
+      padding-right: 3rem;
     }
 
     .banner-image-left & {

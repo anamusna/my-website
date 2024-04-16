@@ -12,7 +12,7 @@
 }
 
 .about-badge {
-  @extend .text-secondary-1, h4;
+  @extend .text-secondary-1;
   border: 1px solid $secondary-1;
   font-weight: $font-weight-boldest
 }

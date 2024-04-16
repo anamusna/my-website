@@ -8,36 +8,38 @@ interface SlideProps {
   rightElement?: React.ReactNode;
   className?: string;
   from?: string;
+  key?: string;
 }
 
-const useSlideAnimation = (elementRef: React.RefObject<HTMLDivElement>, from: string) => {
+export const animateSliding = (element: HTMLDivElement | null) => {
+  const slideOnScrollOptions = {
+    threshold: 0,
+    rootMargin: "0px 0px -100px 0px",
+  };
+
+  const slideOnScrollObserver = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) {
+          observer.observe(entry.target);
+        } else {
+          entry.target.classList.add("appear");
+          //observer.unobserve(entry.target);
+        }
+      });
+    },
+    slideOnScrollOptions
+  );
+
+  if (element) {
+    slideOnScrollObserver.observe(element);
+  }
+};
+
+export const useSlideAnimation = (elementRef: React.RefObject<HTMLDivElement>, from: string) => {
   useEffect(() => {
-    const animateSliding = (element: HTMLDivElement | null) => {
-      const slideOnScrollOptions = {
-        threshold: 0,
-        rootMargin: "0px 0px -100px 0px",
-      };
-
-      const slideOnScrollObserver = new IntersectionObserver(
-        (entries, observer) => {
-          entries.forEach((entry) => {
-            if (!entry.isIntersecting) {
-              return;
-            } else {
-              entry.target.classList.add("appear");
-              observer.unobserve(entry.target);
-            }
-          });
-        },
-        slideOnScrollOptions
-      );
-
-      if (element) {
-        slideOnScrollObserver.observe(element);
-      }
-    };
-
     animateSliding(elementRef.current);
+
   }, [elementRef, from]);
 };
 
@@ -88,15 +90,24 @@ const SlideComponent: React.FC<SlideProps> = ({
   );
 };
 
-export const SlideContent: React.FC<SlideProps> = (props) => {
+export const SlideContent = ({ leftElement,
+  slideItems,
+  slideElement,
+  rightElement,
+  className,
+  from,
+ // key
+} : SlideProps) => {
   const slideContentRef = useRef<HTMLDivElement>(null);
-  useSlideAnimation(slideContentRef, props.from || "left");
+
+  useSlideAnimation(slideContentRef, from || "left");
   return (
     <div
       ref={slideContentRef}
-      className={`slide-content slide-content-from-${props.from || "left"} ${props.className}`}
+      //key={key}
+      className={`slide-content slide-content-from-${from || "left"} ${className}`}
     >
-      {props.slideElement}
+      {slideElement}
     </div>
   );
 };

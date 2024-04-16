@@ -11,8 +11,10 @@ const loadLocales = (i18nInstance: i18next.i18n) => {
   i18nInstance.addResourceBundle("de", namespace, de);
 };
 
+const languageFromPath = window.location.pathname.split('/')[1];
+
 const options: i18next.InitOptions = {
-  lng: "en",
+  lng: languageFromPath || "en",
   ns: namespace,
   defaultNS: namespace,
   fallbackLng: "en",
@@ -20,7 +22,8 @@ const options: i18next.InitOptions = {
     escapeValue: false,
   },
   detection: {
-    order: ["querystring", "navigator"],
+    order: ["path", "querystring", "navigator"],
+    lookupFromPathIndex: 0,
     lookupQuerystring: "lng",
   },
   react: {

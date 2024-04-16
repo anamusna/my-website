@@ -1,6 +1,5 @@
 .btn {
-  @extend .body-text;
- // font-weight: $font-weight-bolder !important;
+  font-weight: $font-weight-bolder !important;
 
   .svg-inline--fa {
     float: right;
@@ -62,9 +61,9 @@
   --#{$prefix}btn-color: #{$white};
   --#{$prefix}btn-bg: #{$color};
   --#{$prefix}btn-border-color: #{$color};
-  --#{$prefix}btn-hover-color: #{$white};
-  --#{$prefix}btn-hover-bg: #{rgba($color, $opacity-sm)};
-  --#{$prefix}btn-hover-border-color: #{rgba($color, 0)};
+  --#{$prefix}btn-hover-color: #{$color};
+  --#{$prefix}btn-hover-bg: #{$white};
+  --#{$prefix}btn-hover-border-color: #{$color};
   --#{$prefix}btn-active-color: #{$white};
   --#{$prefix}btn-active-bg: #{rgba($color, $opacity-sm)};
   --#{$prefix}btn-active-border-color: #{rgba($color, 0)};
@@ -84,12 +83,12 @@
 .btn-outline-primary {
   --#{$prefix}btn-color: #{$primary};
   --#{$prefix}btn-border-color: #{$primary};
-  --#{$prefix}btn-hover-color: #{$primary};
-  --#{$prefix}btn-hover-bg: #{rgba($primary, .15)};
-  --#{$prefix}btn-hover-border-color: #{$secondary};
-  --#{$prefix}btn-active-color: #{$primary};
+  --#{$prefix}btn-hover-color: #{$white};
+  --#{$prefix}btn-hover-bg: #{$primary};
+  --#{$prefix}btn-hover-border-color: #{$primary};
+  --#{$prefix}btn-active-color: #{$white};
   --#{$prefix}btn-active-bg: #{rgba($black, $opacity-lg)};
-  --#{$prefix}btn-active-border-color: #{$secondary};
+  --#{$prefix}btn-active-border-color: #{$white};
   --#{$prefix}btn-active-shadow: #{$btn-active-box-shadow};
   --#{$prefix}btn-disabled-color: #{$gray-2};
   --#{$prefix}btn-disabled-bg: transparent;

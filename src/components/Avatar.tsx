@@ -20,7 +20,7 @@ interface AvatarProps {
 const Avatar = ({
   image,
   iconClassName,
-  iconColor = "text-primary",
+  iconColor = "",
   initials,
   dot = true,
   onClick,
@@ -42,7 +42,7 @@ const Avatar = ({
       ) : icon ? (
         <FontAwesomeIcon
           className={`icon text-center border-0  ${iconClassName} ${
-            iconColor ? `text-${iconColor} ` : "text-white"
+            iconColor ? `text-${iconColor} ` : ""
           } `}
           icon={icon}
           size="2x"

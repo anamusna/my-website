@@ -13,5 +13,3 @@ export const useBackToTop = () => {
 
   return [divRef, goToTop] as const;
 };
-
-

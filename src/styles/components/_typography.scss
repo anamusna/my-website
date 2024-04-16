@@ -5,6 +5,7 @@ html {
 html,
 body,
 #root,
+#body,
 #app,
 #app>div {
   color: $black;
@@ -16,7 +17,8 @@ body,
 }
 
 a {
-  font-weight: $font-weight-bold;
+  //font-weight: $font-weight-bold;
+  cursor: pointer; 
 }
 
 .text-underline {
@@ -29,10 +31,6 @@ h2,
 h3 {
   line-height: 1.2;
   font-weight: $font-weight-boldest !important;
-}
-
-p {
-  @extend .body-text;
 }
 
 .fw-boldest {
@@ -48,17 +46,16 @@ p {
   font-weight: $font-weight-boldest !important;
   line-height: 1.1;
 
-  @include media-breakpoint-up(md) {
+  /* @include media-breakpoint-up(md) {
     font-size: $display-font-size !important;
-  }
+  } */
 }
 
-.body-text {
-  font-size: 1.3rem;
-  font-weight: $font-weight-base;
-  @include media-breakpoint-up(md) {
+.hero-text {
+   font-size: 1.3rem;
+   @include media-breakpoint-up(md) {
     font-size: 1.5rem;
-  }
+  } 
 }
 
 .underline {

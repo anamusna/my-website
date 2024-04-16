@@ -2,54 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { useTranslation } from "react-i18next";
-
-interface SocialMediaItem {
-  name: string;
-  label: string;
-  icon: any;
-  href: string;
-}
+import { HashLink } from "react-router-hash-link";
+import { ColophonSocialMedia } from "./ColophonSocialMedia";
 
 function Footer() {
   const { t } = useTranslation();
-
-  const SocialMediaItems: SocialMediaItem[] = [
-    {
-      name: "linkedin",
-      label: "Linkedin",
-      icon: faLinkedin,
-      href: "https://www.linkedin.com/in/ansumana-darboe",
-    },
-    {
-      name: "github",
-      label: "Github",
-      icon: faGithub,
-      href: "https://github.com/anamusna",
-    },
-  ];
-
-  const ColophonSocialMedia = SocialMediaItems.map((item) => {
-    return (
-      <li key={`colophonSocialMedia-${item.name}`}>
-        <a
-          className="text-white"
-          href={item.href}
-          target="_blank"
-          rel="noreferrer"
-        >
-          <FontAwesomeIcon
-            aria-label={item.label}
-            fixedWidth
-            className=""
-            icon={item.icon}
-            size="xl"
-          />
-        </a>
-      </li>
-    );
-  });
 
   return (
     <footer className="footer">
@@ -70,26 +28,68 @@ function Footer() {
   );
 }
 
+export const LinkItems = () => {
+  const { t, i18n } = useTranslation();
+
+  /* 
+      data-bs-toggle="collapse"
+                  data-bs-target={`#collapse`}
+                  aria-expanded="false"
+                  aria-controls={`collapse`}
+  */
+  const menuContent: any[] = [
+    { label: `${t("about.title")}`, url: "#about" },
+    { label: `${t(`about.skillTitle`)}`, url: "#technologies" },
+    { label: `${t(`serviceTitle`)}`, url: "#services" },
+    { label: `${t(`about.experienceTitle`)}`, url: "#experience" },
+    {
+      label: `${t("header.links.testimonials.label")}`,
+      url: `${i18n.language}/testimonials`,
+    },
+  ];
+
+  const linkItems = menuContent.map((item) => {
+    return (
+      <HashLink
+      className={`link-text btn btn-sm hero-title text-uppercase text-underline`}
+      to={`/${item.url}`}
+      key={item.label}
+    >
+      {item.label}
+    </HashLink>
+    );
+  });
+
+  return (
+    <p className="text-md-center">
+      {linkItems}
+    </p>
+  );
+};
+
 export const FooterMain = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   return (
     <div className="footer">
-      <div className="footer-main py-6">
+      <div className="footer-main py-5">
         <div className="col-md-10 mx-auto container">
-          <div className="col-md-6 mx-auto">
+          <div className="d-none text-center d-md-flex mx-auto justify-content-center mb-4">
+            <LinkItems />
+          </div>
+          <div className="col-md-6 mx-auto text-center">
             <p className="testimonial-title footer-title text-center text-white mb-5">
               {t("footer.title")}
             </p>
             <div className="hero-button-container d-flex mx-auto justify-content-center">
               <Link
-                className="btn btn-icon btn-primary text-uppercase"
-                to="/contact"
+                className="btn btn-lg btn-icon btn-primary text-uppercase"
+                to={`/${i18n.language}/contact`}
               >
                 {t("footer.button")}
                 <FontAwesomeIcon
                   icon={faChevronRight}
-                  className="bg-white text-primary rounded-circle mt-1 "
+                  className=""
                   size="xs"
                   fixedWidth
                 />
