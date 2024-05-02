@@ -1,10 +1,17 @@
 import React, { useRef } from "react";
 import { useTranslation } from "react-i18next";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faArrowRightLong,
+  faArrowUp,
+  faChevronRight,
+  faEyeSlash,
+  faUpRightFromSquare,
+} from "@fortawesome/free-solid-svg-icons";
 import { SlideContent, useSlideAnimation } from "../components/Sliders";
 import forwards from "../styles/images/forwards.svg";
 import { useBackToTop } from "../helpers/back-to-top";
 import Avatar from "../components/Avatar";
-import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
 import { FooterMain } from "../components/Footer";
 
 const Blog = () => {
@@ -44,30 +51,32 @@ const Blog = () => {
                   rel="noreferrer"
                 >
                   <div
-                    className="banner banner-image banner-image-left shadow"
+                    className="banner banner-image banner-image-left"
                     key={index}
                   >
                     <div className="banner-row mx-auto">
-                      <div className="col-12 col-md-4 d-none d-md-flex">
+                      <div className="col-12 col-md-4 d-none d-md-flex page-blog-img">
                         <img
-                          className="img-fluid h-100"
+                          className="img-fluid"
                           src={require(`../styles/images/blog/${blog.image}`)}
                           alt={blog.image}
-                          style={{
-                            backgroundSize: "cover",
-                            backgroundPosition: "center",
-                            backgroundRepeat: "no-repeat",
-                            minHeight: "14rem",
-                          }}
                         />
                       </div>
                       <div className="banner-body">
                         <div className="banner-text">
-                          <h3 className="value-title mb-4 mb-md-5 text-start">
+                          <h3 className="value-title mb-4 text-start">
                             {t(blog.title)}
                           </h3>
 
-                          <p className="fw-normal"> {t(blog.text)}</p>
+                          <p className="fw-normal">
+                            {t(blog.text)}{" "}
+                            <FontAwesomeIcon
+                              icon={faUpRightFromSquare}
+                              className="text-primary"
+                              fixedWidth
+                              size="xs"
+                            />{" "}
+                          </p>
                         </div>
                       </div>
                     </div>

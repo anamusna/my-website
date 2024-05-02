@@ -2,4 +2,12 @@
   .testimonial-body {
     @extend .bg-gray;
   }
+  &-subtitle{
+    @extend .subtitle-text;
+  }
+}
+
+.quotation-mark {
+  @extend .text-secondary, .bg-white;
+  font-size: 3rem;
 }

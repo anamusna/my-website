@@ -17,11 +17,6 @@ const Header = () => {
   const [menuLeftPosition, setMenuLeftPosition] = useState(0);
   const menuButtonRef = useRef<HTMLDivElement>(null);
   const menuRef = useRef<HTMLUListElement>(null);
-  const [divRef, isScrolled, headRef] = useHeaderBackgroundChange();
-
-  const headerStyle = isScrolled ? { backgroundColor: "red" } : {};
-
-  console.log("isScrolled#:", isScrolled);
 
   const repositionMenu = () => {
     if (menuRef.current) {
@@ -122,7 +117,7 @@ const Menu: React.FC<{
   const location = useLocation();
   const pathname = location.pathname;
 
-  const { contact } = useTranslatedPaths();
+  const { contact, testimonials } = useTranslatedPaths();
 
   const handleClickOutside = (event: MouseEvent) => {
     if (
@@ -153,10 +148,9 @@ const Menu: React.FC<{
 
   const handleSelectChange = async (lng: any) => {
     const language = lng.slice(0, 2).toLowerCase();
-    const newPathname = `/${language}${pathname.substring(3)}`;
-
-    i18n.changeLanguage(language);
-
+     i18n.changeLanguage(language);
+     const newPathname = `/${i18n.language}${pathname.substring(3)}`;
+ 
     navigate(newPathname);
     setIsMenuOpen(false);
   };

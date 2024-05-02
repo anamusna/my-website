@@ -25,9 +25,11 @@ const Testimonials = () => {
         <div className="hero-container ">
           <div className="mx-auto">
             <div className="mx-auto col-md-4 text-center">
-              <h1 className="title text-center mb-4">{t(`testimonials.title`)}</h1>
-              <BannerImage image={ProfileImage}/>
-              <p className="mb-4 mb-md-5">{t(`testimonials.text`)}</p>
+              <h1 className="title text-center mb-4">
+                {t(`testimonials.title`)}
+              </h1>
+              <BannerImage image={ProfileImage} />
+              <p className="mb-4 mb-md-5 page-testimonials-subtitle">{t(`testimonials.text`)}</p>
             </div>
 
             <div className="row my-4">
@@ -79,8 +81,8 @@ const Testimonials = () => {
 export const Testimonial = ({ testimonial }: { testimonial: any }) => {
   return (
     <div className="row mx-md-3 mx-auto mb-4" key={testimonial.name}>
-      <div className="hero-body pt-4 bg-gray-3 rounded-4 position-relative">
-        <p className="body-text">“{testimonial.testimony}”</p>
+      <div className="hero-body pt-3 bg-gray-3 rounded-4 position-relative">
+        <p className="body-text">&ldquo;{testimonial.testimony}&rdquo;</p>
       </div>
       <div className="mb-4 text-start">
         <div className="text-start arrow-down mb-2 ms-5"></div>

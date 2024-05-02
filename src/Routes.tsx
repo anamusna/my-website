@@ -5,7 +5,7 @@ import {
   Routes,
 } from "react-router-dom";
 
-import {Blogs} from "./pages/Blog";
+import { Blogs } from "./pages/Blog";
 import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
@@ -29,10 +29,7 @@ const AppRouter = () => {
           path={`/${i18n.language}${testimonials}`}
           element={<Testimonials />}
         />
-        <Route
-          path={`/${i18n.language}/blog`}
-          element={<Blogs />}
-        />
+        <Route path={`/${i18n.language}/blog`} element={<Blogs />} />
         <Route
           path="/"
           element={<Navigate replace to={`/${i18n.language}`} />}

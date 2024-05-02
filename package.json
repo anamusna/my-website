@@ -20,6 +20,8 @@
     "axios": "^1.6.2",
     "bootstrap": "^5.3.2",
     "i18next": "^23.7.16",
+    "i18next-browser-languagedetector": "^7.2.1",
+    "i18next-xhr-backend": "^3.2.2",
     "intl-pluralrules": "^2.0.1",
     "node-sass": "^7.0.3",
     "react": "^18.2.0",
@@ -66,6 +68,7 @@
     ]
   },
   "devDependencies": {
+    "@types/i18next-xhr-backend": "^1.4.2",
     "@types/react-copy-to-clipboard": "^5.0.7",
     "@types/react-router-hash-link": "^2.4.9"
   }

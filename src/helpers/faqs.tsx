@@ -307,7 +307,7 @@ export const faqData: ITEM[] = [
           I would describe myself as a passionate and determined individual.
           Beyond coding, I've got a diverse background in Tech having worked as
           a Full Stack Developer, a Network System Administrator and IT Support.
-          Proudly, I'm also a co-founder and Tech Lead of ZULA.
+          Proudly, I'm also a co-founder and CTO of ZULA.
         </p>
         <p>
           Outside of work, I enjoy cooking traditional family dishes and

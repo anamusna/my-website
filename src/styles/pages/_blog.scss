@@ -1,14 +1,25 @@
 .page-blog {
-  .banner {
-    &-image {
-      @extend .shadow;
-  
-      @include media-breakpoint-up(md) {
-       //box-shadow: $box-shadow-lg;
-     }
+
+  &-img{
+   @include media-breakpoint-up(md) {
+    max-height: 14rem;
     }
+     img{
+      background-size: "cover";
+      background-position: "center";
+      background-repeat: "no-repeat";
+      //height: 14rem;
+     } 
+   }
+  .banner {
+    box-shadow: $box-shadow-lg;
+     @include media-breakpoint-up(md) {
+      box-shadow: none !important;
+    }
+  
     &:hover {
       box-shadow: $box-shadow-lg;
+      @extend .shadow;
     } 
   }  
 }

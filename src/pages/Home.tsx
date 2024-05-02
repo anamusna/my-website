@@ -76,7 +76,7 @@ const Hero = () => {
       <div className="container hero-container pt-4 pt-md-6">
         <div className="mx-auto hero-banner banner banner-image mx-auto banner-image-right">
           <div className="mb-md-4 row banner-row mx-auto h-100">
-            <BannerImage withWork />;
+            <BannerImage withWork />
             <SlideContentWrapper />
           </div>
         </div>
@@ -344,8 +344,8 @@ const Experience = () => {
             <div className="bg-gray-3 rounded-4 mb-4 pt-4 px-md-4 pt-md-5 pb-md-1">
               {experiences.map((experience, index) => (
                 <div className="experience mb-md-5" key={experience.company}>
-                  <div className="mx-auto d-flex flex-md-row">
-                    <div className="px-1 px-md-2 col-12 d-flex flex-column flex-md-row align-items-md-center">
+                  <div className="mx-auto d-flex flex-column px-1 px-md-2">
+                    <div className="col-12 d-flex flex-column flex-md-row align-items-md-center">
                       <div className="order-1 order-md-0 col-md-3">
                         <h3 className="p-md-2 company-text fw-normal mb-4">
                           {t(`${experience.company}`)}
@@ -357,6 +357,7 @@ const Experience = () => {
                         </h3>
                       </div>
                     </div>
+                    <p className="body-text ">{t(`${experience.subText}`)}</p>
                   </div>
                   <SlideContent
                     className="description ps-2 p-2 pt-md-4 col-md-9 offset-md-3 mb-4"
