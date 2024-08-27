@@ -8,6 +8,7 @@ import Header from "./components/Header";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Testimonials from "./pages/Testimonials";
+import Workflow from "./pages/Workflow";
 import { useTranslation } from "react-i18next";
 import { useTranslatedPaths } from "./helpers/use-translated-paths";
 
@@ -54,6 +55,7 @@ const AppRouter = () => {
         <Route path="/:lang/referenzen" element={<Navigate replace to={`${currentLang}${testimonials}`} />} />
         <Route path="/:lang/über" element={<Navigate replace to={`${currentLang}${about}`} />} />
         <Route path="/:lang/kontakt" element={<Navigate replace to={`${currentLang}${contact}`} />} />
+        <Route path="/:lang/flow" element={<Workflow />} />
       </Routes>
       <Footer />
     </>
