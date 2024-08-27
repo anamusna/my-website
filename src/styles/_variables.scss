@@ -31,21 +31,23 @@ $purple: rgb(153, 0, 204); // #9900cc
 $purple-1: rgb(223, 159, 189); //#df9fbd
 $purple-2: rgb(210, 77, 255); //#FFA589
 $purple-3: rgb(236, 179, 255); //#FFE2D9
-$yellow: rgb(255, 236, 97); //#ffec61
+$yellow: rgb(230, 203, 0); //#ffec61
 $blue: rgb(51, 51, 204); //#3333cc
-$blue-1: rgb(75, 126, 197); //#4B7EC5
+$blue-1: rgb(10, 102, 194); 
+//$blue-1: rgb(75, 126, 197); //#4B7EC5
 $blue-2: rgb(153, 196, 255); //#99C4FF
 $blue-3: rgb(208, 228, 255); //#D0E4FF
-$red: rgb(252, 21, 21); //#fc1515
+$red: rgb(255, 0, 0); //#fc1515
 $green: rgb(1, 169, 129); //#01A981
-$green-1: rgb(205, 254, 243);
-$green-2: rgb(97, 223, 162);
+$green-1: rgba(205, 254, 243, .2);
+$green-2: rgb(0, 255, 0);
 $white: rgb(255, 255, 255); //#FFFFFF
 $gray: rgb(128, 128, 128); //#808080
 $gray-1: rgb(201, 201, 201); //#C9C9C9
 $gray-2: rgb(230, 230, 230); //#E6E6E6
 $gray-3: rgb(248, 248, 248); //#F8F8F8
-$black: rgb(49, 49, 49); //#313131
+$dark: rgb(49, 49, 49); //#313131
+$black: rgb(0, 0, 0); //#000000
 
 $grays: (
     "0": $gray,
@@ -69,6 +71,7 @@ $colors: (
     "green-1": $green-1,
     "green-2": $green-2,
     "black": $black,
+    "dark": $dark,
     "white": $white,
     "gray": $gray,
     "gray-1": $gray-1,
@@ -94,7 +97,7 @@ $success: $green;
 $success-1: $green-1;
 $success-2: $green-2;
 $light: $white;
-$dark: $black;
+$dark: $dark;
 $white: $white;
 $black: $black;
 $yellow: $yellow;
@@ -117,7 +120,7 @@ $brand-colors: (
     success-1: $green-1,
     success-2: $green-2,
     light: $white,
-    dark: $black,
+    dark: $dark,
     white: $white,
     black: $black,
     yellow: $yellow,
@@ -229,8 +232,6 @@ $form-invalid-border-color: $danger;
 $form-select-indicator-color: $success;
 $form-switch-bg-image-color: $success;
 
-$body-bg: $black;
-
 $body-emphasis-color: $primary;
 $body-secondary-color: $secondary;
 $body-tertiary-color: $success;
@@ -294,8 +295,8 @@ $position-values: (
 // Settings for the `<body>` element.
 
 
-$body-bg: $white;
-$body-color: $black;
+$body-bg: $black;
+$body-color: $white;
 $body-text-align: null !default;
 
 
@@ -420,6 +421,7 @@ $box-shadow: 0 .5rem 1rem rgba($black, .15) !default;
 $box-shadow-sm: 0 .125rem .25rem rgba($black, .075) !default;
 $box-shadow-md: 0 .5rem 1.875rem rgba($black, .075) !default;
 $box-shadow-lg: 0 1rem 3rem rgba($black, .175) !default;
+$box-shadow-xl: .3rem .4rem rgba($gray, 0.5);
 $box-shadow-inset: inset 0 1px 2px rgba($black, .075) !default;
 // scss-docs-end box-shadow-variables
 
@@ -465,8 +467,8 @@ $opacity-lg: .8;
 
 // scss-docs-start font-variables
 // stylelint-disable value-keyword-case
-$font-family-sans-serif: 'Didact Gothic', 
-     Arial,
+$font-family-sans-serif:  Arial,
+'Didact Gothic', 
     system-ui,
     -apple-system,
     "Segoe UI",
@@ -480,8 +482,8 @@ $font-family-sans-serif: 'Didact Gothic',
     "Segoe UI Symbol",
     "Noto Color Emoji" !default;
 ; 
-$font-family-monospace: "Didact Gothic",
-    Arial,
+$font-family-monospace:  Arial,
+'Didact Gothic', 
     SFMono-Regular,
     Menlo,
     Monaco,
@@ -915,7 +917,7 @@ $form-check-inline-margin-end: 1rem !default;
 
 
 // scss-docs-start form-switch-variables
-$form-switch-color: $secondary;
+$form-switch-color: $white;
 $form-switch-width: 2em !default;
 $form-switch-padding-start: $form-switch-width + .5em !default;
 $form-switch-bg-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='3' fill='#{$form-switch-color}'/></svg>") !default;
@@ -923,11 +925,11 @@ $form-switch-border-radius: $form-switch-width !default;
 $form-switch-transition: background-position .15s ease-in-out !default;
 
 
-$form-switch-focus-color: $secondary;
+$form-switch-focus-color: $white;
 $form-switch-focus-bg-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='3' fill='#{$form-switch-focus-color}'/></svg>") !default;
 
 
-$form-switch-checked-color: $white;
+$form-switch-checked-color: $secondary;
 $form-switch-checked-bg-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='3' fill='#{$form-switch-checked-color}'/></svg>") !default;
 $form-switch-checked-bg-position: right center !default;
 // scss-docs-end form-switch-variables

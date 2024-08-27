@@ -30,6 +30,7 @@
   &-image {
     img {
       @extend .mh-100, .img-fluid, .w-100;
+      display: block;
     }
 
     &-right {

@@ -1,11 +1,11 @@
 html {
   box-sizing: border-box;
+  overflow-y: hidden;
 }
 
 html,
 body,
 #root,
-#body,
 #app,
 #app>div {
   color: $black;
@@ -14,11 +14,40 @@ body,
   margin: 0;
   overflow-y: inherit;
   overflow-x: hidden;
+  scroll-padding-top: 3rem;
+  scroll-behavior: smooth;
 }
 
-a {
- // font-weight: $font-weight-bold;
-  cursor: pointer; 
+.animated-text {
+  text-transform: uppercase;
+ background-image: linear-gradient(
+   -225deg,
+   $secondary 0%,
+   $primary 29%,
+   $danger 67%,
+   $yellow 100%
+ );
+
+ background-size: auto auto;
+ background-clip: border-box;
+ background-size: 200% auto;
+ background-clip: text;
+ text-fill-color: transparent;
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ animation: textclip 2s linear infinite;
+ display: inline-block;
+}
+
+@keyframes textclip {
+ to {
+   background-position: 200% center;
+ }
+}
+
+a,
+.link {
+  cursor: pointer;
 }
 
 .text-underline {
@@ -47,14 +76,24 @@ h3 {
 
   @include media-breakpoint-up(md) {
     font-size: $display-font-size !important;
-  } 
+  }
+}
+
+.blog-title{
+  font-size: 1.6rem;
+
+  @include media-breakpoint-up(md) {
+    font-size: 1.5rem;
+  }
 }
 
 .hero-text {
-   font-size: 1.3rem;
-   @include media-breakpoint-up(md) {
+
+  font-size: 1.2rem;
+
+  @include media-breakpoint-up(md) {
     font-size: 1.5rem;
-  } 
+  }
 }
 
 .underline {

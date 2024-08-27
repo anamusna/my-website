@@ -1,18 +1,88 @@
 .link-active {
-  @extend .btn-gradient;
+  
 }
 
-.header-brand-text {
-  @extend .d-block,
-  .m-auto,
-  .p-2,
-  .py-3;
-  font-size: 1rem;
-  font-family: $font-family-monospace;
+.logo-container {
+  position: relative;
+
+  //background-color: $gray;
+  &:before {
+    @extend .bg-primary, .text-secondary;
+    content: "";
+    color: $secondary !important;
+    position: absolute;
+    top: calc(100% - 2px);
+    left: 0;
+    width: 100%;
+    height: 2px;
+    transform-origin: center center;
+    transform: scaleX(0);
+    animation: line-animation 3s ease alternate;
+  }
+
+  .logo {
+    animation: clip-path-reveal-1 3s ease alternate;
+  }
+}
+
+@keyframes line-animation {
+  0% {
+    transform: scaleX(0);
+  }
+
+  15% {
+    transform: scaleX(0);
+  }
+
+  20%,
+  25% {
+    transform: scaleX(1);
+    top: calc(100% - 2px);
+  }
+
+  50% {
+    transform: scaleX(1);
+    top: 0px;
+  }
+
+  70% {
+    transform: scaleX(0.2);
+    top: 0px;
+  }
+
+  80%,
+  100% {
+    transform: scaleX(0.2);
+    top: 0px;
+  }
+}
+
+@keyframes clip-path-reveal-1 {
+
+  0%,
+  25% {
+    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+  }
+
+  50% {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+}
+
+.header-item {
+  font-size: 1.1rem;
 
   @include media-breakpoint-up(md) {
     font-size: 1.3rem !important;
   }
+}
+
+.header-brand-text {
+  @extend .d-block, .header-item,
+  .m-auto,
+  .p-2,
+  .py-3;
+
 }
 
 .scrolled {
@@ -20,13 +90,12 @@
 }
 
 .header {
-  @extend .position-fixed, .bg-white, .shadow;
+  @extend .position-fixed, .shadow;
   z-index: 1021;
   top: 0;
   right: 0;
   left: 0;
 
-  //border-bottom: 1px solid $gray-1;
   @include media-breakpoint-up(md) {
     background-clip: padding-box;
     top: 0;
@@ -55,8 +124,6 @@
     @include media-breakpoint-up(md) {
       width: auto;
       position: relative;
-      /*  right: 5rem;
-      width: 20rem; */
     }
   }
 
@@ -78,14 +145,19 @@
   &-brand {
     @extend .p-0;
 
-    img {
-      height: 4rem;
-      width: 4rem;
+    .img-container {
+      height: 5rem;
+      width: 5rem;
+    }
 
-      @include media-breakpoint-up(md) {
-        height: 5rem;
-        width: 5rem;
-      }
+    .header-brand-img {
+      @extend .p-1, .rounded-circle;
+      max-height: 3rem;
+      max-width: 3rem;
+    }
+
+    img {
+      background-position: 'cover';
     }
   }
 
@@ -103,10 +175,8 @@
   }
 
   &-navbar {
-    @extend .bg-white,
-    .navbar,
+    @extend .navbar,
     .navbar-expand-md,
-    .navbar-light,
     .sticky-top,
     .flex-wrap,
     .p-0;
@@ -119,7 +189,7 @@
   }
 
   &-menu {
-    @extend .bg-white, .p-0, .text-start;
+    @extend .p-0, .text-start;
     position: absolute;
     border: 0 solid rgba(39, 39, 41, 0.15);
     border-radius: none;
@@ -133,15 +203,6 @@
       width: auto;
       z-index: 1022;
       position: relative;
-      /*  right: 5rem;
-      width: 20rem; */
-    }
-
-    &.open {
-      //@extend .shadow;
-      /* position: absolute;
-      */
-      //border-radius: $border-radius-lg;
     }
 
     &-action {
@@ -153,8 +214,6 @@
       .bg-transparent,
       .d-block,
       .m-auto,
-      .p-3,
-      .py-3,
       .position-relative,
 
       .w-100;
@@ -164,24 +223,21 @@
       white-space: nowrap;
 
       &:after {
-        @extend .border-bottom,
-        .border-gray-1,
-        .d-block;
+        @extend .d-block,
+        .position-absolute;
         content: "";
         bottom: 0;
         left: 0;
         right: 0;
-        position: absolute;
 
         @include media-breakpoint-up(md) {
-          position: relative;
+          //  position: relative;
         }
       }
 
       &-link {
-        font-size: 1.3rem !important;
-        font-family: $font-family-monospace;
-        border-radius: 6rem;
+        @extend .header-item;
+        // border-radius: 6rem;
 
         &:active,
         &:focus {
@@ -189,23 +245,13 @@
         }
 
         &:hover {
-          @extend .bg-white, .text-primary;
+          @extend .text-primary;
         }
-      }
 
-      &:last-child {
-        border-bottom-right-radius: 0;
-        border-bottom-left-radius: 0;
-      }
-
-      &:first-child {
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
-      }
-
-      &.selected,
-      &.selected:hover {
-        @extend .text-primary, .bg-secondary;
+        &.selected,
+        &.selected:hover {
+          @extend .text-primary, .bg-secondary;
+        }
       }
 
       &.show {
@@ -294,12 +340,12 @@
   }
 
   &-submenu {
-    @extend .position-fixed, .flex-column, .bg-white, .w-50;
+    @extend .position-fixed, .flex-column;
     z-index: 1036;
     top: 100%;
     left: 0;
     width: 100%;
-    //border-bottom: 1px solid $gray-1;
+    max-width: 15rem;
     background-clip: padding-box;
     transition:
       box-shadow 800ms cubic-bezier(0.17, 0.04, 0.03, 0.94),
@@ -307,18 +353,14 @@
       top 800ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
 
     @include media-breakpoint-up(md) {
-      max-width: 10rem;
-
+      max-width: 18rem;
+      width: auto;
       background-clip: padding-box;
       transition:
         box-shadow 800ms cubic-bezier(0.17, 0.04, 0.03, 0.94),
         opacity 800ms cubic-bezier(0.17, 0.04, 0.03, 0.94),
         top 800ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
 
-    }
-
-    .header-menu-item {
-      // @extend .ps-5;
     }
   }
 }

@@ -1,417 +1,271 @@
-import React, { useEffect, useRef, useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useContext, useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faArrowUp,
-  faChevronRight,
-  faEyeSlash,
+  faArrowRightLong,
+  faDotCircle,
 } from "@fortawesome/free-solid-svg-icons";
 import { useTranslation } from "react-i18next";
-import Avatar from "../components/Avatar";
-import BannerImage from "../components/BannerImage";
-import CarouselComponent from "../components/CarouselMulti";
-import { ColophonSocialMedia } from "../components/ColophonSocialMedia";
-import YoutubeEmbed from "../components/Youtube";
-import { SlideContent, useSlideAnimation } from "../components/Sliders";
-import { FooterMain } from "../components/Footer";
-import { useBackToTop } from "../helpers/back-to-top";
-import { useTranslatedPaths } from "../helpers/use-translated-paths";
-import { responsive } from "../styles/responsive";
-import development from "../styles/images/development.svg";
-import app from "../styles/images/app.svg";
-import cloud from "../styles/images/cloud.svg";
-import code from "../styles/images/code.svg";
-import complex from "../styles/images/complex.svg";
-import database from "../styles/images/database.svg";
-import deployment from "../styles/images/deployment.svg";
-import documentation from "../styles/images/documentation.svg";
-import forwards from "../styles/images/forwards.svg";
-import lightbulb from "../styles/images/light-bulb.svg";
-import optimization from "../styles/images/optimization.svg";
-import planning from "../styles/images/planning.svg";
-import review from "../styles/images/review.svg";
-import Work from "../components/Work";
-import useHeaderBackgroundChange from "../helpers/use-header-scroll";
+import { SlideContent } from "../components/Sliders";
+import { useScrollToDiv, useBackToTop } from "../helpers/back-to-top";
+import { useThemeStyles } from "../helpers/use-theme-styles";
+import About from "../components/About";
+import {
+  ColophonSocialMedia,
+  SocialMedia,
+  SocialMediaItems,
+} from "../components/ColophonSocialMedia";
 import Blog from "./Blog";
+import Contact from "./Contact";
+import WhatIOffer from "./Services";
+import Processes from "./Processes";
+import Technologies from "./Technologies";
+import CarouselComponent from "../components/CarouselMulti";
+import { WordFlick } from "../components/TypeAnimation";
+
+import Background from "../styles/images/background.jpg";
+import { ThemeContext } from "../ThemeContext";
+import { Link } from "react-router-dom";
+import { Testimonial } from "../pages/Testimonials";
+import { useTranslatedPaths } from "../helpers/use-translated-paths";
+
+import forwards from "../styles/images/forwards.svg";
+import forwards1 from "../styles/images/forwards1.svg";
+
+import { defaultResponsive } from "../styles/responsive";
+
+import Fabi from "../styles/images/testimony/fabi.jpeg";
+import Lea from "../styles/images/testimony/lea.jpeg";
+import Gregor from "../styles/images/testimony/gregor.jpeg";
+import Nora from "../styles/images/testimony/nora.jpeg";
+import Daphne from "../styles/images/testimony/daphne.jpeg";
+import Thomas from "../styles/images/testimony/thomas.jpeg";
+import Seb from "../styles/images/testimony/seb.jpeg";
+import Fuku from "../styles/images/testimony/fuku.jpeg";
+import Annika from "../styles/images/testimony/annika.jpeg";
 
 const Home = () => {
   const [divRef, goToTop] = useBackToTop();
+  const [sectionRefs, goToSection] = useScrollToDiv();
+  const { t, i18n } = useTranslation();
 
-  return (
-    <div className="page-home mt-5 position-relative" ref={divRef}>
-      <Hero />
-      <div className="hero-holder slide-content">
-        <AboutMe />
-        <Technologies />
-        <WhatIOffer />
-        <Experience />
-        <Testimonials />
-        <Processes />
-        <Blog />
-        <div className="mb-4 mx-auto d-flex flex-row text-center align-items-center justify-content-center">
-          <div
-            onClick={goToTop}
-            role="button"
-            className="p-md-4 slide-content-from-avatar"
-          >
-            <Avatar
-              iconColor=""
-              icon={faArrowUp}
-              size={"md"}
-              dot={false}
-              iconClassName="text-center mx-auto"
-              className="label text-center mx-auto"
-            />
-          </div>
-        </div>
-        <FooterMain />
-      </div>
-    </div>
+  const { theme } = useContext(ThemeContext);
+  const {
+    background,
+    backgroundColor,
+    backgroundVariant,
+    contactBackground,
+    textColor,
+    horizontalColor,
+    serviceBackground,
+    borderColor,
+  } = useThemeStyles(theme);
+
+  const horizontalLine = () => (
+    <div
+      className={`horizontal-line shadow col-11 col-md-9 mx-auto row ${horizontalColor}`}
+    ></div>
   );
-};
-
-const Hero = () => {
-  return (
-    <div className="hero-holder position-relative bg-gradient-horizontal">
-      <div className="container hero-container pt-4 pt-md-6">
-        <div className="mx-auto hero-banner banner banner-image mx-auto banner-image-right">
-          <div className="mb-md-4 row banner-row mx-auto h-100">
-            <BannerImage withWork />
-            <SlideContentWrapper />
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
-
-const SlideContentWrapper = () => {
-  const { t } = useTranslation();
-
-  return (
-    <SlideContent
-      className="slide-content-wrapper home-hero-text-wrapper banner-body"
-      from="left"
-      slideElement={
-        <div className="d-flex flex-column h-100">
-          <div className="px-md-4 text-md-start mb-4 animated-hero">
-            <div className="d-flex d-md-none">
-              <Work />
-            </div>
-            <h3 className="text-start">{t("home.hero.title")}</h3>
-            <h1 className="ms-md-5 home-hero-text title text-center text-md-start">
-              Ansu
-            </h1>
-          </div>
-          <div className="mb-4 mt-auto justify-items-center">
-            <p className="home-hero-text hero-text">{t("home.hero.text")}</p>
-          </div>
-          <ul className="d-none d-md-flex text-secondary m-auto d-flex list-unstyled mb-4 mb-md-0 gap-4">
-            {ColophonSocialMedia}
-          </ul>
-        </div>
-      }
-    />
-  );
-};
-
-const AboutMe = () => {
-  const { t } = useTranslation();
-  const longBio: any[] = t("about.longBio.text", { returnObjects: true });
-  const slideRef = useRef<HTMLDivElement>(null);
-  useSlideAnimation(slideRef, "bottom");
 
   return (
     <div
-      className="container hero-container mb-4 pt-4 pt-md-5 slide-content-from-bottom"
-      ref={slideRef}
-      id="about"
+      className={`page-home mt-md-5 mt-4 position-relative ${backgroundColor}`}
+      ref={divRef}
     >
-      <div className="row my-md-4">
-        <div className="row mx-auto ">
-          <p className="text-black home-hero-text body-text fw-normal mb-5">
-            {t("home.about.text")}
-          </p>
-        </div>
-
-        <div className="row col-12 mx-auto mb-4 mb-md-5">
-          <div className="accordion accordion-flush" id="skill">
-            <div className="accordion-item">
-              <h3
-                className="value-title text-center accordion-header"
-                id={`#heading`}
-              >
-                <button
-                  className="text-uppercase h3 accordion-button collapsed text-start"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target={`#collapse`}
-                  aria-expanded="false"
-                  aria-controls={`collapse`}
-                >
-                  {t("about.title")}
-                </button>
-              </h3>
-
-              <div
-                id={`collapse`}
-                className="accordion-collapse collapse"
-                aria-labelledby={`heading`}
-                data-bs-parent="#skill"
-              >
-                <div className="accordion-body">
-                  {longBio.map((text, index) => (
-                    <p key={index} className="body-text">
-                      {t(text)}
-                    </p>
-                  ))}
-                  <div className="position-relative mt-4 flex-column col-md-10 mx-auto">
-                    <p className="mb-4 text-start body-text text-md-center">
-                      {t("about.youtube")}
-                    </p>
-                    <YoutubeEmbed embedId="nhw-uRjtiPI" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="horizontal-line row bg-gray-2 col-10 col-md-12"></div>
-    </div>
-  );
-};
-
-const Technologies = () => {
-  const slideRef = useRef<HTMLDivElement>(null);
-  const { t } = useTranslation();
-
-  const technologies: any[] = t("technologies", { returnObjects: true });
-
-  useSlideAnimation(slideRef, "bottom");
-
-  return (
-    <div className="container hero-container pt-4 mt-md-5" id="technologies">
-      <div className="row mb-4">
-        <div className="col-12 mx-auto">
-          <div className="d-flex gap-4">
-            <img
-              src={forwards}
-              className="img-fluid"
-              alt="services"
-              style={{ width: "1.8rem", height: "1.8rem" }}
-            />
-            <h3 className="text-uppercase value-title mb-4 mb-md-5 text-start">
-              {t(`about.skillTitle`)}
-            </h3>
-          </div>
-
-          <div
-            className="col-12 row  mx-auto d-flex mb-4 slide-content-from-bottom"
-            ref={slideRef}
-          >
-            {technologies.map((technology, index) => (
-              <div className="col-auto mb-md-4" key={technology.title}>
-                <label className="fw-boldest">{technology.title}</label>
-                <div className="d-flex flex-wrap mb-2 gap-2">
-                  {technology.tools.map((tool: any, toolIndex: number) => (
-                    <div
-                      key={toolIndex}
-                      className="technology d-flex text-center flex-wrap about-badge gap-2 text-start badge rounded-1 align-items-center"
-                    >
-                      <img
-                        className="technology-image img-fluid"
-                        alt="technology"
-                        style={{
-                          width: "1.5rem",
-                          height: "1.5rem",
-                          backgroundSize: "cover",
-                          backgroundPosition: "center",
-                        }}
-                        src={require(`../styles/images/technologies/${tool.image}`)}
-                      />
-                      <p className="technology-text my-1">{t(tool.name)}</p>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-      <div className="horizontal-line row bg-gray-2 col-10 col-md-12"></div>
-    </div>
-  );
-};
-
-const WhatIOffer = () => {
-  const { t } = useTranslation();
-  const services: any[] = t("services", {
-    returnObjects: true,
-  });
-
-  const serviceImages: any = {
-    development,
-    app,
-    cloud,
-    database,
-    optimization,
-    complex,
-  };
-
-  const serviceKeys = Object.keys(serviceImages);
-
-  return (
-    <div className="services" id="services">
-      <div className="container hero-container mb-4 mt-md-6">
-        <div className="mb-4 my-5 mb-md-5">
-          <div className="mx-auto">
-            <div className="ms-2 ms-md-4 d-flex gap-4">
-              <img
-                src={forwards}
-                className="img-fluid"
-                alt="services"
-                style={{ width: "1.8rem", height: "1.8rem" }}
-              />
-              <h3 className="text-uppercase value-title mb-4 mb-md-5 text-start">
-                {t("serviceTitle")}
-              </h3>
-            </div>
-
-            <div className="hero-row">
-              {services.map((service: any, index) => (
+      <section
+        id={`${t("header.links.home.url")}`}
+        className={`hero-wrapper d-flex flex-column ${backgroundVariant}`}
+        ref={sectionRefs.home}
+      >
+        <div className="hero-holder position-relative hero-headline">
+          <div className="container hero-container">
+            <div className="col-md-10 mx-auto banner banner-image mx-auto banner-image-right">
+              <div className="row banner-row mx-auto h-100">
                 <SlideContent
-                  className="col-md-4"
-                  from="bottom"
-                  key={service.title}
+                  className="mt-4 mt-md-5 col-md-10 mx-auto mx-md-0"
+                  from="left"
                   slideElement={
-                    <div className="card h-100">
-                      <div className="card-head flex-column mx-auto">
-                        <img
-                          src={serviceImages[serviceKeys[index]]}
-                          className="card-img-top img-fluid"
-                          alt="services"
-                        />
-                        <h3 className="value-title text-center">
-                          {service.title}
-                        </h3>
+                    <div className="d-flex flex-column h-100">
+                      <div
+                        className={`h3 text-start d-flex text-wrap flex-wrap ${textColor}`}
+                      >
+                        {t("home.hero.title")}{" "}
+                        <h1 className={`ms-2 title mt-md-4 ${textColor}`}>
+                          Ansu
+                        </h1>
                       </div>
-                      <div className="d-flex card-body">
-                        <p className="text-start body-text text-md-center ">
-                          {service.description}
+                      <div className="mt-md-auto">
+                        <p
+                          className={`mb-5 home-hero-text hero-text ${textColor}`}
+                        >
+                          {t("home.tagline")}
                         </p>
                       </div>
+                      <ul
+                        className={`d-flex list-unstyled gap-4 ${textColor}`}
+                      >
+                        {SocialMediaItems.map((item, index) => (
+                          <SocialMedia key={index} item={item} index={index} />
+                        ))}
+                      </ul>
                     </div>
                   }
                 />
-              ))}
+              </div>
             </div>
           </div>
         </div>
-        <div className="horizontal-line row bg-gray-2 col-10 col-md-12"></div>
-      </div>
-    </div>
-  );
-};
-
-const Experience = () => {
-  const { t, i18n } = useTranslation();
-  const experiences: any[] = t("about.experience", { returnObjects: true });
-  const slideRef = useRef<HTMLDivElement>(null);
-  useSlideAnimation(slideRef, "bottom");
-
-  const cvLink =
-    i18n.language === "de"
-      ? "https://drive.google.com/file/d/1_L5NbGdANHJCJEg7Oh__r9yHH2goSsYJ/view?usp=sharing"
-      : "https://drive.google.com/file/d/1JScDayvwjoDI4koNPrE84D8N7kE7H5qH/view?usp=sharing";
-
-  return (
-    <div className="container hero-container pt-4 pt-md-5" id="experience">
-      <div className="row mb-4">
-        <div className="">
-          <div className="d-flex gap-4 mb-4 mb-md-5">
-            <img
-              src={forwards}
-              className="img-fluid"
-              alt="services"
-              style={{ width: "1.8rem", height: "1.8rem" }}
-            />
-            <h3 className="text-uppercase value-title text-start">
-              {t("about.experienceTitle")}
-            </h3>
-          </div>
-          <div className="mb-4 mb-md-5">
-            <div className="bg-gray-3 rounded-4 mb-4 pt-4 px-md-4 pt-md-5 pb-md-1">
-              {experiences.map((experience, index) => (
-                <div className="experience mb-md-5" key={experience.company}>
-                  <div className="mx-auto d-flex flex-column px-1 px-md-2">
-                    <div className="col-12 d-flex flex-column flex-md-row align-items-md-center">
-                      <div className="order-1 order-md-0 col-md-3">
-                        <h3 className="p-md-2 company-text fw-normal mb-4">
-                          {t(`${experience.company}`)}
-                        </h3>
-                      </div>
-                      <div className="order-0 order-md-1 col-md-9">
-                        <h3 className="value-title">
-                          {t(`${experience.position}`)}
-                        </h3>
-                      </div>
-                    </div>
-                    <p className="body-text ">{t(`${experience.subText}`)}</p>
-                  </div>
-                  <SlideContent
-                    className="description ps-2 p-2 pt-md-4 col-md-9 offset-md-3 mb-4"
-                    from="bottom"
-                    slideElement={
-                      <div className="">
-                        <ul className="">
-                          {experience.description.map((description: any) => (
-                            <li className="card-text" key={description}>
-                              <p className="body-text ">
-                                {t(`${description}`)}
-                              </p>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    }
-                  />
-                </div>
-              ))}
+        <div className="mb-n1 container col-md-10 mx-auto mt-auto d-flex flex-wrap align-items-center">
+          <div className="service all position-relative row">
+            <div
+              className={`d-none d-md-flex service-element lefter text-center position-relative ${serviceBackground}`}
+            >
+              <div className={`text text-center ${textColor}`}>
+                {t("home.services.frontend")}
+              </div>
             </div>
-            <div className="resume text-center">
-              <a
-                className="btn btn-lg bt-icon btn-outline-primary text-uppercase"
-                href={cvLink}
-                target="_blank"
-                rel="noreferrer"
+            <div
+              className={`d-none d-md-flex service-element left text-center position-relative ${serviceBackground}`}
+            >
+              <div className={`text text-center ${textColor}`}>
+                {t("home.services.backend")}
+              </div>
+            </div>
+            <div
+              className={`service-element center text-center position-relative ${serviceBackground}`}
+            >
+              <WordFlick />
+              <div
+                className={`d-none d-md-inline  text text-center ${textColor}`}
               >
-                {t("about.cv")}
-                <FontAwesomeIcon
-                  icon={faEyeSlash}
-                  className=""
-                  fixedWidth
-                  //size="xs"
-                />
-              </a>
+                {t("home.services.software")}
+              </div>
+            </div>
+            <div
+              className={`d-none d-md-flex service-element right text-center position-relative ${serviceBackground}`}
+            >
+              <div className={`text text-center ${textColor}`}>
+                {t("home.services.ui/ux")}
+              </div>
+            </div>
+            <div
+              className={`d-none d-md-flex service-element righter text-center position-relative ${serviceBackground}`}
+            >
+              <div className={`text text-center ${textColor}`}>
+                {t("home.services.cloud")}
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div className="horizontal-line bg-gray-2 col-10 col-md-12 mt-4"></div>
+      </section>
+
+      <section
+        id={`${t("header.links.about.url")}`}
+        className={background}
+        ref={sectionRefs.about}
+      >
+        <About />
+      </section>
+
+      <section
+        id={`${t("header.links.services.url")}`}
+        className={backgroundColor}
+        ref={sectionRefs.services}
+      >
+        {horizontalLine()}
+        <WhatIOffer />
+      </section>
+      <section
+        id={`${t("header.links.technologies.url")}`}
+        className={background}
+        ref={sectionRefs.technologies}
+      >
+        {horizontalLine()}
+        <Technologies />
+      </section>
+      <section
+        id={`${t("header.links.process.url")}`}
+        ref={sectionRefs.process}
+      >
+        {horizontalLine()}
+        <Processes />
+      </section>
+      <section
+        id={`${t("header.links.testimonials.url")}`}
+        className={background}
+        ref={sectionRefs.testimonials}
+      >
+        {horizontalLine()}
+        <Testimonials />
+      </section>
+
+      <section id="blog" ref={sectionRefs.blog}>
+        {horizontalLine()}
+        <Blog />
+      </section>
+
+      <section className="hero-holder mb-5">
+        <div className="mt-auto mb-md-4 mx-auto d-flex flex-row text-center align-items-center justify-content-center">
+          <button
+            onClick={() => goToSection("home")}
+            className={`scroll-button slide-content slide-content-from-avatar ${borderColor}`}
+          >
+            <div className="slide-content-from-avatar align-self-end">
+              <FontAwesomeIcon
+                icon={faDotCircle}
+                className={`pt-2 align-self-end text-end ${textColor}`}
+                fixedWidth
+                size="xs"
+              />
+            </div>
+          </button>
+        </div>
+      </section>
+
+      <section
+        className={`page-about hero hero-headline hero-lg position-relative py-md-4 rounded-top-5`}
+        id={`${t("header.links.contact.url")}`}
+        ref={sectionRefs.contact}
+        style={{
+          backgroundImage: `url(${Background})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
+        <div className={`overlay ${contactBackground}`}></div>
+        <div className="content">
+          <Contact />
+        </div>
+      </section>
     </div>
   );
 };
 
 const Testimonials = () => {
   const { t, i18n } = useTranslation();
-  const testimonialsArray: any[] = t("testimonials.groupOne", {
+  const testimonialsArray: any[] = t("testimonials.group", {
     returnObjects: true,
   });
-
   const { testimonials } = useTranslatedPaths(
     t("header.links.testimonials.url")
   );
+
+  const { theme } = useContext(ThemeContext);
+  const themeStyles = useThemeStyles(theme);
+
+  const testimonialGroupImages: any = {
+    Lea,
+    Nora,
+    Thomas,
+    Fuku,
+    Annika,
+    Fabi,
+    Gregor,
+    Daphne,
+    Seb,
+  };
+
+  const testimonialGroup1Keys = Object.keys(testimonialGroupImages);
 
   const [currentTestimonialIndex, setCurrentTestimonialIndex] = useState(0);
 
@@ -429,181 +283,81 @@ const Testimonials = () => {
     }, 5000);
 
     return () => clearInterval(interval);
-  }, [testimonialsArray, currentTestimonialIndex]);
+  }, [testimonialsArray]);
 
   return (
-    <div className="container mt-md-5" id="testimonials">
-      <div className="mx-auto banner banner-features">
-        <div className="hero-row row">
-          <div className="col-12 mx-auto d-flex justify-content-between mt-4 mb-4 p-2">
-            <div className="d-flex gap-4">
-              <img
-                src={forwards}
-                className="img-fluid"
-                alt="services"
-                style={{ width: "1.8rem", height: "1.8rem" }}
-              />
-              <h3 className="text-uppercase value-title text-black text-start">
-                {t("testimonials.title")}
-              </h3>
-            </div>
-
-            <div className="hero-button-container d-none d-md-block">
-              <Link
-                className="btn btn-lg bt-icon btn-outline-primary text-uppercase"
-                to={`/${i18n.language}${testimonials}`}
-              >
-                {t("testimonials.button")}
-                <FontAwesomeIcon
-                  icon={faChevronRight}
-                  className=""
-                  fixedWidth
-                  size="2xs"
-                />
-              </Link>
-            </div>
-          </div>
-
-          <div className="d-flex mb-4">
-            <CarouselComponent
-              responsive={responsive}
-              autoPlay={true}
-              deviceType="desktop"
-              className=""
-              autoPlaySpeed={5000}
-              ssr={true}
-              infinite={true}
-              customTransition="transform 300ms ease-in-out"
-              transitionDuration={500}
-              showDotsOutside={false}
-              showDots={true}
-              partialVisible={true}
-              centerMode={true}
-              afterChange={handleAfterChange}
-            >
-              {testimonialsArray &&
-                testimonialsArray.map((testimonial, i) => (
-                  <div key={testimonial.name} className={`mx-auto mb-4 px-1`}>
-                    <div className="banner banner-shadow rounded-4 p-2 p-md-4">
-                      <div className="gap-4 d-flex bg-gray-3 rounded-4 p-2">
-                        <p className="body-text">
-                          “{t(`testimonials.groupOne.${i}.testimony`)}”
-                        </p>
-                      </div>
-                      <div className="text-start">
-                        <div className="text-end arrow-down mb-2 ms-6"></div>
-                        <div className="d-flex mx-5 align-items-center gap-4">
-                          <div className="label">
-                            {t(`testimonials.groupOne.${i}.name`)}
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-            </CarouselComponent>
-          </div>
-          <div className="d-flex mx-auto justify-content-center align-items-center">
-            <Link
-              className="btn btn-lg bt-icon btn-outline-primary text-uppercase d-md-none"
-              to={`/${i18n.language}${testimonials}`}
-            >
-              {t("testimonials.button")}
-              <FontAwesomeIcon icon={faChevronRight} className=" " fixedWidth />
-            </Link>
-          </div>
-        </div>
-      </div>
-      <div className="horizontal-line bg-gray-2 mx-auto col-10 col-md-12"></div>
-    </div>
-  );
-};
-
-const Processes = () => {
-  const slideRef = useRef<HTMLDivElement>(null);
-  const { t } = useTranslation();
-  const processText: any[] = t("process.text", { returnObjects: true });
-
-  useSlideAnimation(slideRef, "bottom");
-
-  const projectWorkProcesses: any[] = t("process.processes", {
-    returnObjects: true,
-  });
-
-  const projectWorkProcessImages: any = {
-    lightbulb,
-    planning,
-    code,
-    documentation,
-    review,
-    deployment,
-  };
-
-  const projectWorkProcessKeys = Object.keys(projectWorkProcessImages);
-
-  return (
-    <div className="container hero-container mt-5 mt-md-6 mb-4" id="process">
-      <div className="row mb-4 my-md-5" id="my-process">
-        <div className="row mx-auto ">
-          <div className="d-flex gap-4">
+    <div
+      className={`container pt-5 pb-4 ${themeStyles.background}`}
+      id="testimonials"
+    >
+      <div className={`col-md-10 mx-auto banner banner-features `}>
+        <div className="col-12 mx-auto d-flex flex-column mb-4">
+          <h1 className={`hero-title mb-4 text-gray`}>
+            {t("testimonials.title")}
+          </h1>
+          <div className="d-flex gap-2 mb-4">
             <img
-              src={forwards}
+              src={themeStyles.isDarkTheme ? forwards : forwards1}
               className="img-fluid"
               alt="services"
               style={{ width: "1.8rem", height: "1.8rem" }}
             />
-            <h3 className="text-uppercase value-title mb-4 mb-md-5 text-start">
-              {t("process.title")}
+            <h3
+              className={`text-uppercase value-title text-start ${themeStyles.textColor}`}
+            >
+              {t("testimonials.subtitle")}
             </h3>
           </div>
-          <div className="mb-4 mb-md-5">
-            {processText.map((process, index) => (
-              <p className="body-text" key={index}>
-                {process}
-              </p>
-            ))}
-          </div>
-          <div className="row d-flex justify-content-center">
-            {projectWorkProcesses.map((process, index) => (
-              <SlideContent
-                key={process.title}
-                className="col-md-4 mb-4"
-                from="bottom"
-                slideElement={
-                  <div className="card h-100">
-                    <div className="d-flex gap-4  align-items-center mb-4">
-                      <div className="bg-gray-2 p-2 rounded-circle">
-                        <img
-                          className="process-img img-fluid"
-                          alt="process-img"
-                          style={{
-                            backgroundSize: "cover",
-                            backgroundPosition: "center",
-                          }}
-                          src={
-                            projectWorkProcessImages[
-                              projectWorkProcessKeys[index]
-                            ]
-                          }
-                        />
-                      </div>
-                      <div className="col-8 mb-0">
-                        <h3 className="value-title text-start">
-                          {process.title}
-                        </h3>
-                      </div>
-                    </div>
-                    <div className="">
-                      <p className="">{process.text}</p>
-                    </div>
-                  </div>
-                }
-              />
-            ))}
+        </div>
+
+        <div className="row d-flex">
+          <SlideContent
+            from="left"
+            slideElement={
+              <CarouselComponent
+                responsive={defaultResponsive}
+                autoPlay={true}
+                deviceType="desktop"
+                className="mx-auto"
+                wrapperClass="gap-4"
+                autoPlaySpeed={5000}
+                ssr={true}
+                infinite={true}
+                customTransition="transform 300ms ease-in-out"
+                transitionDuration={500}
+                showDotsOutside={true}
+                showDots={true}
+                partialVisible={true}
+                centerMode={true}
+                afterChange={handleAfterChange}
+                arrows={true}
+              >
+                {testimonialsArray &&
+                  testimonialsArray.map((testimonial, index) => (
+                    <Testimonial
+                      testimonial={testimonial}
+                      key={testimonial.name}
+                      className="px-3"
+                      image={
+                        testimonialGroupImages[testimonialGroup1Keys[index]]
+                      }
+                    />
+                  ))}
+              </CarouselComponent>
+            }
+          />
+
+          <div className="d-flex mt-4 mx-auto justify-content-center align-items-center">
+            <Link
+              className={`btn btn-lg bt-icon btn-outline-primary linked-btn text-uppercase ${themeStyles.textColor}`}
+              to={`/${i18n.language}${testimonials}`}
+            >
+              {t("testimonials.button")}
+              <FontAwesomeIcon icon={faArrowRightLong} fixedWidth />
+            </Link>
           </div>
         </div>
       </div>
-      <div className="horizontal-line row bg-gray-2 col-10 col-md-12"></div>
     </div>
   );
 };

@@ -4,36 +4,47 @@ import "react-multi-carousel/lib/styles.css";
 import { responsive as defaultResponsive } from "../styles/responsive";
 
 const CarouselComponent = ({
+  wrapperClass ='',
   responsive = defaultResponsive,
   swipeable = true,
   draggable = true,
-  showDots = false,
+  showDots = true,
+  slidesToSlide = "",
   className = "",
   ssr = true,
-  dotListClass="",
-  infinite = true,
-  autoPlay = true,
+  focusOnSelect = true,
+  rewind = false,
+  arrows = true,
+  minimumTouchDrag = 50,
+  infinite = false,
+  autoPlay = false,
   autoPlaySpeed = 1000,
   keyBoardControl = true,
   customTransition = "all .5",
   transitionDuration = 500,
-  containerClass = `carousel-container mx-auto ${className}`,
-  removeArrowOnDeviceType = [],
+  containerClass = `mx-auto ${className}`,
+  removeArrowOnDeviceType = ["tablet", "mobile"],
   deviceType = "desktop",
-  itemClass = "carousel-item-padding-10-px",
+  dotListClass = "custom-dot-list-style text-primary",
+  itemClass = `inner-container`,
   children,
 }: any) => {
   return (
-    <div className="col-12 ">
+    <div className={`outer-container ${wrapperClass}`}
+    >
       <Carousel
         swipeable={swipeable}
         draggable={draggable}
-        showDots={true}
+        showDots={showDots}
         responsive={responsive}
         ssr={ssr}
-        arrows={false}
         infinite={infinite}
         autoPlay={autoPlay}
+        slidesToSlide={slidesToSlide}
+        focusOnSelect={focusOnSelect}
+        rewind={rewind}
+        arrows={arrows}
+        minimumTouchDrag={minimumTouchDrag}
         autoPlaySpeed={autoPlaySpeed}
         keyBoardControl={keyBoardControl}
         customTransition={customTransition}

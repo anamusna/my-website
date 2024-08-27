@@ -15,7 +15,6 @@
 @import "./base/shadows";
 @import "./base/sliders";
 @import "./base/navbar";
-@import "./base/tabs";
 @import "./base/spacings";
 
 @import "~bootstrap/scss/bootstrap";
@@ -73,13 +72,11 @@
 @import "./components/carousel";
 @import "./components/container";
 @import "./components/dropdown";
-@import "./components/experience";
 @import "./components/heroes";
-@import "./components/home-background";
 @import "./components/icons";
 @import "./components/polygon";
 @import "./components/sliders";
-@import "./components/tabs";
+@import "./components/theme";
 @import "./components/typography";
 @import "./components/zindex";
 
@@ -93,3 +90,4 @@
 @import "./pages/contact";
 @import "./pages/home";
 @import "./pages/testimonials";
+@import "./pages/services";

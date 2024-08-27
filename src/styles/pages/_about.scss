@@ -11,25 +11,91 @@
   }
 }
 
+.background-shadow {
+  // @extend .p-4;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+ // background-color: rgba(0, 0, 0, 0.5); /* Adjust the color and opacity as needed */
+  z-index: 1;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.background-shadow:hover,
+.background-shadow:focus {
+  @extend .p-2;
+  box-shadow: $box-shadow-lg !important;
+  position: relative;
+  z-index: 99999;
+}
+
 .about-badge {
-  @extend .text-secondary-1;
-  border: 1px solid $secondary-1;
-  font-weight: $font-weight-boldest
+  border: 3px solid $black;
+  background-color: $gray-2;
+  font-weight: $font-weight-boldest;
 }
 
 .page-about {
-  .about-title {
+  position: relative;
+  overflow: hidden;
+
+  background-image: inherit;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+ /*  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+              url('../images/background.jpg') center center / cover no-repeat;
+   */
+              .about-title {
     font-size: 1.8rem;
     line-height: $line-height-base;
   }
-    
+
+  .accordion {
+    &-flush {
+      // background-color: $gray-2 !important;
+    }
+
+    &-item {
+      // background-color: $yellow !important;
+    }
+
+    &-title {
+      // @extend .accordion-button;
+      @include media-breakpoint-up(md) {
+       // @extend .text-white
+      }
+    }
+  }
+
+  .accordion-item:hover,
+  .accordion-item:focus {
+    //box-shadow:10px 10px 7px rgba(0,0,0,.7);
+    @extend .border, .border-gray-3;
+    border-radius: 2rem !important;
+    box-shadow: $box-shadow-lg !important;
+    //box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
+  }
+
   .about-img {
     @include media-breakpoint-up(md) {
       border-radius: 50%;
     }
   }
-
- 
 
   &-hero {
     @extend .position-relative, .justify-content-center, .align-items-center;
@@ -49,6 +115,7 @@
 
   .about-hero-content {
     @extend .d-flex, .p-5, .col-md-5, .align-items-center, .flex-column, .justify-content-center;
+
     @include media-breakpoint-up(md) {
       min-height: 35rem;
       min-width: 25rem;
@@ -67,8 +134,7 @@
     top: 0;
     padding: 10%;
     text-align: center;
-    z-index: -1 
-    //transform: translate(-10%, 30%);
+    z-index: -1 //transform: translate(-10%, 30%);
   }
 
   .about-hero {

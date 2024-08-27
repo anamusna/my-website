@@ -3,36 +3,155 @@
     "home": "Home",
     "language": "English",
     "links": {
+      "home": {
+        "label": "Home",
+        "url": "home"
+      },
+      "blog": {
+        "label": "Blog",
+        "url": "blog"
+      },
       "about": {
-        "label": "About",
-        "url": "/about"
+        "label": "Summary",
+        "url": "about"
       },
       "process": {
         "label": "My Process",
-        "url": "/my-process"
+        "url": "process"
       },
       "testimonials": {
         "label": "Testimonials",
-        "url": "/testimonials"
+        "url": "testimonials"
       },
       "contact": {
         "label": "Contact",
-        "url": "/contact"
+        "url": "contact"
+      },
+      "services": {
+        "label": "Services",
+        "url": "services"
+      },
+      "technologies": {
+        "label": "Technologies",
+        "url": "technologies"
+      },
+      "resume": {
+        "label": "Vita",
+        "url": "resume"
       }
     }
   },
+    "info": [
+      {
+        "title": "What I Use",
+        "description": [
+          "* Frontend Development:",
+          "- JavaScript & TypeScript: My primary languages for creating dynamic and interactive web applications.",
+          "- React & React Native: Essential for building responsive user interfaces and mobile apps.",
+          "- HTML5 & CSS3: The backbone of my web design, ensuring clean and accessible layouts.",
+          "- Next.js: Used for server-side rendering and static site generation, boosting performance and SEO.",
+          "- SASS & Bootstrap: Tools that streamline styling, allowing for faster, more efficient design workflows.",
+          "* Backend Development:",
+          "- Node.js & Express: My go-to for building scalable and efficient server-side applications.",
+          "- MongoDB: Preferred for managing large datasets and creating flexible, schema-less databases.",
+          "* Cloud & Infrastructure:",
+          "- AWS: Leveraging cloud services for hosting, storage, and scaling applications.",
+          "- Docker & Kubernetes: Used for containerization and orchestration, ensuring consistent and reliable deployments.",
+          "* Version Control & Collaboration:",
+          "- Git & GitHub: Essential for tracking changes and collaborating with teams on codebases.",
+          "- Bitbucket: Another platform I use for managing code repositories and CI/CD pipelines.",
+          "- Jira & Confluence: Tools that help me stay organized, manage projects, and document processes.",
+          "* Testing & Debugging:",
+          "- Jest & Postman: Crucial for ensuring that my code is robust, bug-free, and functions as intended.",
+          "- Storybook: Used for developing and testing UI components in isolation."
+        ]
+      },
+      {
+        "title": "My Strengths",
+        "description": [
+          "I am adept at problem-solving and thrive in challenging environments where innovative solutions are required. My ability to adapt quickly and my strong technical skills allow me to tackle complex projects and deliver high-quality results. I bring a collaborative spirit to my work, enjoying the exchange of ideas and feedback with colleagues. My dedication to continuous learning keeps me up-to-date with the latest technologies and methodologies, ensuring that my skills remain sharp and relevant.",
+          "My background in sports has instilled a strong sense of discipline and team spirit, which I apply in my professional endeavors. Bringing a positive attitude and good vibes to every situation helps create a motivating and enjoyable work environment. My optimistic outlook and strong problem-solving skills help me navigate challenges effectively and find solutions that work."
+        ]
+      },
+      {
+        "title": "My Values (and What I Value in Others)",
+        "description": [
+          "I deeply value teamwork, integrity, and honesty. I thrive in environments where transparency and proactive problem-solving are the norms. I appreciate colleagues who bring initiative, adaptability, and a collaborative mindset to the table. Respect, diversity, and inclusivity are core principles that I uphold in both my personal and professional life. These values guide my interactions and shape the way I approach challenges, ensuring that every project benefits from a foundation of mutual respect and shared goals."
+        ]
+      },
+      {
+        "title": "What Motivates Me",
+        "description": [
+          "I’m motivated by the opportunity to create technology that makes a real, positive difference in people’s lives. My work at innn.it, change.org, and Zula has allowed me to contribute to projects that empower users and support important social causes. Whether it's optimizing platforms for better access to resources, ensuring the reliability of tools for global advocacy, or creating inclusive digital spaces for children, I’m driven by the impact my work can have on communities and individuals. This passion for meaningful, impactful projects is what fuels my dedication to technology and innovation.",
+          "I also love tackling complex problems and exploring new knowledge. Projects that push the boundaries of what I know excite me and keep me engaged, as they offer the opportunity to grow both personally and professionally while delivering solutions that matter."
+        ]
+      },
+      {
+        "title": "Preferred Working Style",
+        "description": [
+          "I excel in dynamic and collaborative environments where open communication is encouraged and diverse ideas are welcomed. I appreciate workplaces that balance autonomy with teamwork, allowing me to contribute independently while also benefiting from regular feedback and idea exchange with colleagues.",
+          "Creativity and continuous learning are crucial for me, so I value settings that support these aspects and provide a platform for growth and innovation. Finding a balance between having the freedom to tackle challenges in my own way and engaging in collaborative problem-solving is key to my productivity and job satisfaction."
+        ]
+      },
+      {
+        "title": "My Growth Areas",
+        "description": [
+          "I am continuously working on improving my time management skills, particularly in balancing multiple projects with tight deadlines. While I excel in collaborative settings, I am also focusing on enhancing my ability to work independently under pressure. Another area for growth is refining my strategic planning skills to better anticipate long-term project needs and potential obstacles. By addressing these areas, I aim to enhance my overall effectiveness and contribution to team goals."
+        ]
+      },
+      {
+        "title": "What Demotivates Me",
+        "description": [
+          "Rigid work environments and lack of clear communication can be demotivating. I find it challenging to stay engaged in settings where growth is stifled, learning opportunities are limited, and where it feels like my contributions are not valued. A lack of transparency and an absence of collaborative feedback can hinder my enthusiasm, making it difficult to stay motivated. I thrive in environments where open communication, mutual respect, and continuous development are priorities, as these elements foster a more engaging and fulfilling work experience."
+        ]
+      },
+      {
+        "title": "My Blind Spots",
+        "description": [
+          "I tend to get deeply invested in projects that I’m passionate about, sometimes to the point of overcommitting. This can lead to challenges in balancing multiple priorities or recognizing when it's time to delegate tasks. I also have a strong drive to perfect the work I do, which can occasionally slow down progress when seeking that last 1% of improvement. Additionally, because I’m focused on finding the best solutions, I might overlook simpler, more immediate fixes in favor of more complex, long-term strategies. I’m aware of these tendencies and actively work to ensure they don’t hinder project timelines or team dynamics."
+        ]
+      },
+      {
+        "title": "Passions Beyond Development",
+        "description": [
+          "Outside of coding, I have a deep love for sports and I enjoy staying active through various sports particularly football, which has been a lifelong passion. Whether playing or watching, the energy and strategy of the game keep me engaged. I also enjoy exploring new technologies, engaging in community projects and cooking, especially when it comes to preparing traditional family dishes that bring people together. Photography allows me to capture moments and explore new perspectives, while traveling gives me the chance to experience different cultures and broaden my horizons. Spending time with family and friends is something I truly value, as it keeps me grounded and connected to what matters most."
+        ]
+      },
+      {
+        "title": "Other",
+        "description": [
+          "In addition to my technical and professional skills, I bring a global perspective and a passion for making a positive impact through technology. My experience working across different sectors and with diverse teams has broadened my understanding of various user needs and industry trends. I am committed to leveraging this experience to drive meaningful projects that contribute to both organizational success and societal betterment."
+        ]
+      }
+    ],  
+
   "home": {
     "work": "Available for work",
     "location": "Berlin, GER",
+    "read": "read",
+    "tagline": "Full-Stack Developer & Technical Co-Founder based in Berlin, specializing in building scalable, high-performance web and mobile applications with JavaScript, TypeScript, React, React Native, Next.js, MongoDB, Node.js, AWS, Docker, and Kubernetes, among others.",
     "language": {
       "value": "english",
       "label": "English"
+    },
+    "services": {
+      "software": "Software Engineering",
+      "frontend": "Front-End Development",
+      "backend": "Back-End Development",
+      "ui/ux": "UX/UI Design",
+      "cloud": "Infrastructure Optimization"
+    },
+    "links": {
+      "about": "About Me",
+      "process": "My Process",
+      "testimonials": "Testimonials",
+      "contact": "Contact"
     },
     "hero": {
       "title": "Hey, it's me 👋",
       "heroTitle": "Are you in search of a trustworthy ally to assist you in expanding your online presence?",
       "subTitile": "I'll collaborate with you to develop a personalized app or website that aligns with your objectives.",
-      "text": "I'm a full-stack developer specializing in building complex web and mobile applications, collaborating with cross-functional teams, and managing large-scale databases. Oh, and I'm a co-founder and CTO of ZULA too.",
+      "text": "I am a Full-Stack Developer and Technical Co-Founder with 5+ years of experience building and scaling complex web and mobile applications. My background in startups has given me hands-on experience with JavaScript, TypeScript, React, Node.js, and AWS, among others. I lead teams from different areas and manage large databases to build applications that perform well and help businesses grow. I’m passionate about tech’s potential to drive positive change and enjoy tackling complex challenges.",
       "button": "Let's chat about your project"
     },
     "about": {
@@ -41,231 +160,382 @@
     }
   },
   "about": {
-    "title": "About Me",
-    "experienceTitle": "My Professional Story",
-    "skillTitle": "Technologies I Use",
+    "title": "About",
+    "subText": "Overview",
+    "experienceTitle": "Vita",
+    "experienceSubtext": "My Professional Story",
+    "skillTitle": "Toolkit",
+    "skillSubtext": "Technologies I Use",
     "youtube": "Here's a sneak peek into my journey of becoming a full-stack web developer.",
     "text": "I'm Ansumana Darboe (he/him), an experienced Full Stack Developer and co-founder based in Berlin.",
     "cv": "View my resume",
+    "summary": [
+      "Hi there, my name is Ansumana Darboe and I am an experienced Fullstack Developer currently based in Berlin and originally from The Gambia.",
+      "Driven by a passion for leveraging technology to create impactful solutions, I bring over 10 years of experience in the tech industry, including 5 years as a hands-on Full-stack Developer. Throughout my career, I’ve consistently delivered scalable, high-impact projects across various industries using technologies like JavaScript, TypeScript, React, Node.js, and AWS.",
+      "Before transitioning from the football field to tech and code editors, I spent over 4 years as a professional footballer, leading my team to two major titles. Today, I bring that same drive and energy into every tech project I undertake. My journey began in IT system administration, where I developed skills in troubleshooting, network security, and user support. In full-stack development, I quickly mastered both frontend and backend technologies, enabling me to lead and contribute to projects that significantly enhance user experience and drive business growth.",
+      "As Co-Founder and CTO at ZULA, I played a pivotal role in shaping the company’s vision and technical strategy. I led the development of an innovative online book library focused on providing universal access to diverse and inclusive children's stories. My responsibilities included coding the platform from the ground up using React, Node.js, AWS, and more, while managing a talented team of developers and designers. Our efforts led to a successful market entry, a 20% increase in user engagement, and strategic partnerships that expanded our reach.",
+      "At innn.it (formerly Change.org e.V.), I was responsible for building and optimizing the company’s web platforms. My work significantly reduced loading times by 80% and improved user retention by 40%. I implemented server-side rendering and caching strategies that enhanced both performance and SEO, doubling organic traffic. Additionally, I managed large-scale databases with over 500 million records, ensuring data integrity and security, and collaborated with cross-functional teams to deliver new features and UX improvements.",
+      "During my time at Propstack GmbH, I modernized their mobile app using React Native, resulting in a 30% increase in user engagement and a 15% improvement in app ratings. My work focused on refining the user interface and enhancing cross-platform compatibility, which expanded the app’s reach and boosted user satisfaction.",
+      "My earlier experience as an IT System Administrator at Accountax Solutions in Gambia laid the groundwork for my technical proficiency. There, I implemented proactive IT support measures that reduced technical issues by 30% and increased end-user satisfaction by 25%. My ability to diagnose and resolve issues quickly contributed to maintaining high operational uptime and overall system reliability.",
+      "In every role, I’ve brought a commitment to quality, a passion for solving complex problems, and a drive to deliver results that exceed expectations. My comprehensive skill set, combined with my leadership experience and dedication to continuous learning, allows me to effectively contribute to and lead development teams in delivering high-quality, scalable solutions."
+    ],
     "shortBio": {
       "title": "Short Bio",
-      "text": "I've got a diverse background in Tech, having worked as a Network System Administrator to IT Support and Full Stack Developer. My expertise includes building complex applications. With autonomy and clean code, I deliver high-quality tailored solutions for every project. Oh, and I'm a co-founder of ZULA too."
+      "text": "I'm Ansumana Darboe, an experienced Fullstack Developer currently based in Berlin and originally from The Gambia. My career in the tech field has been diverse, with roles including Network System Administrator, IT Support and now, a proficient Full Stack Developer. I specialize in building complex applications, ensuring they run smoothly and efficiently. I take pride in my ability to write clean, maintainable code that meets the specific requirements of each project. My approach emphasizes autonomy, allowing me to adapt and innovate as needed to deliver high-quality solutions."
     },
     "longBio": {
       "title": "Background",
       "text": [
-        "I'm Ansumana Darboe, an experienced Fullstack Developer currently based in Berlin and originally from The Gambia. My career in the tech field has been diverse, with roles including Network System Administrator, IT Support and now, a proficient Full Stack Developer. I specialize in building complex applications, ensuring they run smoothly and efficiently. I take pride in my ability to write clean, maintainable code that meets the specific requirements of each project. My approach emphasizes autonomy, allowing me to adapt and innovate as needed to deliver high-quality solutions.",
-        "I have hands-on experience with various technologies including JavaScript, TypeScript, React, React Native, HTML5, CSS3, MongoDB, Node.js, Next.js, AWS, Docker and Kubernetes allows me to deliver customized solutions that meet the individual requirements of each project. Whether it's developing responsive front-end designs or optimizing back-end functionality, I deliver a high quality code and user experience.",
-        "In my role as Co-Founder and CTO at ZULA,  I played a critical role in shaping the company's vision and direction. I led the development and implementation of the technology strategies to build an online library accessible to all, while overseeing a talented team of developers and designers to ensure the platform was user-friendly and content-rich.",
-        "Previously, I worked as a fullstack developer at innn.it, formerly change.org. There I was responsible for developing and maintaining the organization's websites, optimizing their performance and usability, and ensuring scalability and maintainability. This involved managing databases with over 500 million user records, applications, and APIs. I took great care in ensuring data integrity and implementing efficient design and optimization techniques to enhance system performance. Additionally, I collaborated closely with cross-functional teams to handle product requests and integrate new features.",
-        "In my workflow, I rely heavily on Agile methodologies like SCRUM and Kanban. These frameworks help me keep projects organized and on track, ensuring efficient collaboration adaptability, and continuous improvement. I use tools like Bitbucket, Github, Jira, and Confluence to facilitate collaboration, track progresses, and document processes"
+        "With over a decade of experience in the tech industry and over five years as a hands-on full-stack developer, I've consistently built and delivered scalable and high-performing applications. My expertise covers both front-end and back-end development, including website and app development, cloud infrastructure management, optimization techniques, and database design.",
+        "My proficiency with various technologies, including JavaScript, TypeScript, React, React Native, HTML5, CSS3, MongoDB, Node.js, Next.js, AWS, Docker, and Kubernetes, enables me to tailor solutions to each project's unique requirements. Whether designing and building responsive front-end designs or enhancing back-end functionality, my focus is always on delivering top-quality code and user experiences.",
+        "As Co-Founder and CTO at ZULA, I spearheaded the company's vision and direction, leading the development and implementation of technology strategies to create an inclusive online library. This involved overseeing a talented team to ensure the platform was both user-friendly and content-rich, resulting in successful market entry and a 20% increase in user engagement.",
+        "In my previous role as a fullstack developer at innn.it (formerly change.org), I was responsible for developing and maintaining the organization's websites, enhancing their performance and usability. This included managing databases with over 500 million user records, applications, and APIs. By prioritizing data integrity and implementing efficient design and optimization techniques, I significantly improved system performance. Collaborating closely with cross-functional teams, I successfully handled product requests and integrated new features, resulting in a 80% reduction of loading time and a 40% boost in user retention.",
+        "I rely heavily on Agile methodologies like SCRUM and Kanban in my workflow, ensuring projects stay organized and on track for efficient collaboration and continuous improvement. I use tools like Bitbucket, Github, Jira, and Confluence to facilitate collaboration, track progress, and document processes, ensuring smooth operations and timely delivery of projects."
       ]
     },
     "skills": [
       {
         "skill": "JavaScript and TypeScript",
-        "text": "In order to elevate the quality of my code, I employ TypeScript, an extension of JavaScript. This provides the benefit of static typing, reducing the likelihood of bugs and enhancing overall code reliability. For front-end development, I harness the power of JavaScript to craft dynamic and interactive user interfaces. This combination not only ensures a smoother development process but also results in a more robust and error-resistant codebase."
+        "text": [
+          "In order to elevate the quality of my code, I employ TypeScript, an extension of JavaScript. This provides the benefit of static typing, reducing the likelihood of bugs and enhancing overall code reliability.",
+          "For front-end development, I harness the power of JavaScript to craft dynamic and interactive user interfaces. This combination not only ensures a smoother development process but also results in a more robust and error-resistant codebase."
+        ]
       },
       {
         "skill": "React and React Native",
-        "text": "My framework of choice for crafting efficient and reusable UI components is React. Its component-based architecture allows me to create modular, scalable, and easily maintainable user interfaces. Additionally, when transitioning to mobile app development, I seamlessly extend this capability using React Native. This ensures the development of cross-platform applications with a single codebase, saving time and resources."
+        "text": [
+          "My framework of choice for crafting efficient and reusable UI components is React. Its component-based architecture allows me to create modular, scalable, and easily maintainable user interfaces.",
+          "Additionally, when transitioning to mobile app development, I seamlessly extend this capability using React Native. This ensures the development of cross-platform applications with a single codebase, saving time and resources."
+        ]
       },
       {
         "skill": "MongoDB",
-        "text": "MongoDB stands out as my preferred database management system. Its flexibility in handling JSON-like documents and scalability make it an ideal choice for managing diverse data structures. The ability to adapt to evolving project needs, coupled with efficient querying capabilities, contributes to a robust and versatile data management solution."
+        "text": [
+          "MongoDB stands out as my preferred database management system. Its flexibility in handling JSON-like documents and scalability make it an ideal choice for managing diverse data structures.",
+          "The ability to adapt to evolving project needs, coupled with efficient querying capabilities, contributes to a robust and versatile data management solution."
+        ]
       },
       {
         "skill": "AWS",
-        "text": "AWS is my go-to solution for cloud storage. Its secure and scalable object storage ensures reliable data management for my applications. The seamless integration with other AWS services further enhances the overall efficiency of the cloud infrastructure, providing a solid foundation for application deployment and data handling."
+        "text": [
+          "AWS is my go-to solution for cloud storage. Its secure and scalable object storage ensures reliable data management for my applications.",
+          "The seamless integration with other AWS services further enhances the overall efficiency of the cloud infrastructure, providing a solid foundation for application deployment and data handling."
+        ]
       },
       {
         "skill": "RESTful APIs",
-        "text": "To foster efficient data exchange and ensure a seamless UI, I design and implement RESTful APIs. These APIs serve as a bridge between different components of a web application, allowing for smooth communication and interaction. This approach not only enhances the responsiveness of the application but also promotes a modular and scalable architecture."
+        "text": [
+          "To foster efficient data exchange and ensure a seamless UI, I design and implement RESTful APIs. These APIs serve as a bridge between different components of a web application, allowing for smooth communication and interaction.",
+          "This approach not only enhances the responsiveness of the application but also promotes a modular and scalable architecture."
+        ]
       },
       {
         "skill": "Node.js",
-        "text": "Node.js takes the spotlight as my preferred server-side runtime. Its non-blocking, event-driven architecture aligns perfectly with my development philosophy, allowing for the creation of scalable and high-performance server-side applications. This choice facilitates the development of fast and responsive back-end solutions for a wide range of applications."
+        "text": [
+          "Node.js takes the spotlight as my preferred server-side runtime. Its non-blocking, event-driven architecture aligns perfectly with my development philosophy, allowing for the creation of scalable and high-performance server-side applications.",
+          "This choice facilitates the development of fast and responsive back-end solutions for a wide range of applications."
+        ]
       },
       {
         "skill": "Docker and Kubernetes",
-        "text": "For consistent deployment across various environments, I leverage Docker containers. These containers encapsulate the application and its dependencies, ensuring reliability and consistency. To orchestrate and manage these containers at scale, I turn to Kubernetes. This dynamic duo enables seamless scaling, efficient management, and automated processes, streamlining the deployment lifecycle."
+        "text": [
+          "For consistent deployment across various environments, I leverage Docker containers. These containers encapsulate the application and its dependencies, ensuring reliability and consistency.",
+          "To orchestrate and manage these containers at scale, I turn to Kubernetes. This dynamic duo enables seamless scaling, efficient management, and automated processes, streamlining the deployment lifecycle."
+        ]
       },
       {
         "skill": "CI/CD",
-        "text": "Continuous Integration and Continuous Deployment (CI/CD) are integral components of my development process. By implementing CI/CD practices, I automate testing and deployment, significantly reducing the likelihood of errors. This approach ensures that updates can be delivered quickly and reliably, contributing to a more agile and responsive development cycle."
+        "text": [
+          "Continuous Integration and Continuous Deployment (CI/CD) are integral components of my development process. By implementing CI/CD practices, I automate testing and deployment, significantly reducing the likelihood of errors.",
+          "This approach ensures that updates can be delivered quickly and reliably, contributing to a more agile and responsive development cycle."
+        ]
       },
       {
         "skill": "Microservices",
-        "text": "I embrace a microservices architecture to design applications that prioritize scalability and maintainability. This architectural approach promotes modularity, allowing each microservice to focus on a specific business function. This not only enhances scalability but also facilitates easy maintenance and updates, ensuring flexibility and agility in response to evolving project requirements."
+        "text": [
+          "I embrace a microservices architecture to design applications that prioritize scalability and maintainability. This architectural approach promotes modularity, allowing each microservice to focus on a specific business function.",
+          "This not only enhances scalability but also facilitates easy maintenance and updates, ensuring flexibility and agility in response to evolving project requirements."
+        ]
       },
       {
         "skill": "Redux",
-        "text": "For effective state management in larger applications, I integrate Redux. This powerful library provides a predictable state container, making it easier to manage and debug complex data flows. By centralizing the state, Redux enhances the maintainability and scalability of larger applications, ensuring a smooth and organized development process."
+        "text": [
+          "For effective state management in larger applications, I integrate Redux. This powerful library provides a predictable state container, making it easier to manage and debug complex data flows.",
+          "By centralizing the state, Redux enhances the maintainability and scalability of larger applications, ensuring a smooth and organized development process."
+        ]
       },
       {
         "skill": "Bootstrap",
-        "text": "Bootstrap takes center stage in my toolkit for rapid front-end development. Its responsive design components enable swift and consistent UI development. Additionally, I employ SASS, a CSS preprocessor, to enhance maintainability by introducing variables and mixins. This combination accelerates front-end development while ensuring a clean and organized styling structure."
+        "text": [
+          "Bootstrap takes center stage in my toolkit for rapid front-end development. Its responsive design components enable swift and consistent UI development.",
+          "Additionally, I employ SASS, a CSS preprocessor, to enhance maintainability by introducing variables and mixins. This combination accelerates front-end development while ensuring a clean and organized styling structure."
+        ]
       },
       {
         "skill": "Express.js",
-        "text": "Express.js is my framework of choice for building robust and scalable web applications on the Node.js runtime. Its simplicity and flexibility align seamlessly with my development philosophy, allowing for the creation of efficient and modular back-end solutions. Express.js streamlines the development process, enabling the rapid creation of feature-rich web applications."
+        "text": [
+          "Express.js is my framework of choice for building robust and scalable web applications on the Node.js runtime. Its simplicity and flexibility align seamlessly with my development philosophy, allowing for the creation of efficient and modular back-end solutions.",
+          "Express.js streamlines the development process, enabling the rapid creation of feature-rich web applications."
+        ]
       },
       {
         "skill": "Version Control",
-        "text": "Git is my version control system of choice, providing a robust and distributed approach to tracking changes in my projects. By utilizing Git, I enable collaborative development, track changes effectively, and maintain a safety net for code rollback when necessary. This ensures version control integrity and collaboration across development teams."
+        "text": [
+          "Git is my version control system of choice, providing a robust and distributed approach to tracking changes in my projects. By utilizing Git, I enable collaborative development, track changes effectively, and maintain a safety net for code rollback when necessary.",
+          "This ensures version control integrity and collaboration across development teams."
+        ]
       },
       {
         "skill": "SCRUM",
-        "text": "I adhere to the SCRUM framework for project management. SCRUM's iterative development approach, emphasis on collaboration, and regular feedback cycles align with my project management philosophy. This framework ensures that projects are delivered incrementally, adapting to changing requirements and maintaining alignment with client expectations."
+        "text": [
+          "I adhere to the SCRUM framework for project management. SCRUM's iterative development approach, emphasis on collaboration, and regular feedback cycles align with my project management philosophy.",
+          "This framework ensures that projects are delivered incrementally, adapting to changing requirements and maintaining alignment with client expectations."
+        ]
       },
       {
         "skill": "Webpack",
-        "text": "Webpack is my preferred bundler for optimizing web application performance. Its ability to efficiently package and manage assets, coupled with features like code splitting and tree shaking, significantly enhances the overall speed and efficiency of web applications. Webpack plays a crucial role in optimizing the performance of the applications I develop."
+        "text": [
+          "Webpack is my preferred bundler for optimizing web application performance. Its ability to efficiently package and manage assets, coupled with features like code splitting and tree shaking, significantly enhances the overall speed and efficiency of web applications.",
+          "Webpack plays a crucial role in optimizing the performance of the applications I develop."
+        ]
       },
       {
         "skill": "TDD",
-        "text": "I adhere to Test Driven Development (TDD) as my approach for writing software. This methodology involves creating tests before writing the actual code, ensuring that the codebase remains robust, scalable, and bug-free throughout the development process. TDD contributes to a more reliable and maintainable codebase by prioritizing test coverage from the outset."
+        "text": [
+          "I adhere to Test Driven Development (TDD) as my approach for writing software. This methodology involves creating tests before writing the actual code, ensuring that the codebase remains robust, scalable, and bug-free throughout the development process.",
+          "TDD contributes to a more reliable and maintainable codebase by prioritizing test coverage from the outset."
+        ]
       },
       {
         "skill": "TypeScript, Abstraction, and Frontend and Backend APIs",
-        "text": "Throughout my career, I've extensively utilized TypeScript, specializing in developing well-abstracted modules for both frontend and backend APIs. At ZULA, as a Co-Founder and CTO, I led the development of technology strategies aligning with our mission to build a diverse online book library. This involved creating user-friendly and content-rich platforms using TypeScript, React, and Node.js, showcasing my ability to leverage these technologies effectively.\n\nMoreover, during my tenure at innnit e.V, I optimized website performance using Server-Side Rendering (SSR) and developed communication tools utilizing frontend applications and layouts. This experience allowed me to deepen my understanding of abstraction principles while delivering scalable solutions. Additionally, my role at Propstack GmbH involved revamping mobile applications with React Native, demonstrating proficiency in both frontend and backend technologies."
+        "text": [
+          "Throughout my career, I've extensively utilized TypeScript, specializing in developing well-abstracted modules for both frontend and backend APIs. At ZULA, as a Co-Founder and CTO, I led the development of technology strategies aligning with our mission to build a diverse online book library. This involved creating user-friendly and content-rich platforms using TypeScript, React, and Node.js, showcasing my ability to leverage these technologies effectively.",
+          "Moreover, during my tenure at innnit e.V, I optimized website performance using Server-Side Rendering (SSR) and developed communication tools utilizing frontend applications and layouts. This experience allowed me to deepen my understanding of abstraction principles while delivering scalable solutions.",
+          "Additionally, my role at Propstack GmbH involved revamping mobile applications with React Native, demonstrating proficiency in both frontend and backend technologies."
+        ]
       },
       {
         "skill": "Tell me about yourself.",
-        "text": "I'm Ansumana Darboe, an experienced Full Stack Developer currently based in Berlin and originally from The Gambia. I am 36 years old. Before transitioning to tech, I enjoyed an exciting career in professional football, during which I led my team to victory in two major tournaments and secured a runner-up title. ___ With over a decade of experience in the tech industry, including roles as a Network System Administrator and 5 years as a full stack developer, I have a proven track record in developing scalable and high-performing applications. My expertise spans both front-end and back-end development, encompassing website and app development, cloud infrastructure management, optimization techniques, database design, CI/CD practices, and solving complex problems. ___ Over the years, I have gained extensive experience working with various technologies, as outlined in my CV, including JavaScript, TypeScript, ReactJS, NodeJS, MongoDB, AWS, Docker, and Kubernetes. ___ Currently, I serve as both Co-Founder and CTO at ZULA, a passion project dedicated to building an online book library accessible to all, with a focus on diversity and inclusion. My responsibilities include shaping the company's vision, leading a talented team of developers and designers, and overseeing the development of our user-friendly platform. ___ In my most recent role as a full-stack developer and IT support at innnit e.V, formerly known as change.org, I was responsible for developing and maintaining the organization's websites, optimizing their performance and user experience, and ensuring scalability and maintainability. This encompassed managing databases with over 500 million user records, applications, and APIs. I also collaborated closely with cross-functional teams to handle product requests and integrate new features. ___ I thrive in dynamic, collaborative environments where teamwork, creativity, diversity, and continuous learning are embraced. Agile methodologies like SCRUM complement my workflow, enabling me to effectively manage projects and deliver high-quality results within deadlines. ___ Outside of work, I'm passionate about various interests including computer science, coding, watching sports (especially football), cooking traditional family dishes, photography, traveling, and spending quality time with family and friends."
+        "text": [
+          "I am an experienced fullstack developer currently living in Berlin. My career in tech has been very diverse. I have worked as a network system administrator and IT support, among other things, and am now an experienced fullstack developer. I specialize in developing complex applications and making sure they run smoothly and efficiently. I pride myself on my ability to write clean, maintainable code that meets the specific requirements of each project. I place a high value on self-reliance, allowing me to customize and innovate as needed to deliver high-quality solutions.",
+          "With over a decade of experience in the technology industry and five years as a hands-on full-stack developer, I have continuously developed and delivered scalable and high-performance applications. My expertise spans both front-end and back-end development, including website and app development, cloud infrastructure management, optimization techniques, and database design.",
+          "My expertise in various technologies such as JavaScript, TypeScript, React, React Native, HTML5, CSS3, MongoDB, Node.js, Next.js, AWS, Docker and Kubernetes allows me to customize solutions to the unique requirements of each project. Whether designing and developing responsive front-end designs or improving back-end functionality, my focus is always on delivering high-quality code and user experiences.",
+          "As co-founder and CTO at ZULA, I drove the vision and direction of the company and led the development and implementation of technology strategies to create an inclusive online library. This included overseeing a talented team to ensure the platform was both user-friendly and content-rich, resulting in a successful launch and a 20% increase in user engagement.",
+          "In my previous role as a fullstack developer at innn.it (formerly change.org), I was responsible for developing and maintaining the organization's websites and improving their performance and usability. This included managing databases with over 500 million user records, applications and APIs. By prioritizing data integrity and implementing efficient design and optimization techniques, I significantly improved system performance. Working closely with interdisciplinary teams, I successfully addressed product requests and integrated new features, resulting in an 80% reduction in load time and a 40% increase in user engagement.",
+          "I rely heavily on Agile methodologies such as SCRUM and Kanban in my workflow to ensure projects stay organized and on track for efficient collaboration and continuous improvement. I utilize tools such as Bitbucket, Github, Jira and Confluence to facilitate collaboration, track progress and document processes, ensuring a smooth flow and timely delivery of projects.",
+          "I speak both English and German and have hobbies such as sports, cooking traditional family meals, photography and exploring new places. Let's get in touch and find out how I can help you achieve your development goals!"
+        ]
       },
       {
         "skill": "Why are you stopping at Zula",
-        "text": "I am currently seeking a new job due to changes within my company innnit. Last year, our company underwent separation from our parent company, which led to a reduction in our team size. Unfortunately, after a year, the company faced financial challenges and had to downsize to avoid insolvency. As a result, nine employees, including myself, were let go for operational reasons. Since then I have started Zula. ___ While my experience at Zula as a Co-Founder and CTO was incredibly rewarding, I made the decision to step away from my role primarily because I missed the hands-on challenges and technical aspects of being a developer. As a co-founder, my responsibilities encompassed not only technical leadership but also strategic planning, business development, and team management. While these aspects were fulfilling in their own right, I found myself yearning to dive back into those feelings of coding and problem-solving that initially drew me to the tech industry. <br/> Additionally, if I am being honest. As a co-founder, I poured my resources into building and nurturing Zula, and while the journey was fulfilling, it left me in a challenging financial position. Therefore, I am actively seeking employment to stabilize my finances and continue pursuing my passion for technology in a more hands-on capacity. Overall, my time at Zula provided invaluable experience and taught me valuable lessons in leadership and entrepreneurship. However, I am now eager to return to my roots as a developer and contribute my skills and expertise to a new team and set of challenges."
+        "text": [
+          "I am currently seeking a new job due to changes within my company innnit. Last year, our company underwent separation from our parent company, which led to a reduction in our team size. Unfortunately, after a year, the company faced financial challenges and had to downsize to avoid insolvency. As a result, nine employees, including myself, were let go for operational reasons. Since then I have started Zula.",
+          "I decided to step away from my role at ZULA primarily because I want to focus more on hands-on development and tackle coding challenges directly. As a co-founder and CTO, I handled not just the technical leadership but also strategic planning, business development, and team management. While these responsibilities were rewarding, I found myself yearning for more hands-on coding and problem-solving challenges that initially drew me to the tech industry. I believe a more focused position that allows me to dive deeply into specific technologies and tackle complex problems will enable me to not only enhance my skills further but also gain exposure to new methods and perspectives which are crucial for my professional growth as a developer.",
+          "Additionally, if I am being honest. As a co-founder, I poured my resources into building and nurturing Zula, and while the journey was fulfilling, it left me in a challenging financial position. Therefore, I am actively seeking employment to stabilize my finances and continue pursuing my passion for technology in a more hands-on capacity.",
+          "Overall, my time at Zula provided invaluable experience and taught me valuable lessons in leadership and entrepreneurship. However, I am now eager to return to my roots as a developer and contribute my skills and expertise to a new team and set of challenges."
+        ]
       },
       {
         "skill": "What are you looking for in your new role?",
-        "text": "I am seeking a role that allows me to contribute my full-stack development skills and be a part of a dynamic and collaborative team. The opportunity to work on impactful projects, embrace modern engineering practices, and actively contribute to product development is essential for me. I am excited about roles that promote continuous learning, growth, and foster an environment of openness and teamwork."
+        "text": [
+          "I am seeking a role that allows me to contribute my full-stack development skills and be a part of a dynamic and collaborative team. The opportunity to work on impactful projects, embrace modern engineering practices, and actively contribute to product development is essential for me.",
+          "I am excited about roles that promote continuous learning, growth, and foster an environment of openness and teamwork."
+        ]
       },
       {
         "skill": "What interests you most about the position you're applying for?",
-        "text": "What interests me most about the position I'm applying for is the opportunity to leverage my skills and expertise in full-stack development to contribute to impactful projects and collaborate with a talented team. I'm particularly drawn to the company's commitment to innovation, continuous improvement, and fostering a supportive work culture. I see myself contributing to the team by bringing a combination of technical proficiency, creative problem-solving, and effective communication. Whether it's developing scalable solutions, optimizing performance, or driving process improvements, I'm dedicated to delivering high-quality outcomes that align with the company's goals and contribute to its success."
+        "text": [
+          "What interests me most about the position I'm applying for is the opportunity to leverage my skills and expertise in full-stack development to contribute to impactful projects and collaborate with a talented team.",
+          "I'm particularly drawn to the company's commitment to innovation, continuous improvement, and fostering a supportive work culture. I see myself contributing to the team by bringing a combination of technical proficiency, creative problem-solving, and effective communication. Whether it's developing scalable solutions, optimizing performance, or driving process improvements, I'm dedicated to delivering high-quality outcomes that align with the company's goals and contribute to its success."
+        ]
       },
       {
         "skill": "Can you walk me through your experience as a co-founder and CTO at ZULA? What were your key responsibilities and achievements in that role?",
-        "text": "As a co-founder and CTO at ZULA, I played a pivotal role in shaping the company's vision, mission, and strategic direction. My responsibilities included spearheading the development and implementation of technology strategies aligned with our objectives. This involved directing the team towards creating a user-friendly and content-rich online book library. One of our key achievements was the successful establishment of ZULA, contributing to the conceptualization of the company and its mission to provide universal access to books celebrating diversity. Additionally, I oversaw the end-to-end process from content curation to platform development, ensuring seamless functionality across the platform."
+        "text": [
+          "As a co-founder and CTO at ZULA, I played a pivotal role in shaping the company's vision, mission, and strategic direction. My responsibilities included spearheading the development and implementation of technology strategies aligned with our objectives.",
+          "This involved directing the team towards creating a user-friendly and content-rich online book library. One of our key achievements was the successful establishment of ZULA, contributing to the conceptualization of the company and its mission to provide universal access to books celebrating diversity.",
+          "Additionally, I oversaw the end-to-end process from content curation to platform development, ensuring seamless functionality across the platform."
+        ]
       },
       {
         "skill": "What motivated you to co-found ZULA, and how did you contribute to shaping its vision and mission?",
-        "text": "The motivation behind co-founding ZULA stemmed from the desire to make a meaningful impact by providing access to literature that celebrates diversity and resonates with every child. I contributed to shaping ZULA's vision and mission by actively participating in the conceptualization and establishment of the company. Together with the team, we aimed to develop a vast online book library that goes beyond just words on a page. Our collective mission was to ensure every child has access to stories that truly resonate with them, fostering a love for reading and promoting inclusivity."
+        "text": [
+          "The motivation behind co-founding ZULA stemmed from the desire to make a meaningful impact by providing access to literature that celebrates diversity and resonates with every child. I contributed to shaping ZULA's vision and mission by actively participating in the conceptualization and establishment of the company.",
+          "Together with the team, we aimed to develop a vast online book library that goes beyond just words on a page. Our collective mission was to ensure every child has access to stories that truly resonate with them, fostering a love for reading and promoting inclusivity."
+        ]
       },
       {
         "skill": "As a full-stack developer at innnit e.V, you achieved significant improvements in website loading time. Could you elaborate on the strategies you implemented to achieve this?",
-        "text": "During my tenure as a full-stack developer at innnit e.V, I implemented several strategies to achieve significant improvements in website loading time. One key strategy was the utilization of Server-Side Rendering (SSR) to enhance website performance and SEO capabilities. By rendering the initial HTML page on the server, we were able to deliver faster loading times and improve search engine visibility. Additionally, I optimized website performance through caching strategies and streamlined code to enhance scalability and maintainability. These efforts resulted in an 80% reduction in website loading time, leading to improved user experience, increased page views, and a 40% reduction in bounce rate."
+        "text": [
+          "During my tenure as a full-stack developer at innnit e.V, I implemented several strategies to achieve significant improvements in website loading time. One key strategy was the utilization of Server-Side Rendering (SSR) to enhance website performance and SEO capabilities.",
+          "By rendering the initial HTML page on the server, we were able to deliver faster loading times and improve search engine visibility. Additionally, I optimized website performance through caching strategies and streamlined code to enhance scalability and maintainability.",
+          "These efforts resulted in an 80% reduction in website loading time, leading to improved user experience, increased page views, and a 40% reduction in bounce rate."
+        ]
       },
       {
         "skill": "How did you manage databases with over 500 million records at innnit e.V? What challenges did you face, and how did you ensure data integrity?",
-        "text": "Managing databases with over 500 million records at innnit e.V presented several challenges, including scalability, performance, and data integrity. To address these challenges, I employed efficient database design and optimization techniques, ensuring proper indexing and partitioning to enhance query performance. Regular maintenance tasks such as data cleaning and optimization were also crucial in managing large datasets effectively. Additionally, I implemented robust data validation and error handling mechanisms to ensure data integrity, preventing inconsistencies and inaccuracies in the database. Regular backups and disaster recovery plans were put in place to mitigate the risk of data loss or corruption."
+        "text": [
+          "Managing databases with over 500 million records at innnit e.V presented several challenges, including scalability, performance, and data integrity. To address these challenges, I employed efficient database design and optimization techniques, ensuring proper indexing and partitioning to enhance query performance.",
+          "Regular maintenance tasks such as data cleaning and optimization were also crucial in managing large datasets effectively. Additionally, I implemented robust data validation and error handling mechanisms to ensure data integrity, preventing inconsistencies and inaccuracies in the database.",
+          "Regular backups and disaster recovery plans were put in place to mitigate the risk of data loss or corruption."
+        ]
       },
       {
         "skill": "Can you walk me through your experience with React, Node, and MongoDb?",
-        "text": "Starting with React, I've been using this JavaScript library for building user interfaces for several years now. I've worked on both small-scale and large-scale applications, ranging from single-page applications to complex web applications. I'm comfortable with React's component-based architecture and the virtual DOM, which allows for efficient rendering of UI components. I've leveraged React's state management features, such as useState and useContext, as well as popular libraries like Redux for more complex state management needs. Additionally, I have experience with React Hooks, which provide a way to use state and other React features without writing a class. Moving on to Node.js, I've utilized this runtime environment extensively for building server-side applications and APIs. Node.js's non-blocking, event-driven architecture makes it well-suited for handling concurrent operations, which is crucial for building scalable and high-performance applications. I've worked with frameworks like Express.js to create robust and RESTful APIs, handling routing, middleware, and request/response handling efficiently. I'm familiar with Node.js's package management system using npm or yarn and have experience with tools like npm scripts for automating tasks during development. Regarding MongoDB, I've used this NoSQL database extensively in conjunction with Node.js for building data-driven applications. MongoDB's flexible schema and document-oriented approach make it suitable for handling unstructured or semi-structured data. I've designed and implemented MongoDB schemas tailored to the specific requirements of the applications, leveraging features like indexing, aggregation pipelines, and data replication for performance and scalability. I'm comfortable writing MongoDB queries using the MongoDB Query Language (MQL) and have experience with MongoDB drivers for Node.js, such as mongoose, for interacting with the database programmatically."
+        "text": [
+          "Starting with React, I've been using this JavaScript library for building user interfaces for several years now. I've worked on both small-scale and large-scale applications, ranging from single-page applications to complex web applications.",
+          "I'm comfortable with React's component-based architecture and the virtual DOM, which allows for efficient rendering of UI components. I've leveraged React's state management features, such as useState and useContext, as well as popular libraries like Redux for more complex state management needs.",
+          "Additionally, I have experience with React Hooks, which provide a way to use state and other React features without writing a class.",
+          "Moving on to Node.js, I've utilized this runtime environment extensively for building server-side applications and APIs. Node.js's non-blocking, event-driven architecture makes it well-suited for handling concurrent operations, which is crucial for building scalable and high-performance applications.",
+          "I've worked with frameworks like Express.js to create robust and RESTful APIs, handling routing, middleware, and request/response handling efficiently. I'm familiar with Node.js's package management system using npm or yarn and have experience with tools like npm scripts for automating tasks during development.",
+          "Regarding MongoDB, I've used this NoSQL database extensively in conjunction with Node.js for building data-driven applications. MongoDB's flexible schema and document-oriented approach make it suitable for handling unstructured or semi-structured data.",
+          "I've designed and implemented MongoDB schemas tailored to the specific requirements of the applications, leveraging features like indexing, aggregation pipelines, and data replication for performance and scalability.",
+          "I'm comfortable writing MongoDB queries using the MongoDB Query Language (MQL) and have experience with MongoDB drivers for Node.js, such as mongoose, for interacting with the database programmatically."
+        ]
       },
       {
         "skill": "What do you enjoy the most about your skills?",
-        "text": "The ability to create software that helps people and makes their lives easier, and perfecting it. The best thing about programming is that you have the opportunity to create things that no one else around can. The feeling you get when you actually see the output of the code you have written. You spend time trying to figure out the best logic to get the result, you write it, run it, you end up with some errors, fix the bugs, run it again, and then you see the output. You understand how Archimedes would have felt now. The fact that you actually get to use your brains in the smartest and most logical way possible, where every assignment thrown at you is a challenge. Where you rack up your brains in all possible ways to find the best solution. Of tying up the nuts and bolts, seeing the screen come up with all the data needed. At the end of the day, writing code is something you have to love, something you've got to be passionate about. The feeling you get when you actually see the output of the code you have written. You spend time trying to figure out the best logic to get the result, you write it, run it, you end up with some errors, fix the bugs, run it again, and then you see the output. You understand how Archimedes would have felt now."
+        "text": [
+          "The ability to create software that helps people and makes their lives easier, and perfecting it. The best thing about programming is that you have the opportunity to create things that no one else around can.",
+          "The feeling you get when you actually see the output of the code you have written. You spend time trying to figure out the best logic to get the result, you write it, run it, you end up with some errors, fix the bugs, run it again, and then you see the output. You understand how Archimedes would have felt now.",
+          "The fact that you actually get to use your brains in the smartest and most logical way possible, where every assignment thrown at you is a challenge. Where you rack up your brains in all possible ways to find the best solution.",
+          "Of tying up the nuts and bolts, seeing the screen come up with all the data needed. At the end of the day, writing code is something you have to love, something you've got to be passionate about.",
+          "The feeling you get when you actually see the output of the code you have written. You spend time trying to figure out the best logic to get the result, you write it, run it, you end up with some errors, fix the bugs, run it again, and then you see the output. You understand how Archimedes would have felt now."
+        ]
       },
       {
         "skill": "Why React instead of Angular or Vue.js?",
-        "text": "React provides a component-based structure. Components are like Lego pieces. You start with tiny components like buttons, checkboxes, dropdowns, etc., and then you create wrapper components composed of those smaller components. And then you write higher-level wrapper components. And it goes on like that until you have this one root component, and that component is your app. Each component decides how it should be rendered. Each component has its own internal logic. This approach has some amazing results. You can reuse components anywhere you need. As a result, (1) your app has a consistent look and feel, (2) code reuse makes it easier to maintain and grow your codebase, and (3) it is easier to develop your app. You can increase your productivity by using reusable components and development tools. Developer productivity is important because if you can get things done quickly, you can earn more money in less time, which is a common goal of companies and startups. I mean if it takes a huge amount of time to build a simple thing, you'll lose money. On the contrary, if you can deliver products quickly, you can earn cash quickly, and your clients will also be happy. There are many development tools available for React which speed up your work. For example, there's a browser extension called React Developer Tools, which can make your coding work a lot easier. You can add it to your browser and can use it to examine React components hierarchy. This extension can be installed on Chrome and Mozilla Firefox. As they say, 'Libraries and Frameworks may become obsolete, but the concepts and solutions they propose often survive the test of time.' One of the powerful sides of React is that it provides a good abstraction, which means that it does not expose any complex internals to the user. Compare this to Angular: Why on earth should you have to learn an internal process such as digest cycles? Those kinds of details better be kept as internals to provide a clean abstraction. You only need to understand a component's lifecycles, states, and props to master React to accomplish everything you need. React does not dictate any patterns or architecture like MVC/MVVM; after all, it's only about the view layer, and you are free to design your app's architecture in any way you see fit."
+        "text": [
+          "React provides a component-based structure. Components are like Lego pieces. You start with tiny components like buttons, checkboxes, dropdowns, etc., and then you create wrapper components composed of those smaller components.",
+          "And then you write higher-level wrapper components. And it goes on like that until you have this one root component, and that component is your app. Each component decides how it should be rendered. Each component has its own internal logic. This approach has some amazing results.",
+          "You can reuse components anywhere you need. As a result, (1) your app has a consistent look and feel, (2) code reuse makes it easier to maintain and grow your codebase, and (3) it is easier to develop your app. You can increase your productivity by using reusable components and development tools.",
+          "Developer productivity is important because if you can get things done quickly, you can earn more money in less time, which is a common goal of companies and startups. I mean if it takes a huge amount of time to build a simple thing, you'll lose money.",
+          "On the contrary, if you can deliver products quickly, you can earn cash quickly, and your clients will also be happy. There are many development tools available for React which speed up your work. For example, there's a browser extension called React Developer Tools, which can make your coding work a lot easier.",
+          "You can add it to your browser and can use it to examine React components hierarchy. This extension can be installed on Chrome and Mozilla Firefox. As they say, 'Libraries and Frameworks may become obsolete, but the concepts and solutions they propose often survive the test of time.'",
+          "One of the powerful sides of React is that it provides a good abstraction, which means that it does not expose any complex internals to the user. Compare this to Angular: Why on earth should you have to learn an internal process such as digest cycles?",
+          "Those kinds of details better be kept as internals to provide a clean abstraction. You only need to understand a component's lifecycles, states, and props to master React to accomplish everything you need.",
+          "React does not dictate any patterns or architecture like MVC/MVVM; after all, it's only about the view layer, and you are free to design your app's architecture in any way you see fit."
+        ]
       },
       {
         "skill": "Tell me about a time when you had a disagreement with another developer.",
-        "text": "At change.org, I encountered a disagreement with a fellow programmer regarding the approach to be taken in implementing a new feature. We had differing opinions on the best way to structure the code and utilize certain libraries. Initially, we had a healthy discussion where we both presented our arguments and explained our reasoning. However, despite our efforts, we couldn't reach a mutually beneficial resolution at that moment. Recognizing the importance of maintaining a positive working relationship, we decided to involve our team lead to mediate the disagreement. The team lead listened to both perspectives and encouraged open communication. They provided valuable insights and guidance based on their experience and expertise. With their assistance, we were able to find a middle ground that satisfied both of our concerns and aligned with the project's goals. Looking back, if I had known then what I know now, I would have taken a more proactive approach in seeking common ground earlier in the discussion. I would have focused on finding shared objectives and identifying areas where our ideas overlapped rather than solely defending my viewpoint. Additionally, I would have suggested conducting some small-scale experiments or prototyping to gather empirical evidence and facilitate a more data-driven decision-making process. This would have allowed us to better evaluate the feasibility and effectiveness of different approaches before committing to a specific solution. Overall, I learned from this experience that effective communication, active listening, and involving relevant stakeholders can significantly contribute to resolving disagreements and finding mutually beneficial resolutions. It is crucial to approach conflicts with a collaborative mindset and a willingness to consider alternative perspectives."
+        "text": [
+          "At change.org, I encountered a disagreement with a fellow programmer regarding the approach to be taken in implementing a new feature. We had differing opinions on the best way to structure the code and utilize certain libraries. Initially, we had a healthy discussion where we both presented our arguments and explained our reasoning.",
+          "However, despite our efforts, we couldn't reach a mutually beneficial resolution at that moment. Recognizing the importance of maintaining a positive working relationship, we decided to involve our team lead to mediate the disagreement. The team lead listened to both perspectives and encouraged open communication.",
+          "They provided valuable insights and guidance based on their experience. Ultimately, we came to a compromise that incorporated elements of both approaches. This experience taught me the importance of effective communication, collaboration, and seeking input from others when resolving conflicts."
+        ]
       },
       {
-        "skill": "Give me an example of when you worked cooperatively as a team member to accomplish an important goal.",
-        "text": "During my time at innnit e.V, our team embarked on a crucial project to develop a web applications tailored for citizen participation and engagement. The objective was to create a platform where citizens could easily voice their concerns and suggestions on various civic issues. As a Full Stack Developer, I collaborated closely with UX designers, backend developers, and the project manager. We conducted regular stand-up meetings to ensure alignment and addressed challenges together. I was responsible for implementing the frontend, while the backend developers handled the server-side logic. Our cooperative effort through agile methodologies like SCRUM, and regular check-ins led to the successful launch of the platform, allowing citizens to engage actively with their local communities. This experience taught me the value of teamwork, effective communication, and leveraging each team member's expertise to achieve our common goal."
-      },
-      {
-        "skill": "Tell me about your experience revamping the mobile app at Propstack GmbH using React Native. What were the main challenges you faced during this project?",
-        "text": "During my time at Propstack GmbH, I led the effort to revamp the company's mobile app using React Native. One of the main challenges we faced during this project was ensuring seamless integration of new features while maintaining compatibility with existing functionalities. This required careful planning and coordination to prioritize feature implementation and minimize disruptions to the user experience. Additionally, optimizing performance and ensuring consistency across different platforms posed challenges that we addressed through rigorous testing and optimization efforts."
-      },
-      {
-        "skill": "Code Quality and Maintainability",
-        "text": "Ensuring code quality and maintainability is a top priority in my development approach. At Propstack GmbH, I led the revamp of the company's mobile application with React Native, focusing on optimizing performance and enhancing user experience. By conducting thorough code reviews, testing, and documentation, I ensured that the codebase was well-structured and maintainable.\n\nMoreover, my experience at innnit e.V involved troubleshooting and resolving issues to ensure website functionality, stability, and performance. By adhering to coding best practices and implementing robust testing procedures, I contributed to the overall quality and reliability of the software.\n\nFurthermore, I believe in the importance of collaboration and knowledge sharing within development teams. By promoting a culture of code review and feedback, I foster an environment where team members can collectively ensure code quality and maintainability."
-      },
-      {
-        "skill": "Ensuring Sustainability and Maintainability",
-        "text": "Ensuring the sustainability and maintainability of software is paramount in my development approach. At ZULA, I spearheaded the end-to-end development process, focusing on creating scalable and high-performing applications. By applying a full-stack approach and leveraging technologies like TypeScript, React, and MongoDB, I ensured the delivery of quality software that aligns with long-term objectives.\n\nAdditionally, my experience at innnit e.V involved optimizing website performance and implementing caching strategies to enhance scalability and maintainability. This required meticulous attention to code quality and architecture, ensuring that future updates and modifications could be seamlessly integrated.\n\nFurthermore, I believe in continuous learning and staying updated with industry best practices. By actively participating in cutting-edge research projects and collaborating with cross-functional teams, I strive to anticipate future challenges and preemptively address them in my development efforts."
-      },
-      {
-        "skill": "How do you ensure scalability and maintainability in your development projects, especially considering your experience with large databases and high-traffic websites?",
-        "text": "Ensuring scalability and maintainability in development projects is crucial, especially when dealing with large databases and high-traffic websites. To achieve this, I follow best practices such as modular design, code abstraction, and separation of concerns. By breaking down the project into smaller, reusable components, I ensure scalability by facilitating easier integration of new features and functionalities. Additionally, I prioritize clean code principles and adhere to coding standards to enhance maintainability. Regular code reviews and documentation further contribute to ensuring the project remains scalable and maintainable over time."
-      },
-      {
-        "skill": "Can you provide an example of a time when you collaborated with cross-functional teams to implement new features or improve user experience?",
-        "text": "At innnit e.V, I collaborated with cross-functional teams to implement new features and improve user experience on our websites. One notable example is when we introduced a new interactive feedback feature to gather user input on site improvements. This involved close collaboration with UX designers, frontend developers, and product managers to conceptualize the feature, design user interfaces, and implement backend functionality. Through iterative development cycles and regular feedback sessions, we successfully delivered a feature that enhanced user engagement and satisfaction."
-      },
-      {
-        "skill": "What methodologies do you typically use for project management and development? How do you adapt these methodologies to suit different projects or teams?",
-        "text": "I typically use Agile methodologies such as SCRUM and Kanban for project management and development. These methodologies emphasize iterative development, continuous feedback, and adaptability, allowing for flexibility and responsiveness to changing requirements. Depending on the project scope and team dynamics, I adapt these methodologies by tailoring the sprint duration, organizing daily stand-up meetings, and adjusting the backlog prioritization process. Additionally, I incorporate collaborative tools like Jira and Confluence to facilitate communication and streamline project workflows."
-      },
-      {
-        "skill": "You mentioned using Docker and Kubernetes in your technical skills. Can you explain how you've utilized these technologies in your previous projects?",
-        "text": "In previous projects, I've utilized Docker and Kubernetes to streamline the deployment and management of containerized applications. Docker allows for containerization of applications, enabling consistent development and deployment environments across different platforms. Kubernetes, on the other hand, provides orchestration and management capabilities for containerized applications, ensuring scalability, reliability, and automation of deployment tasks. By leveraging Docker and Kubernetes, I've been able to implement scalable and resilient infrastructure architectures, facilitating efficient deployment and operation of complex microservices-based applications."
-      },
-      {
-        "skill": "What drew you to pursue a career in full-stack development, and how do you stay updated with the latest trends and technologies in the field?",
-        "text": "I was drawn to pursue a career in full-stack development due to my passion for solving complex problems and building innovative solutions that make a positive impact. Full-stack development allows me to work on both frontend and backend components, providing a holistic understanding of software development and enabling me to tackle challenges at every level of the stack. To stay updated with the latest trends and technologies in the field, I regularly engage in continuous learning through online courses, workshops, and community events. Additionally, I actively participate in tech forums, read industry blogs, and experiment with new tools and frameworks to expand my skill set and stay abreast of emerging technologies."
-      },
-      {
-        "skill": "How do you approach debugging and troubleshooting complex technical issues, both individually and within a team environment?",
-        "text": "When faced with debugging and troubleshooting complex technical issues, I adopt a systematic approach that combines analytical thinking, attention to detail, and collaboration. Individually, I start by thoroughly understanding the problem, examining relevant code, logs, and documentation to identify potential causes. I then use debugging tools and techniques to isolate the issue and test possible solutions iteratively. In a team environment, I leverage collective expertise by engaging in collaborative problem-solving discussions, sharing insights, and dividing tasks based on individual strengths. Clear communication, active listening, and open-mindedness are essential for effective teamwork in resolving technical issues efficiently."
-      },
-      {
-        "skill": "Solving Complex Software Problems",
-        "text": "During my tenure at innnit e.V, I encountered a challenge with website loading times, which was impacting user experience and engagement. Utilizing my expertise in frontend and backend technologies, I implemented Server-Side Rendering (SSR) to optimize performance. This pragmatic solution not only improved website loading times but also enhanced SEO capabilities, resulting in a significant reduction in bounce rates and increased page views.\n\nMoreover, at Propstack GmbH, I led the revamp of the company's mobile application with React Native. By streamlining the user interface, improving navigation, and incorporating user feedback, I effectively addressed usability issues and boosted user engagement by 30%.\n\nThese experiences demonstrate my ability to tackle complex software problems with practical and effective solutions. I'm confident in my capacity to contribute innovative ideas and drive impactful outcomes."
-      },
-      {
-        "skill": "Technology Trends and Advancements",
-        "text": "I prioritize continuous learning and staying abreast of emerging technologies and trends. Whether it's attending industry conferences, participating in online courses, or engaging with developer communities, I'm always seeking opportunities to expand my knowledge and skill set.\n\nFurthermore, my involvement in cutting-edge research projects, as mentioned in the job description, reflects my proactive approach to staying ahead of the curve. By collaborating with cross-functional teams and contributing to innovative initiatives, I ensure that I'm constantly evolving as a developer.\n\nMoreover, I believe in the importance of practical application and experimentation. By incorporating new technologies into personal projects and side ventures, I gain hands-on experience and deepen my understanding of their capabilities and limitations.\n\nOverall, my commitment to continuous learning and exploration aligns with Adornis's vision of being two years ahead of the market. I'm excited about the opportunity to contribute to such a forward-thinking team."
+        "skill": "What is your greatest strength?",
+        "text": [
+          "My greatest strength lies in my ability to think logically and solve complex problems efficiently. I have a natural inclination towards breaking down intricate issues into manageable components, allowing me to develop effective solutions. This strength has been honed through years of experience in the tech industry, where I've consistently demonstrated my capacity to navigate challenges and deliver results.",
+          "Another strength of mine is my adaptability. The tech landscape is constantly evolving, and I have a proven track record of quickly learning and implementing new technologies and methodologies. This adaptability enables me to stay ahead of the curve and contribute meaningfully to any project or team I'm a part of.",
+          "Additionally, my strong communication skills allow me to convey technical concepts to non-technical stakeholders, fostering collaboration and ensuring alignment across teams. This combination of logical thinking, adaptability, and effective communication has been instrumental in my success as a developer and leader in the tech industry."
+        ]
       },
       {
         "skill": "Collaborating with Clients",
-        "text": "Collaborating with clients to understand and address their challenges is a fundamental aspect of my approach to software development. At ZULA, I worked closely with stakeholders to conceptualize and implement technology strategies that aligned with our mission of providing universal access to diverse online book libraries.\n\nSimilarly, at innnit e.V, I collaborated with cross-functional teams to handle product requests, implement new features, and improve user experience. By actively engaging with clients and gathering feedback, I ensured that our solutions addressed their needs effectively.\n\nFurthermore, I believe in fostering open communication and empathy when working with clients. By actively listening to their concerns and understanding their objectives, I'm able to propose pragmatic solutions that deliver tangible value.\n\nOverall, my experience in collaborating with clients, coupled with my technical expertise, positions me well to contribute to Adornis's mission of empowering makers with innovative software solutions."
+        "text": [
+          "Collaborating with clients to understand and address their challenges is a fundamental aspect of my approach to software development. At ZULA, I worked closely with stakeholders to conceptualize and implement technology strategies that aligned with our mission of providing universal access to diverse online book libraries.",
+          "Similarly, at innnit e.V, I collaborated with cross-functional teams to handle product requests, implement new features, and improve user experience. By actively engaging with clients and gathering feedback, I ensured that our solutions addressed their needs effectively.",
+          "Furthermore, I believe in fostering open communication and empathy when working with clients. By actively listening to their concerns and understanding their objectives, I'm able to propose pragmatic solutions that deliver tangible value.",
+          "Overall, my experience in collaborating with clients, coupled with my technical expertise, positions me well to contribute to Adornis's mission of empowering makers with innovative software solutions."
+        ]
       },
       {
         "skill": "Agile",
-        "text": "I have a solid foundation in rapid development methodologies, particularly Agile, which I've applied throughout my career to drive project success. At innnit e.V, I actively participated in Agile practices such as SCRUM and Kanban, facilitating efficient project management and collaboration across teams.\n\nMoreover, my role as a Co-Founder and CTO at ZULA involved directing and implementing comprehensive technology strategies within an Agile framework. By breaking down development tasks into manageable iterations and prioritizing customer feedback, we were able to iterate quickly and deliver value incrementally.\n\nFurthermore, my experience in developing and launching the \"Buildy\" app during my educational background at the Digital Career Institute involved applying Agile principles to streamline project management and ensure timely delivery.\n\nOverall, my familiarity with Agile methodologies and their application in real-world scenarios positions me as a valuable asset to Adornis's rapid development initiatives."
+        "text": [
+          "I have a solid foundation in rapid development methodologies, particularly Agile, which I've applied throughout my career to drive project success. At innnit e.V, I actively participated in Agile practices such as SCRUM and Kanban, facilitating efficient project management and collaboration across teams.",
+          "Moreover, my role as a Co-Founder and CTO at ZULA involved directing and implementing comprehensive technology strategies within an Agile framework. By breaking down development tasks into manageable iterations and prioritizing customer feedback, we were able to iterate quickly and deliver value incrementally.",
+          "Furthermore, my experience in developing and launching the \"Buildy\" app during my educational background at the Digital Career Institute involved applying Agile principles to streamline project management and ensure timely delivery.",
+          "Overall, my familiarity with Agile methodologies and their application in real-world scenarios positions me as a valuable asset to Adornis's rapid development initiatives."
+        ]
       },
       {
         "skill": "Can you discuss a particularly challenging project you've worked on and how you overcame obstacles to deliver a successful outcome?",
-        "text": "One particularly challenging project I worked on involved migrating a legacy monolithic application to a microservices architecture. The project posed various obstacles, including architectural complexity, data migration challenges, and ensuring seamless integration with existing systems. To overcome these obstacles, I collaborated closely with cross-functional teams to define a clear migration strategy, breaking down the monolithic application into smaller, manageable services. We conducted thorough impact assessments, addressed dependencies, and implemented robust testing frameworks to ensure compatibility and reliability. Despite encountering hurdles along the way, such as data consistency issues and service dependencies, we remained agile and adaptive, iterating on our approach and leveraging lessons learned to overcome challenges. Ultimately, through diligent planning, proactive communication, and teamwork, we successfully delivered the project on schedule with minimal disruption to operations."
+        "text": [
+          "One particularly challenging project I worked on involved migrating a legacy monolithic application to a microservices architecture. The project posed various obstacles, including architectural complexity, data migration challenges, and ensuring seamless integration with existing systems.",
+          "To overcome these obstacles, I collaborated closely with cross-functional teams to define a clear migration strategy, breaking down the monolithic application into smaller, manageable services. We conducted thorough impact assessments, addressed dependencies, and implemented robust testing frameworks to ensure compatibility and reliability.",
+          "Despite encountering hurdles along the way, such as data consistency issues and service dependencies, we remained agile and adaptive, iterating on our approach and leveraging lessons learned to overcome challenges.",
+          "Ultimately, through diligent planning, proactive communication, and teamwork, we successfully delivered the project on schedule with minimal disruption to operations."
+        ]
       },
       {
         "skill": "Can you discuss a challenging technical issue you encountered at innnit e.V and how you resolved it?",
-        "text": "One challenging technical issue I encountered at innnit e.V involved optimizing the performance of a critical API endpoint handling a large volume of concurrent requests. The issue stemmed from inefficient query execution and database indexing, leading to slow response times and occasional timeouts. To resolve this issue, I conducted a thorough performance analysis, identifying bottlenecks in the query execution plan and database indexing strategy. I then optimized the SQL queries by rewriting them to leverage appropriate indexes and reduce the overall execution time. Additionally, I implemented caching mechanisms to cache frequently accessed data, further reducing response times and improving scalability. These optimizations resulted in a significant improvement in API response times, ensuring smooth and reliable operation even under high load conditions."
+        "text": [
+          "One challenging technical issue I encountered at innnit e.V involved optimizing the performance of a critical API endpoint handling a large volume of concurrent requests. The issue stemmed from inefficient query execution and database indexing, leading to slow response times and occasional timeouts.",
+          "To resolve this issue, I conducted a thorough performance analysis, identifying bottlenecks in the query execution plan and database indexing strategy. I then optimized the SQL queries by rewriting them to leverage appropriate indexes and reduce the overall execution time.",
+          "Additionally, I implemented caching mechanisms to cache frequently accessed data, further reducing response times and improving scalability.",
+          "These optimizations resulted in a significant improvement in API response times, ensuring smooth and reliable operation even under high load conditions."
+        ]
       },
       {
         "skill": "Describe a project where you were responsible for developing both backend and frontend systems. Challenges!",
-        "text": "Situation: One project where I took charge of both frontend and backend development was the revamp of innn.it, an online platform aimed at improving user experience and increasing page views. My role involved building the frontend interface using React and managing the backend system with Node.js and MongoDB. <br /> Task: The primary goal was to enhance the innn.it platform by redesigning the user interface for better usability and responsiveness while optimizing the backend system for improved performance and scalability. <br/> Action: I began by collaborating closely with the design team to understand user requirements and translate them into intuitive UI/UX designs. Using React, I developed a modern and user-friendly frontend interface, focusing on enhancing navigation, layout, and overall aesthetics. <br/> Simultaneously, on the backend side, I leveraged Node.js and MongoDB to optimize the system architecture. I implemented caching strategies to reduce website loading time significantly, ensuring a seamless user experience. Additionally, I worked on database management to ensure data integrity and scalability, utilizing MongoDB's document-oriented approach to efficiently store and retrieve data. <br /> "
+        "text": [
+          "Situation: One project where I took charge of both frontend and backend development was the revamp of innn.it, an online platform aimed at improving user experience and increasing page views. My role involved building the frontend interface using React and managing the backend system with Node.js and MongoDB.",
+          "Task: The primary goal was to enhance the innn.it platform by redesigning the user interface for better usability and responsiveness while optimizing the backend system for improved performance and scalability.",
+          "Action: I began by collaborating closely with the design team to understand user requirements and translate them into intuitive UI/UX designs. Using React, I developed a modern and user-friendly frontend interface, focusing on enhancing navigation, layout, and overall aesthetics.",
+          "Simultaneously, on the backend side, I leveraged Node.js and MongoDB to optimize the system architecture. I implemented caching strategies to reduce website loading time significantly, ensuring a seamless user experience. Additionally, I worked on database management to ensure data integrity and scalability, utilizing MongoDB's document-oriented approach to efficiently store and retrieve data."
+        ]
       },
       {
         "skill": "Challenges and overcoming?",
-        "text": "Throughout the project, I faced challenges such as integrating complex frontend components with backend APIs, ensuring consistent data flow between the two systems, and optimizing performance for high traffic volumes. Result: Despite the challenges, the project was a success. By implementing caching strategies, optimizing code, and fine-tuning database queries, I achieved an impressive 80% reduction in website loading time, leading to increased page views and improved user engagement. The collaboration between frontend and backend teams ensured seamless integration, resulting in a cohesive and efficient platform.        "
+        "text": [
+          "Throughout the project, I faced challenges such as integrating complex frontend components with backend APIs, ensuring consistent data flow between the two systems, and optimizing performance for high traffic volumes.",
+          "Result: Despite the challenges, the project was a success. By implementing caching strategies, optimizing code, and fine-tuning database queries, I achieved an impressive 80% reduction in website loading time, leading to increased page views and improved user engagement.",
+          "The collaboration between frontend and backend teams ensured seamless integration, resulting in a cohesive and efficient platform."
+        ]
       },
       {
         "skill": "Can you tell me your strengths with examples?",
-        "text": "Strength: One of my key strengths is my analytical thinking and attention to detail. I have a natural ability to break down complex problems into smaller, manageable chunks, allowing me to find efficient solutions. This strength has been particularly beneficial in troubleshooting and debugging issues during development. For example, in my previous role, there was a critical performance issue with one of the organization's websites. By meticulously analyzing the code and conducting thorough testing, I was able to identify and resolve the problem, resulting in a significant improvement in the website's speed and overall user experience."
+        "text": [
+          "Strength: One of my key strengths is my analytical thinking and attention to detail. I have a natural ability to break down complex problems into smaller, manageable chunks, allowing me to find efficient solutions. This strength has been particularly beneficial in troubleshooting and debugging issues during development.",
+          "For example, in my previous role, there was a critical performance issue with one of the organization's websites. By meticulously analyzing the code and conducting thorough testing, I was able to identify and resolve the problem, resulting in a significant improvement in the website's speed and overall user experience."
+        ]
       },
       {
         "skill": "Can you tell me your weaknesses with examples?",
-        "text": "While I strive for perfection in my work, I sometimes tend to be overly critical of myself. This can lead to spending more time than necessary on a task or being hesitant to seek help when needed. However, I have recognized this tendency and have actively worked on improving it. I have learned the importance of setting realistic expectations and seeking feedback from colleagues to ensure efficient progress. For instance, during a particularly challenging project, I realized that I was spending excessive time on a specific feature. I reached out to a more experienced team member for guidance, and their input helped me find a more streamlined approach, ultimately saving time and delivering the project on schedule"
+        "text": [
+          "While I strive for perfection in my work, I sometimes tend to be overly critical of myself. This can lead to spending more time than necessary on a task or being hesitant to seek help when needed. However, I have recognized this tendency and have actively worked on improving it.",
+          "I have learned the importance of setting realistic expectations and seeking feedback from colleagues to ensure efficient progress. For instance, during a particularly challenging project, I realized that I was spending excessive time on a specific feature.",
+          "I reached out to a more experienced team member for guidance, and their input helped me find a more streamlined approach, ultimately saving time and delivering the project on schedule."
+        ]
       },
       {
         "skill": "Can you tell me your Failure with examples?",
-        "text": "Failure: In a previous project, I encountered a failure when implementing a new feature that involved integrating a third-party API. Despite careful planning and testing, the integration didn't work as expected, resulting in disrupted functionality and unhappy users. It was a valuable lesson in the importance of thoroughly understanding the API documentation and conducting extensive testing before deployment. This experience taught me the significance of diligent preparation, including thorough research and comprehensive testing, to mitigate potential failures. I now approach new integrations with meticulous attention to detail and a robust testing strategy, ensuring smoother and more successful implementations."
+        "text": [
+          "Failure: In a previous project, I encountered a failure when implementing a new feature that involved integrating a third-party API. Despite careful planning and testing, the integration didn't work as expected, resulting in disrupted functionality and unhappy users.",
+          "It was a valuable lesson in the importance of thoroughly understanding the API documentation and conducting extensive testing before deployment.",
+          "This experience taught me the significance of diligent preparation, including thorough research and comprehensive testing, to mitigate potential failures. I now approach new integrations with meticulous attention to detail and a robust testing strategy, ensuring smoother and more successful implementations."
+        ]
       },
       {
         "skill": "How do you balance your technical skills with your interests outside of work, such as sports, cooking, and photography? How do these interests contribute to your professional life?",
-        "text": "Balancing technical skills with interests outside of work is essential for maintaining a healthy work-life balance and fostering personal growth. Engaging in activities such as sports, cooking, and photography provides opportunities for relaxation, creativity, and social connection, which are crucial for overall well-being. These interests contribute to my professional life by enhancing creativity, problem-solving abilities, and resilience. For example, participating in team sports cultivates teamwork and leadership skills, while cooking fosters patience, attention to detail, and adaptability. Similarly, photography encourages visual storytelling, attention to aesthetics, and a fresh perspective, all of which translate into my approach to software development, where creativity, collaboration, and adaptability are key."
+        "text": [
+          "Balancing technical skills with interests outside of work is essential for maintaining a healthy work-life balance and fostering personal growth. Engaging in activities such as sports, cooking, and photography provides opportunities for relaxation, creativity, and social connection, which are crucial for overall well-being.",
+          "These interests contribute to my professional life by enhancing creativity, problem-solving abilities, and resilience. For example, participating in team sports cultivates teamwork and leadership skills, while cooking fosters patience, attention to detail, and adaptability.",
+          "Similarly, photography encourages visual storytelling, attention to aesthetics, and a fresh perspective, all of which translate into my approach to software development, where creativity, collaboration, and adaptability are key."
+        ]
       }
+    ],
+    "services": [
+      "Full-Stack Developer",
+      "Software Engineer",
+      "Frontend Developer",
+      "Backend Developer",
+      "UX/UI Designer",
+      "Cloud Engineer"
+    ],
+    "offers": [
+      "Full-Stack Applications with JavaScript and TypeScript",
+      "Interactive Frontend Applications with React",
+      "Cross-Platform Mobile Apps for iOS and Android using React Native",
+      "Cloud Infrastructure Optimization with AWS, Docker, and Kubernetes",
+      "Scalable Database Design with MongoDB",
+      "Application Performance Optimization",
+      "Tech Stack Migrations to React",
+      "MVPs & Prototypes",
+      "Complex Code Issue Resolution"
     ],
     "tools": [
       "JavaScript",
@@ -309,17 +579,17 @@
         "company": "Zula",
         "position": "Co-Founder | CTO",
         "employment_type": "Self-employed",
-        "location": "",
+        "location": "Berlin, Germany",
         "start_date": "Jul 2023",
         "end_date": "Present",
         "duration": "8 mos",
         "subText": "As a Co-Founder and CTO at Zula, I spearheaded the development and implementation of technology strategies for ZULA. Leading an awesome team, we've been working tirelessly to building an online book library that goes beyond just words on a page. Our collective mission has been to to make sure every child gets access to stories that truly resonate with them, ensuring universal access to books that celebrate the beauty of diversity.",
         "description": [
-          "Co-founded Zula, contributing to the conceptualization and establishment of the company. Initiated and shaped the company's vision, mission, and overall strategic direction.",
-          "Directed, developed and implemented comprehensive technology strategies aligning with the company's objectives of developing a vast online book library, ensuring the creation of a user-friendly and content-rich platform.",
-          "Led the team towards the mission of providing access to books that celebrates differences and resonates with every child.",
-          "Oversaw the end-to-end process, from content curation to platform development.",
-          "Applied a full-stack approach to ensure seamless functionality across the platform."
+          "Co-founded Zula, shaping vision, mission, and strategic direction, resulting in successful market entry.",
+          "Directed tech strategies for online book library development, leading to a 20% increase in user engagement.",
+          "Led a diverse team to build an inclusive online library for kids, expanding access to educational resources.",
+          "Managed end-to-end process from content to platform, ensuring seamless integration and user experience.",
+          "Applied full-stack approach to optimize performance and scalability, resulting in 99.9% uptime."
         ],
         "skills": [
           "Jest",
@@ -358,14 +628,13 @@
         "duration": "2 yrs 10 mos",
         "subText": "I built websites and achieved 80% reduction in website loading time, resulting in improved user experience, increased page views, and 40% reduction in bounce rate. Optimized website performance, implemented caching strategies, and streamlined code to enhance scalability and maintainability. Managed databases with 500M+ records, ensuring data integrity. Supported 25+ employees with prompt IT support and established data security policies.",
         "description": [
-          "Developed and maintained organization's websites, optimizing performance, user experience, and ensuring scalability and maintainability.",
-          "Utilized Server-Side Rendering (SSR) to enhance website performance and SEO capabilities.",
-          "Troubleshot, debugged, and resolved issues to ensure website functionality, stability, and performance.",
-          "Collaborated with cross-functional teams to handle product requests, implement new features, and improve user experience.",
-          "Managed organization's databases handling over 500 million user records, applications, and APIs, including design, optimization, and ensuring data integrity.",
-          "Conducted testing and implemented developed codes to ensure functionality, stability, and quality.",
-          "Provided technical documentation for developed projects to support ongoing maintenance and updates.",
-          "Established and provided IT support for over 25 employees within the association, promptly addressing inquiries and resolving technical issues."
+          "Spearheaded website development and optimization efforts, reducing loading time by 80% and boosting user retention by 40%.",
+          "Implemented caching strategies to enhance website performance, resulting in a 50% decrease in bounce rate.",
+          "Managed databases with 500M+ records, ensuring data integrity and security.",
+          "Utilized Server-Side Rendering (SSR) for improved performance and SEO, doubling organic traffic.",
+          "Collaborated on new features and UX improvements, leading to a 25% increase in user satisfaction.",
+          "Established and provided IT support for over 25 employees within the association, promptly addressing inquiries and resolving technical issues.",
+          "Provided technical documentation for developed projects to support ongoing maintenance and updates, enabling smooth operations."
         ],
         "skills": [
           "Jest",
@@ -394,19 +663,21 @@
         ]
       },
       {
-        "company": "Propstack",
+        "company": "Propstack GmbH",
         "position": "Full-stack Developer",
         "employment_type": "Internship",
-        "location": "Berlin Area, Germany",
-        "start_date": "May 2019",
+        "location": "Berlin, Germany",
+        "start_date": "April 2019",
         "end_date": "Jun 2019",
         "duration": "2 mos",
         "subText": "I Rebuilt the company's mobile app with React Native, resulting in a 30% increase in user engagement and a 15% decrease in app abandonment. Streamlined user interface, improved navigation, and implemented user feedback to enhance overall user experience.",
         "description": [
-          "Rebuilt the company's mobile application using React Native to optimize its performance, user experience, and align it with the company's branding and messaging.",
-          "Enhanced the mobile app's functionalities based on user feedback, business requirements, and industry best practices to make it more user-friendly and intuitive.",
-          "Collaborated closely with the UX designer to ensure the mobile app's easy navigation, usability, and accessibility. ",
-          "Worked collaboratively with external vendors and service providers to optimize the mobile app for both Android and iOS devices, ensuring compliance with relevant app store requirements."
+          "Modernized mobile app with React Native, increasing user engagement by 30% and decreasing bounce rate by 15%.",
+          "Aligned app with branding and messaging, resulting in a 20% increase in brand recognition.",
+          "Enhanced functionalities based on user feedback, leading to a 40% rise in app ratings.",
+          "Collaborated with UX designer to optimize navigation and user flow, resulting in a 20% increase in app usage.",
+          "Worked with vendors to ensure cross-platform compatibility across Android and iOS platforms, expanding user reach.",
+          "Documented design and development processes for future maintenance."
         ],
         "skills": [
           "React",
@@ -434,12 +705,11 @@
         "duration": "1 yr 10 mos",
         "subText": "I offered thorough IT support to both internal staff and external parties and managed network security measures like firewalls and antivirus software. This involved identifying and fixing network issues, whether they were related to hardware, software, or connectivity. I also addressed software problems, including those within operating systems, applications, and databases.",
         "description": [
-          "Provided comprehensive IT support to internal and external stakeholders.",
-          "Diagnosed and resolved network issues related to hardware, software, and connectivity.",
-          "Troubleshot and solved software faults, including operating systems, applications, and databases.",
-          "Installed and implemented network security programs, such as firewalls and anti-virus software.",
-          "Configured new computer systems, including hardware and software setup.",
-          "Conducted end-user training on various software programs and systems."
+          "Provided comprehensive IT support for internal and external stakeholders, ensuring uninterrupted operations.",
+          "Diagnosed and resolved network issues related to hardware, software, and connectivity promptly, minimizing downtime.",
+          "Conducted end-user training on systems, enhancing productivity.",
+          "Installed and configured network security programs such as firewalls and anti-virus software, safeguarding sensitive data.",
+          "Setup new computer systems, improving efficiency for 50+ employees."
         ],
         "skills": [
           "System Administration"
@@ -2411,7 +2681,8 @@
     }
   ],
   "process": {
-    "title": "My Work Processes",
+    "title": "Process",
+    "subTitle": "My Work Processes",
     "subText": "Understanding the project's needs and requirements is paramount for me. I make sure to engage in detailed discussions to grasp every aspect of the project thoroughly. Additionally, breaking down complex issues and tasks is a key part of my approach. This allows for better management and execution, ensuring that each component receives the necessary attention. Moreover, I prioritize time management, especially when developing responsive web and mobile apps. By adhering to these processes, I aim to deliver high-quality results efficiently and effectively.",
     "button": "My Processes",
     "text": [
@@ -2422,31 +2693,37 @@
       {
         "title": "Discussion",
         "img": "../styles/images/light-bulb.svg",
+        "description": "Collaborating to understand your unique project needs, goals, and challenges to ensure alignment and clear vision.",
         "text": "To understand the project needs and requirements it's very important for me to discuss with the people involved to make sure I understand everything the project should achieve."
       },
       {
         "title": "Planning",
         "img": "../styles/images/prioritise.svg",
+        "description": "Designing a robust project roadmap and scalable architecture to prioritize tasks and ensure efficient, high-quality development.",
         "text": "Next, I start by breaking the big project into smaller tasks and decide urgencies. This helps me prioritize tasks, estimate time better and ensure deadlines are met without compromising on quality."
       },
       {
         "title": "Development",
         "img": "../styles/images/code.svg",
+        "description": "Building your project iteratively with agile methodologies, delivering functional components for continuous feedback and refinement.",
         "text": "I like to build things step by step. I deliver parts of the project one at a time, getting feedback as I go. It helps me make improvements along the way."
       },
       {
         "title": "Documentation",
         "img": "../styles/images/documentation.svg",
-        "text": "I keep records of everything I do. This includes technical details and guides."
+        "description": "Maintaining detailed documentation to support seamless knowledge transfer, ongoing maintenance, and future scalability.",
+        "text": "I keep records of everything I do. This includes technical details and guides ongoing maintenance, and future scalability."
       },
       {
         "title": "Review",
         "img": "../styles/images/sprint.svg",
+        "description": "Conducting rigorous testing to ensure optimal performance, stability, and security, providing a polished and reliable final product.",
         "text": "At the end of a sprint, I show what I've completed, gather feedback, and adjust accordingly."
       },
       {
         "title": "Deployment",
         "img": "../styles/images/deployment.svg",
+        "description": "Launching your project with precision, followed by real-time monitoring and quick issue resolution to ensure smooth operation and user satisfaction.",
         "text": "Once everything is good to go, I deploy the project online. I also set up tools to keep an eye on how things are running, so I can quickly fix any issues that pop up."
       }
     ]
@@ -2454,77 +2731,88 @@
   "services": [
     {
       "title": "Website Development",
+      "text": "Building seamless web apps with React, TypeScript, and Node.js, ensuring a high-quality user experience from front-end to back-end.",
       "description": "Crafting custom web applications tailored precisely to your requirements. From elegant front-end design to robust back-end functionality, I ensure a seamless user experience at every turn."
     },
     {
       "title": "App Development",
+      "text": "Crafting high-performance cross-platform apps with React Native, delivering precision and user engagement on both iOS and Android.",
       "description": "Efficiently transforming your app concepts into reality using React Native. Whether it's for iOS or Android, rest assured your app will be built with precision and performance in mind."
     },
     {
       "title": "Cloud Infrastructure",
+      "text": "Optimizing AWS setups with Docker and Kubernetes for scalable, secure, and efficient cloud infrastructure.",
       "description": "Optimizing your AWS cloud infrastructure for peak performance. From setting up EC2 instances to deploying Docker containers with Kubernetes."
     },
     {
       "title": "Database Design",
+      "text": "Designing scalable MongoDB databases with a focus on organization, security, and performance.",
       "description": "Creating scalable database solutions with MongoDB. Organizing and securing your data is key, and I ensure your database is structured to empower your applications while safeguarding your information."
     },
     {
       "title": "Optimization",
+      "text": "Enhancing application speed and responsiveness through fine-tuning and effective caching strategies.",
       "description": "Fine-tuning applications for maximum efficiency. Enhancing speed, responsiveness, and overall user satisfaction, I optimize every aspect of your digital platform to ensure peak performance."
     },
     {
       "title": "Complex Problems",
+      "text": "Resolving intricate code issues and modernizing legacy systems to boost functionality and maintainability.",
       "description": "Solving complex issues within your code that desperately need resolution in your application's codebase, yet remain untouched due to reluctance. From outdated legacy code to modern implementation hurdles."
     }
   ],
   "testimonials": {
     "title": "Testimonials",
     "button": "All testimonials",
-    "subtitle": "Curious what it's like to work with me?",
+    "subtitle": "What my Colleagues are saying",
     "text": "Here are some thoughts from folks I've had the pleasure of working with.",
-    "groupOne": [
+    "group": [
       {
         "name": "Lea Terwort",
         "position": "UX Designer",
         "company": "innn.it",
+        "image": "lea.jpeg",
         "testimony": "You're a true team player! If there was a contest for the most skilled developer with the brightest smile, you'd win hands down. Working with you is so fun, and the results also speak for themselves. You have a very easy and appreciative way of communicating (which is not a given between designers and developers;) and I am so happy to work in a team with you."
       },
       {
         "name": "Nora Circosa",
         "position": "Executive Board Member",
         "company": "innn.it",
+        "image": "nora.jpeg",
         "testimony": "Your blend of technical expertise and positive energy is truly remarkable. So glad that you're part of our team. Your smile and positive vibes make everyone around you feel at ease. I admire how you relate with people and find the right words. You are a very charismatic person. Thanks a lot for all your amazing work at innn.it."
       },
       {
         "name": "Thomas Manoila",
         "position": "Head of Content Creation",
         "company": "innn.it",
+        "image": "thomas.jpeg",
         "testimony": "I'm so happy you are part of the team. Your mastery in Tech is evident in the quality of your work. Your laugh is infectious and your can-do-mentality is amazing. I really enjoy talking to you and appreciate your input to every topic! Stay awesome!"
       },
       {
         "name": "Luiz Fukushiro",
         "position": "Product Lead",
         "company": "innn.it",
+        "image": "fuku.jpeg",
         "testimony": "You're a true asset to our team. You've brought a lot of joy to the team, and your positive energy motivates all of us to go the extra mile. Your analytical skills and can-do mentality makes working with you a pleasure. Thanks for the fantastic energy and for finding solutions to every challenge!"
       },
       {
         "name": "Annika Heintz-Saad",
         "position": "Head of Fund-Raising",
         "company": "innn.it",
+        "image": "annika.jpeg",
         "testimony": "You are not just a skilled developer; you are also a natural leader with a passion for bringing out the best in people. Your presence, voice, laugh & energy lights up every room! This is very special!"
-      }
-    ],
-    "groupTwo": [
+      },
       {
         "name": "Fabian Schyrer",
         "position": "Head of Cloud Technology",
         "company": "MAN Energy Solutions",
+        "image": "fabi.jpeg",
         "testimony": "Ansumana Darboe constantly amazed me with his business insight and original methods to solving problems. His hands-on strategy to node.js, MongoDB, HTML5, CSS, Redux, React, MySQL, and strong personality won him the respect of the team. Ansumana Darboe never refuses you when you ask him for help. He is always capable of adapting to new working environments and has a very positive attitude towards work. Ansumana is an eager professional, no matter how complex the problem is, he will always come up with a brilliant, elegant, and cost-effective solution. He is a trustworthy person and I will always hold him in the highest esteem."
       },
       {
         "name": "Gregor Hackmack",
         "position": "Executive Board Member",
         "company": "innn.it",
+        "image": "gregor.jpeg",
         "testimony": "Your impact on the team is undeniable with your technical skills and leadership shining through in every project. Your can-do and proactive approach to resolving issues is truly inspiring. I will never forget our signature collection rallies for `Democracy For All`. You are such a great and joyful person! It's such a joy to meet you, talk with you and most importantly laugh with you! I always enjoy having you around at the office. Thank you for all the work you invest into innn.it - you built our future!"
       },
       {
@@ -2537,6 +2825,74 @@
         "name": "Sebastian Schütz",
         "position": "Head of Social Media",
         "company": "innn.it",
+        "image": "seb.jpeg",
+        "testimony": "Your ability to translate complex ideas simply and effectively is truly amazing and you have such a positive energy that it made me smile whenever I saw you. You're such a great person!"
+      }
+    ],
+    "groupOne": [
+      {
+        "name": "Lea Terwort",
+        "position": "UX Designer",
+        "company": "innn.it",
+        "image": "lea.jpeg",
+        "testimony": "You're a true team player! If there was a contest for the most skilled developer with the brightest smile, you'd win hands down. Working with you is so fun, and the results also speak for themselves. You have a very easy and appreciative way of communicating (which is not a given between designers and developers;) and I am so happy to work in a team with you."
+      },
+      {
+        "name": "Nora Circosa",
+        "position": "Executive Board Member",
+        "company": "innn.it",
+        "image": "nora.jpeg",
+        "testimony": "Your blend of technical expertise and positive energy is truly remarkable. So glad that you're part of our team. Your smile and positive vibes make everyone around you feel at ease. I admire how you relate with people and find the right words. You are a very charismatic person. Thanks a lot for all your amazing work at innn.it."
+      },
+      {
+        "name": "Thomas Manoila",
+        "position": "Head of Content Creation",
+        "company": "innn.it",
+        "image": "thomas.jpeg",
+        "testimony": "I'm so happy you are part of the team. Your mastery in Tech is evident in the quality of your work. Your laugh is infectious and your can-do-mentality is amazing. I really enjoy talking to you and appreciate your input to every topic! Stay awesome!"
+      },
+      {
+        "name": "Luiz Fukushiro",
+        "position": "Product Lead",
+        "company": "innn.it",
+        "image": "fuku.jpeg",
+        "testimony": "You're a true asset to our team. You've brought a lot of joy to the team, and your positive energy motivates all of us to go the extra mile. Your analytical skills and can-do mentality makes working with you a pleasure. Thanks for the fantastic energy and for finding solutions to every challenge!"
+      },
+      {
+        "name": "Annika Heintz-Saad",
+        "position": "Head of Fund-Raising",
+        "company": "innn.it",
+        "image": "annika.jpeg",
+        "testimony": "You are not just a skilled developer; you are also a natural leader with a passion for bringing out the best in people. Your presence, voice, laugh & energy lights up every room! This is very special!"
+      }
+    ],
+    "groupTwo": [
+      {
+        "name": "Fabian Schyrer",
+        "position": "Head of Cloud Technology",
+        "company": "MAN Energy Solutions",
+        "image": "fabi.jpeg",
+        "testimony": "Ansumana Darboe constantly amazed me with his business insight and original methods to solving problems. His hands-on strategy to node.js, MongoDB, HTML5, CSS, Redux, React, MySQL, and strong personality won him the respect of the team. Ansumana Darboe never refuses you when you ask him for help. He is always capable of adapting to new working environments and has a very positive attitude towards work. Ansumana is an eager professional, no matter how complex the problem is, he will always come up with a brilliant, elegant, and cost-effective solution. He is a trustworthy person and I will always hold him in the highest esteem."
+      },
+      {
+        "name": "Gregor Hackmack",
+        "position": "Executive Board Member",
+        "company": "innn.it",
+        "image": "gregor.jpeg",
+        "testimony": "Your impact on the team is undeniable with your technical skills and leadership shining through in every project. Your can-do and proactive approach to resolving issues is truly inspiring. I will never forget our signature collection rallies for `Democracy For All`. You are such a great and joyful person! It's such a joy to meet you, talk with you and most importantly laugh with you! I always enjoy having you around at the office. Thank you for all the work you invest into innn.it - you built our future!"
+      },
+      {
+        "name": "Daphne Schaefer",
+        "position": "Fund-Raising expert",
+        "company": "innn.it",
+        "image": "daphne.jpeg",
+        "testimony": "You are a true professional with a wealth of experience and expertise. You always make me laugh. I will sincerely remember and cherish all the memories we've made!"
+      },
+      {
+        "name": "Sebastian Schütz",
+        "position": "Head of Social Media",
+        "company": "innn.it",
+        "image": "seb.jpeg",
         "testimony": "Your ability to translate complex ideas simply and effectively is truly amazing and you have such a positive energy that it made me smile whenever I saw you. You're such a great person!"
       }
     ]
@@ -2545,9 +2901,8 @@
     "title": "Project Planner",
     "subText": "You are welcome to arrange an appointment.",
     "text": [
-      "Whether you're just brainstorming ideas or already have a detailed project plan, I'm here to turn your vision into reality. Let's explore how we can work together on your next digital venture.",
-      "Reach out to start a conversation about your web or mobile app needs, and let's create something amazing together.",
-      "Not quite ready to dive into project specifics? Just want to say a friendly `Hi`? I'm looking forward to hearing from you!"
+      "I’m here to help bring your ideas to life, whether you’re at the brainstorming stage or have a detailed plan ready. Let’s discuss your web or mobile app needs and create something amazing together.",
+      "Not ready to dive into specifics yet? No problem, just say ‘hi,’— I'll love to hear from you!"
     ],
     "meeting": "Book a meeting",
     "linkedin": "LinkedIn",
@@ -2729,46 +3084,68 @@
   ],
   "blogs": [
     {
+      "title": "Event-Driven Microservice Architecture",
+      "text": "Explore how to build scalable and efficient web applications using an event-driven microservice architecture with React, Node.js, Docker, and Kubernetes.",
+      "image": "microservice.png",
+      "time": "9",
+      "date": "May 18, 2024",
+      "url": "https://ansumana.hashnode.dev/event-driven-microservice-using-nodejs-docker-and-kubernetes"
+    },
+    {
       "title": "Understanding React Hooks",
-      "text": "I delve into how React Hooks revolutionize component development by managing state, logic and side effects directly within functional components. From understanding what Hooks are to how they boost readability and reusability. Dive into common patterns and best practices with essential hooks like useState, useEffect, useContext and useRef for clean, maintainable code.",
+      "text": "Explore how React Hooks enhance component development by managing state and logic within functional components, focusing on readability and reusability.",
       "image": "hooks.png",
+      "time": "5",
+      "date": "Sep 4, 2023",
       "url": "https://ansumana.hashnode.dev/understanding-react-hooks"
     },
     {
-      "title": "The Virtual DOM",
-      "text": "I delve into the concept of the Virtual DOM in web development. I explain its significance, how it works, and the benefits it offers, including improved performance and easier maintenance. I also provide insights into best practices for optimizing Virtual DOM usage, empowering developers to create efficient and scalable web applications.",
-      "image": "dom.png",
-      "url": "https://ansumana.hashnode.dev/the-virtual-dom"
-    },
-    {
       "title": "Understanding Performance Optimization",
-      "text": "I delve into the essentials of performance optimization, crucial for developers aiming to build faster, more efficient applications. From understanding key performance metrics to identifying bottlenecks, optimizing algorithms and data structures, caching strategies, asynchronous programming, and minimizing HTTP requests, I cover the essential techniques to enhance user experience across web, mobile, and gaming platforms.",
+      "text": "A guide on performance optimization techniques for building faster, efficient applications, covering metrics, bottlenecks, caching, and asynchronous programming.",
       "image": "optimization.png",
+      "time": "5",
+      "date": "Sep 2, 2023",
       "url": "https://ansumana.hashnode.dev/understanding-performance-optimization"
     },
     {
-      "title": "Understanding React: Components, State, and Props",
-      "text": "I delve into the three fundamental concepts of React: components, state, and props. Just as building a house requires laying a foundation and adding elements, React enables developers to create dynamic interfaces by breaking them into reusable components. I explain the difference between functional and class components, how to manage state using hooks or class methods, and the role of props in facilitating communication between components.",
+      "title": "The Virtual DOM",
+      "text": "An introduction to the Virtual DOM, explaining its benefits like improved performance and best practices for optimizing its usage in scalable web applications.",
+      "image": "dom.png",
+      "time": "3",
+      "date": "Aug 28, 2023",
+      "url": "https://ansumana.hashnode.dev/the-virtual-dom"
+    },
+    {
+      "title": "Understanding React Concepts",
+      "text": "A breakdown of React's core concepts — components, state, and props — illustrating how they work together to create dynamic, reusable interfaces.",
       "image": "concepts.png",
+      "time": "5",
+      "date": "Aug 25, 2023",
       "url": "https://ansumana.hashnode.dev/understanding-react-components-state-and-props"
     },
     {
       "title": "A Deep Dive into React",
-      "text": "I dive deep into the React core concepts of components, state, and props, demonstrating their implementation with examples. Exploring the Virtual DOM, React Hooks, and performance optimization techniques like React.memo and useMemo, I highlight how they enhance development efficiency. Additionally, I discuss state management with Redux and advanced React patterns like render props and context API.",
+      "text": "An in-depth look at React’s core concepts, Virtual DOM, React Hooks, and performance optimizations, including advanced state management with Redux.",
       "image": "deep-dive.png",
+      "time": "5",
+      "date": "Aug 15, 2023",
       "url": "https://ansumana.hashnode.dev/a-deep-dive-into-react"
     },
     {
       "title": "Why React Over Angular or Vue.js",
-      "text": "I explain why I prefer React over Angular or Vue.js. Highlighting its component-based architecture akin to Lego bricks, declarative nature, virtual DOM for efficient rendering, flexibility, and rich ecosystem. I detail how React empowers developers to create dynamic web apps efficiently and effortlessly and why it's the ultimate choice in frontend development for many developers.",
+      "text": "Reasons I prefer React, highlighting its component-based architecture, flexibility, virtual DOM efficiency, and extensive ecosystem.",
       "image": "react.png",
+      "time": "6",
+      "date": "Jul 14, 2023",
       "url": "https://ansumana.hashnode.dev/why-react-over-angular-or-vuejs"
     }
   ],
-  "blogTitle": "Recent Articles",
+  "blogTitle": "Blog",
+  "blogSubtitle": "Recent Articles",
   "scrollButton": "Back to top",
   "serviceTitle": "What I Provide",
-  "serviceText": "Reasons to consider hiring me.",
+  "serviceText": "Reasons to consider hiring me",
+  "loadMore": "Show more Articles",
   "footer": {
     "title": "Do you have a project in mind? Let's discuss how we can bring it to life. Whether you're ready to begin or simply exploring ideas, I'm all ears.",
     "button": "Get in touch",

@@ -1,15 +1,23 @@
 .footer {
   // @extend .mt-5;
 .link-text{
-    @extend .text-gray;
+   // @extend .text-gray;
 }
 
 .link-text:hover {
-  @extend .text-white;
+  @extend .text-white, .text-underline;
+}
+
+.border-top-white{
+  border-top: 2px solid  $gray !important;
+}
+
+.border-top-black{
+  border-top: 2px solid $dark !important;
 }
 
   &-main {
-    @extend .bg-secondary, .fw-bold;
+    @extend  .fw-bold;
 
     &-col {
       @extend .col-12, .col-md-4;
@@ -124,10 +132,7 @@
 .footer-button{
   
 }
- .colophon {
-    @extend .bg-secondary, .border-top, .border-white;
-    border-color: $white;
-  } 
+
 
   &-colophon {
     @extend .d-flex,
@@ -144,7 +149,7 @@
 
     a {
       @extend .fw-normal;
-      color: $gray-2;
+     // color: $gray-2;
     }
 
     &-nav {

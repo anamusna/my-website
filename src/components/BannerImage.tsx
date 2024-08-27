@@ -1,41 +1,50 @@
-import React from 'react';
-import { SlideContent } from './Sliders';
-import Work from './Work';
-import { ColophonSocialMedia } from './ColophonSocialMedia';
-import ProfileImage from "../styles/images/ansu-bg.png";
+import React, { useRef } from 'react';
+import { SlideContent, useSlideAnimation } from './Sliders';
+import ProfileImage from "../styles/images/ansu1.png";
 
 interface CombinedBannerImageProps {
   withWork?: boolean;
   image?: any;
+  className?: string;
 }
 
-const BannerImage = ({ withWork, image } : CombinedBannerImageProps) => {
+const BannerImage = ({ image, className } : CombinedBannerImageProps) => {
   return (
     <SlideContent
-      className={withWork ? "banner-img order-1 order-md-0 mx-auto" : "col-6 mx-auto order-1 mb-4 order-md-0 mx-auto"}
-      from="up"
+      className={`testimonial-image ${!image ? "banner-img mx-auto" : "col-6 mx-auto order-1 mb-4 order-md-0 mx-auto"}`}
+      from="right"
       slideElement={
-        <div className={withWork ? "d-flex flex-column" : "hero-img hero-container"}>
-          {withWork && (
-            <div className="d-none d-md-flex">
-              <Work />
-            </div>
-          )}
-          <div className="hero-img hero-container">
-            <img
-              className={image ? "rounded-circle img-fluid" :"img-fluid py-md-5 ps-md-5"}
-              src={image ? image : ProfileImage}
-              alt="Ansumana"
-            />
-          </div>
-          {withWork && (
-            <ul className="d-flex d-md-none text-secondary mx-auto mt-4 d-flex list-unstyled mb-md-0 gap-4">
-              {ColophonSocialMedia}
-            </ul>
-          )}
-        </div>
+        <img
+        className={`img-fluid  ${image ? "rounded-circle mb-4" :  `rounded-4 ${className}` }`}
+        src={image ? image : ProfileImage}
+        style={{
+          backgroundPosition: "cover"
+        }}
+        alt="Ansumana"
+      />
       }
     />
+  );
+};
+
+export const HomeBanner = ({
+  className,
+} : any) => {
+  const slideContentRef = useRef<HTMLDivElement>(null);
+
+  useSlideAnimation(slideContentRef, "left");
+  return (
+    <div
+      ref={slideContentRef}
+      className={`slide-content slide-content-from-left my-md-4 order-md-2 banner-img mx-auto rounded-4 ${className}`}
+      style={{
+        backgroundImage: `url(${ProfileImage})`,
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
+      }}
+    >
+    </div>
   );
 };
 

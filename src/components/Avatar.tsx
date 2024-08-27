@@ -1,49 +1,52 @@
-import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 interface AvatarProps {
   alt?: string;
-  icon?: any;
-  children?: React.ReactNode;
-  style?: object;
+  icon?: any; 
+  style?: React.CSSProperties; 
   iconColor?: string;
+  label?: string;
   iconClassName?: string;
   dot?: boolean;
   onClick?: () => void;
-  dotColor?: string;
+  dotColor?: string; 
   image?: string;
   initials?: string;
-  size: any;
+  size: 'sm' | 'md' | 'lg' | (string & {}); 
   className?: string;
 }
 
-const Avatar = ({
+const Avatar: React.FC<AvatarProps> = ({
   image,
+  label,
   iconClassName,
-  iconColor = "",
+  iconColor = '',
   initials,
   dot = true,
   onClick,
-  size = "lg",
+  size = 'lg',
   icon,
-  className = "bg-white",
-}: AvatarProps) => {
-
+  className = 'bg-white',
+}) => {
   return (
     <div
       className={`avatar d-flex align-items-center avatar-${size} ${
-        icon ? `border-${iconColor} ` : ""
+        icon ? `border-${iconColor}` : ''
       } ${className}`}
       onClick={onClick}
     >
-      {dot && <div className={`avatar-dot bg-success `}></div>}
+      {dot && <div className={`avatar-dot bg-success`} />}
       {image ? (
-        <img src={image} alt={`avatar-${size}`} />
+        <div className="d-flex flex-column w-100">
+          <img src={image} alt="avatar" className="img-fluid" />
+          {label && <small className="testimony-name fw-bold">{label}</small>}
+        </div>
       ) : icon ? (
         <FontAwesomeIcon
-          className={`icon text-center border-0  ${iconClassName} ${
-            iconColor ? `text-${iconColor} ` : ""
-          } `}
+          className={`icon text-center border-0 ${iconClassName} ${
+            iconColor ? `text-${iconColor}` : ''
+          }`}
           icon={icon}
           size="2x"
           fixedWidth

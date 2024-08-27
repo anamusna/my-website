@@ -29,14 +29,14 @@
   }
 
   .slide-content-from-avatar {
-  
+    animation-name: avatar;
+    animation-timing-function: linear;
+
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
     @include media-breakpoint-up(md) {
-      animation-name: avatar;
-      animation-timing-function: linear;
-  
-      animation-duration: 2s;
-      animation-iteration-count: infinite;
-      transform-origin: bottom;
+     
     }
   }
 
@@ -51,15 +51,15 @@
 
   &.slide-content-from-left,
   &.slide-content-from-right,
-  .slide-content-from-bottom {
-    animation-name: fade_in;
+  &.slide-content-from-bottom {
+    //animation-name: fade_in;
     opacity: 0;
   }
 
   &.slide-content-from-left.appear,
   &.slide-content-from-right.appear,
-  .slide-content-from-bottom.appear {
-    animation: slide-move-in 3s forwards;
+  &.slide-content-from-bottom.appear {
+   animation: slide-move-in 5s forwards;
     // opacity: 1;
   }
 
@@ -68,25 +68,28 @@
     opacity: 1;
   }
 
-  .slide-content-from-bottom.appear {
-    animation: slide-move-in 3s forwards;
+  &.slide-content-from-bottom.appear {
+    animation: slide-move-in 2.5s forwards;
   }
 
   @keyframes avatar {
     0% {
       transform: translateY(0);
+      background-color: red !important;
     }
 
     50% {
       transform: translateY(-50px);
+      background-color: blue !important;
     }
 
     100% {
       transform: translateY(0);
+      background-color: green !important;
     }
   }
 
-  @include media-breakpoint-up(md) {
+/*   @include media-breakpoint-up(md) {
 
     &.slide-content-from-left,
     &.slide-content-from-right {
@@ -95,7 +98,7 @@
 
     &.slide-content-from-left,
     &.slide-content-from-right {
-      transition: opacity 250ms ease-in, transform 300ms ease-in;
+      transition: opacity 250ms ease-in, transform 250ms ease-in;
       opacity: 0;
     }
 
@@ -104,7 +107,7 @@
       transform: scale(1);
       opacity: 1;
     }
-  }
+  } */
 
   @keyframes slide-move-in {
 

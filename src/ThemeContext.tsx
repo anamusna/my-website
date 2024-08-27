@@ -1,17 +1,12 @@
-import React, { createContext, useState } from 'react';
+import React, { type Dispatch, type SetStateAction } from 'react';
 
-export const ThemeContext = createContext({});
+export const isThemeDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
 
-export const ThemeProvider = ({ children }: any) => {
-  const [theme, setTheme] = useState('light');
+const defaultTheme = isThemeDark ? 'dark' : 'light';
 
-  const toggleTheme = () => {
-    setTheme(prevTheme => (prevTheme === 'light' ? 'dark' : 'light'));
-  };
-
-  return (
-    <ThemeContext.Provider value={{ theme, toggleTheme }}>
-      {children}
-    </ThemeContext.Provider>
-  );
+export const initialThemeState = {
+  theme: defaultTheme,
+  setTheme: (() => null) as Dispatch<SetStateAction<string>>,
 };
+
+export const ThemeContext = React.createContext(initialThemeState);

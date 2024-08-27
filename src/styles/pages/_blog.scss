@@ -3,6 +3,7 @@
   &-img{
    @include media-breakpoint-up(md) {
     max-height: 14rem;
+    height: 100%;
     }
      img{
       background-size: "cover";
@@ -10,16 +11,38 @@
       background-repeat: "no-repeat";
       //height: 14rem;
      } 
-   }
-  .banner {
-    box-shadow: $box-shadow-lg;
-     @include media-breakpoint-up(md) {
-      box-shadow: none !important;
-    }
-  
-    &:hover {
-      box-shadow: $box-shadow-lg;
-      @extend .shadow;
-    } 
-  }  
+   } 
 }
+
+.hover-black{
+  //@extend .bg-dark;
+  box-shadow: $box-shadow-xl;
+  background-color: $black;
+  &:hover,
+  &:active {
+   // @extend .opacity-black;
+
+    background-color: rgb($dark, .5) !important;
+    border-radius: 2rem;
+    //border-top-right-radius: 2rem;
+    //border-bottom-right-radius: 2rem;
+   // border-radius: 2.5rem;
+    box-shadow: $box-shadow-lg;
+  } 
+ }
+
+ .hover-white {
+  //@extend .bg-gray-2;
+  box-shadow: $box-shadow-xl;
+   background-color: $white;
+  &:hover,
+  &:active {
+    //@extend .opacity-white;
+    background-color: rgb($gray-3, .5) !important;
+    border-radius: 2rem;
+    //border-top-right-radius: 2rem;
+    //border-bottom-right-radius: 2rem;
+   // border-radius: 2.5rem;
+    box-shadow: $box-shadow-lg;
+  } 
+ }

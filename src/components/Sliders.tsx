@@ -4,14 +4,13 @@ import { useTranslation } from "react-i18next";
 interface SlideProps {
   leftElement?: React.ReactNode;
   slideItems?: React.ReactNode[] | JSX.Element[];
-  slideElement?: any;
+  slideElement?: React.ReactNode;
   rightElement?: React.ReactNode;
   className?: string;
-  from?: string;
-  key?: string;
+  from?: "left" | "right" | "top" | "bottom";
 }
 
-export const animateSliding = (element: HTMLDivElement | null) => {
+const animateSliding = (element: HTMLDivElement | null) => {
   const slideOnScrollOptions = {
     threshold: 0,
     rootMargin: "0px 0px -100px 0px",
@@ -20,11 +19,9 @@ export const animateSliding = (element: HTMLDivElement | null) => {
   const slideOnScrollObserver = new IntersectionObserver(
     (entries, observer) => {
       entries.forEach((entry) => {
-        if (!entry.isIntersecting) {
-          observer.observe(entry.target);
-        } else {
+        if (entry.isIntersecting) {
           entry.target.classList.add("appear");
-          //observer.unobserve(entry.target);
+          observer.unobserve(entry.target);
         }
       });
     },
@@ -36,27 +33,33 @@ export const animateSliding = (element: HTMLDivElement | null) => {
   }
 };
 
-export const useSlideAnimation = (elementRef: React.RefObject<HTMLDivElement>, from: string) => {
+export const useSlideAnimation = (
+  elementRef: React.RefObject<HTMLDivElement>,
+  from: string
+) => {
   useEffect(() => {
     animateSliding(elementRef.current);
-
   }, [elementRef, from]);
 };
 
-const SlideComponent: React.FC<SlideProps> = ({
+const SlideComponent = ({
   leftElement,
   rightElement,
   slideElement,
   slideItems = [],
   from = "left",
   className = "",
-}) => {
+}: SlideProps) => {
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
   const slideRef = useRef<HTMLDivElement>(null);
   const { t } = useTranslation();
-  const testimonials: any[] = t("testimonials.groupTwo", {
-    returnObjects: true,
-  });
+
+  const testimonials: { name: string; testimony: string }[] = t(
+    "testimonials.groupTwo",
+    {
+      returnObjects: true,
+    }
+  );
 
   useSlideAnimation(slideRef, from);
 
@@ -67,52 +70,54 @@ const SlideComponent: React.FC<SlideProps> = ({
       );
     }, 5000);
     return () => clearInterval(interval);
-  }, [currentSlideIndex, slideItems]);
+  }, [slideItems.length]);
+
+  const currentTestimonial = testimonials[currentSlideIndex] || {
+    name: "",
+    testimony: "",
+  };
 
   return (
     <div
       ref={slideRef}
-      key={testimonials[currentSlideIndex].name}
       className={`row mx-md-3 mx-auto my-4 slide-body slide-body-from-${from} ${className}`}
     >
       <div className="pt-4 bg-gray-2 rounded-4 position-relative">
-        {slideElement || testimonials[currentSlideIndex].testimony}
+        {slideElement || currentTestimonial.testimony}
       </div>
       <div className="mb-4 text-start">
         <div className="text-start arrow-down mb-4 ms-6"></div>
         <div className="d-flex mx-5 align-items-center gap-4">
-          <div className="fw-bold">
-            {testimonials[currentSlideIndex].name},{" "}
-          </div>
+          <div className="fw-bold">{currentTestimonial.name}</div>
         </div>
       </div>
     </div>
   );
 };
 
-export const SlideContent = ({ leftElement,
-  slideItems,
+export const SlideContent = ({
   slideElement,
-  rightElement,
   className,
-  from,
- // key
-} : SlideProps) => {
+  from = "left",
+}: SlideProps) => {
   const slideContentRef = useRef<HTMLDivElement>(null);
 
-  useSlideAnimation(slideContentRef, from || "left");
+  useSlideAnimation(slideContentRef, from);
   return (
     <div
       ref={slideContentRef}
-      //key={key}
-      className={`slide-content slide-content-from-${from || "left"} ${className}`}
+      className={`slide-content slide-content-from-${from} ${className}`}
     >
       {slideElement}
     </div>
   );
 };
 
-export const SlideContents: React.FC<SlideProps> = (props) => {
+export const SlideContents: React.FC<SlideProps> = ({
+  leftElement,
+  rightElement,
+  className,
+}) => {
   const leftContentRef = useRef<HTMLDivElement>(null);
   const rightContentRef = useRef<HTMLDivElement>(null);
 
@@ -120,18 +125,18 @@ export const SlideContents: React.FC<SlideProps> = (props) => {
   useSlideAnimation(rightContentRef, "right");
 
   return (
-    <div className="slide-content-wrapper ">
+    <div className="slide-content-wrapper">
       <div
         ref={leftContentRef}
-        className={`slide-content slide-content-from-left ${props.className}`}
+        className={`slide-content slide-content-from-left ${className}`}
       >
-        {props.leftElement}
+        {leftElement}
       </div>
       <div
         ref={rightContentRef}
-        className={`slide-content slide-content-from-right ${props.className}`}
+        className={`slide-content slide-content-from-right ${className}`}
       >
-        {props.rightElement}
+        {rightElement}
       </div>
     </div>
   );
