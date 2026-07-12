@@ -1,0 +1,48 @@
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faAws, faNodeJs, faReact } from "@fortawesome/free-brands-svg-icons";
+import {
+  faBolt,
+  faBuilding,
+  faChevronDown,
+  faCode,
+  faDatabase,
+  faGraduationCap,
+  faHandshake,
+  faLaptopCode,
+  faLightbulb,
+  faLock,
+  faPalette,
+  faPlane,
+  faRocket,
+  faScaleBalanced,
+  faSearch,
+  faServer,
+  faUserCheck,
+  faUsers,
+  faUserTie,
+} from "@fortawesome/free-solid-svg-icons";
+
+library.add(
+  faChevronDown,
+  faPalette,
+  faServer,
+  faCode,
+  faReact,
+  faNodeJs,
+  faAws,
+  faDatabase,
+  faBolt,
+  faSearch,
+  faLock,
+  faHandshake,
+  faLightbulb,
+  faRocket,
+  faScaleBalanced,
+  faUserCheck,
+  faUsers,
+  faBuilding,
+  faGraduationCap,
+  faLaptopCode,
+  faPlane,
+  faUserTie
+);

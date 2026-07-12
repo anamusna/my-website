@@ -1,0 +1,62 @@
+[[redirects]]
+ from = "/about"
+ to = "/index.html"
+ status = 200
+
+[[redirects]]
+ from = "/projects/*"
+ to = "/index.html"
+ status = 200
+
+[[redirects]]
+ from = "/blog"
+ to = "/index.html"
+ status = 200
+
+[[redirects]]
+ from = "/contact"
+ to = "/index.html"
+ status = 200
+
+[[redirects]]
+ from = "/testimonials"
+ to = "/index.html"
+ status = 200
+
+# Success redirects for form submissions
+[[redirects]]
+ from = "/contact/success"
+ to = "/contact"
+ status = 302
+
+[[redirects]]
+ from = "/testimonials/success"
+ to = "/testimonials"
+ status = 302
+
+# Handle all other routes (catch-all)
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+    Content-Security-Policy = "default-src 'self'; base-uri 'self'; form-action 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: blob: https:; connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com https://www.googletagmanager.com https://analytics.google.com; frame-src https://calendly.com; object-src 'none'; upgrade-insecure-requests"
+
+[forms]
+ [forms."contact-form"]
+   name = "Contact Form"
+   success_url = "/contact/success"
+ [forms."project-form"]
+   name = "Project Form"
+   success_url = "/contact/success"
+ [forms."feedback-form"]
+   name = "Feedback Form"
+   success_url = "/testimonials/success"

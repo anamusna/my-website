@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ansumana Darboe | Blog</title>
+    <link>https://ansumana-darboe.netlify.app/blog</link>
+    <description>Notes on React, performance, microservices, and building software that survives real users and real traffic.</description>
+    <language>en</language>
+    <atom:link href="https://ansumana-darboe.netlify.app/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Event-Driven Microservices: When Your App Gets Too Big</title>
+      <link>https://ansumana-darboe.netlify.app/blog/event-driven-microservices-when-your-app-gets-too-big</link>
+      <guid>https://ansumana-darboe.netlify.app/blog/event-driven-microservices-when-your-app-gets-too-big</guid>
+      <pubDate>Sat, 18 May 2024 00:00:00 GMT</pubDate>
+      <description>There was a time deploy took thirty seconds. Then the codebase grew, teams multiplied, and nobody wanted to touch production on a Friday.</description>
+    </item>
+    <item>
+      <title>React Hooks</title>
+      <link>https://ansumana-darboe.netlify.app/blog/react-hooks</link>
+      <guid>https://ansumana-darboe.netlify.app/blog/react-hooks</guid>
+      <pubDate>Mon, 04 Sep 2023 00:00:00 GMT</pubDate>
+      <description>Before hooks, you either wrote a simple function with no state or a class component with lifecycle methods and boilerplate.</description>
+    </item>
+    <item>
+      <title>Performance Optimization: When Your App Starts to Crawl</title>
+      <link>https://ansumana-darboe.netlify.app/blog/performance-optimization-when-your-app-starts-to-crawl</link>
+      <guid>https://ansumana-darboe.netlify.app/blog/performance-optimization-when-your-app-starts-to-crawl</guid>
+      <pubDate>Sat, 02 Sep 2023 00:00:00 GMT</pubDate>
+      <description>The app felt fast on your laptop. Then real users arrived on older phones and slow networks, and the complaints started.</description>
+    </item>
+    <item>
+      <title>The Virtual DOM: React&apos;s Secret to Speed</title>
+      <link>https://ansumana-darboe.netlify.app/blog/the-virtual-dom-react-s-secret-to-speed</link>
+      <guid>https://ansumana-darboe.netlify.app/blog/the-virtual-dom-react-s-secret-to-speed</guid>
+      <pubDate>Mon, 28 Aug 2023 00:00:00 GMT</pubDate>
+      <description>Updating the real DOM directly forces the browser to recalculate layout more than you need.</description>
+    </item>
+    <item>
+      <title>React Components, State, and Props: The Building Blocks</title>
+      <link>https://ansumana-darboe.netlify.app/blog/react-components-state-and-props-the-building-blocks</link>
+      <guid>https://ansumana-darboe.netlify.app/blog/react-components-state-and-props-the-building-blocks</guid>
+      <pubDate>Fri, 25 Aug 2023 00:00:00 GMT</pubDate>
+      <description>A React app is small pieces with one job each: a button handles clicks, a card shows a user, a list renders rows.</description>
+    </item>
+    <item>
+      <title>A Deep Dive into React</title>
+      <link>https://ansumana-darboe.netlify.app/blog/a-deep-dive-into-react</link>
+      <guid>https://ansumana-darboe.netlify.app/blog/a-deep-dive-into-react</guid>
+      <pubDate>Tue, 15 Aug 2023 00:00:00 GMT</pubDate>
+      <description>What started as a clean component sometimes becomes a five-hundred-line file that does everything.</description>
+    </item>
+    <item>
+      <title>Why I Chose React Over Angular or Vue</title>
+      <link>https://ansumana-darboe.netlify.app/blog/why-i-chose-react-over-angular-or-vue</link>
+      <guid>https://ansumana-darboe.netlify.app/blog/why-i-chose-react-over-angular-or-vue</guid>
+      <pubDate>Fri, 14 Jul 2023 00:00:00 GMT</pubDate>
+      <description>I built the same kinds of projects in React, Angular, and Vue. All three work.</description>
+    </item>
+  </channel>
+</rss>
